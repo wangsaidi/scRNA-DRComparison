@@ -7,6 +7,8 @@ All 50 authentic scRNA-seq datasets used in this study are publicly available an
 The synthetic dataset was generated using Splatter, see the Supplementary Table S3 for detailed parameters.
 
 # Results
-The results of the dimension reduction performed on the 100 datasets mentioned above using the 26 methods employed in this study, along with the corresponding evaluation metrics, can be downloaded from [Figshare](https://doi.org/10.6084/m9.figshare.32064900).
+The results of the preprocessing of the aforementioned 100 datasets, as well as the dimension reduction results and relevant evaluation metrics for the 26 methods used in this study, can be downloaded from [Figshare](https://doi.org/10.6084/m9.figshare.32064900).
 
-The real and simulate folders contain the results of dimensionality reduction; the downsampling folder contains the runtime and peak memory usage of each method on downsampled data; the metric folder stores the results of various evaluation metrics, with the score folder containing the overall scores for each method, corresponding to Figure 3 in the paper.
+results.tar.gz: The real and simulate folders contain the results of dimensionality reduction; the downsampling folder contains the runtime and peak memory usage of each method on downsampled data; the metric folder stores the results of various evaluation metrics, with the score folder containing the overall scores for each method, corresponding to Figure 3 in the paper.
+
+datasets.tar.gz: Preprocessed dataset.
