@@ -1,0 +1,34 @@
+﻿record_type,item,value,method_scope,dataset_scope,parameter_scope,primary_figure,evidence_or_note
+experiment manifest,Latent-dimension sensitivity,640 source records; 6 methods; 8 datasets,GLMPCA; PCA; SAUCIE; pCMF; scGBM; scVI,batch_1.0; celltype_11; celltype_15; celltype_7; default; dropout_0; gene_5k; gene_5w,latent dimensions: 2; 5; 10; 20; 50,Figure 6; Supplementary Figures S11-S14,"Defines the targeted sensitivity experiment scope used to evaluate scVI, latent dimension, visualization workflow, and input-gene sensitivity."
+experiment manifest,input-gene sensitivity,576 source records; 6 methods; 8 datasets,GLMPCA; PCA; UMAP; scGBM; scVI; t-SNE,batch_1.0; celltype_11; celltype_15; celltype_7; default; dropout_0; gene_5k; gene_5w,latent dimensions: 2; 20; workflows: Latent dimension; PCA50 to 2D; requested HVGs: 500; 1000; 2000; 3000,Figure 6; Supplementary Figures S11-S14,"Defines the targeted sensitivity experiment scope used to evaluate scVI, latent dimension, visualization workflow, and input-gene sensitivity."
+experiment manifest,scVI reference analysis,215 source records; 1 methods; 15 datasets,scVI,batch_0.2; batch_1.0; cell_100; cell_1000; cell_10000; cell_5000; cell_73233; celltype_11; celltype_15; celltype_7; default; dropout_0; dropout_2; gene_5k; gene_5w,latent dimensions: 2; 5; 10; 20; 50,Figure 6; Supplementary Figures S11-S14,"Defines the targeted sensitivity experiment scope used to evaluate scVI, latent dimension, visualization workflow, and input-gene sensitivity."
+experiment manifest,visualization-workflow comparison,192 source records; 4 methods; 8 datasets,PHATE; PaCMAP; UMAP; t-SNE,batch_1.0; celltype_11; celltype_15; celltype_7; default; dropout_0; gene_5k; gene_5w,latent dimensions: 2; workflows: Direct 2D; PCA50 to 2D,Figure 6; Supplementary Figures S11-S14,"Defines the targeted sensitivity experiment scope used to evaluate scVI, latent dimension, visualization workflow, and input-gene sensitivity."
+Figure 6 QA summary,panel_count,8,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,input_rows,1623,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,scvi_reference_rows_all,215,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,scvi_reference_rows_plotted_max_epochs_20,210,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,scvi_reference_rows_excluded_non_20_epochs,5,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,scvi_reference_configurations_plotted,14,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,scvi_reference_dimensions,"2,5,10,20,50",not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,dimension_rows,640,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,dimension_methods,6,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,dimension_datasets,8,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,dimension_seeds_min_per_method_dimension,8,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,workflow_rows,192,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,workflow_methods,4,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,workflow_datasets,8,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,hvg_rows,576,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,hvg_methods,6,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,hvg_datasets,8,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,hvg_requested_values,"500,1000,2000,3000",not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,runtime_rows_plotted,1618,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,control_sensitivity_rows,410,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,control_sensitivity_layers,4,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,control_sensitivity_methods,10,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,top_dimension_delta_method,scVI,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,top_dimension_delta,0.83499442315783,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,workflow_delta_median,0.0395041946239454,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,input_gene_3000_top_method,PCA,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,input_gene_3000_top_median_ari,1.0,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,max_median_control_effect_method,scVI,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.
+Figure 6 QA summary,max_median_control_effect,0.7041712796257431,not applicable,not applicable,not applicable,Figure 6,Computed from the polished Figure 6 source-data QA summary.

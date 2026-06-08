@@ -1,0 +1,146 @@
+﻿figure,panel,role,source
+S1,a,canonical method membership and reproducibility metadata,method catalog
+S1,b,family accounting,method catalog
+S1,c,implementation language accounting,method catalog
+S1,d,publication-year coverage,method catalog
+S1,e,metadata completeness,method catalog
+S1,f,family-language cross-tabulation,method catalog
+S1,g,targeted controls and variants,method catalog
+S1,h,temporal method footprint,method catalog
+S2,a,dataset type accounting,100-dataset atlas
+S2,b,source groups,100-dataset atlas
+S2,c,cell-count range,100-dataset atlas
+S2,d,publication years,100-dataset atlas
+S2,e,species footprint,100-dataset atlas
+S2,f,sequencing technologies,100-dataset atlas
+S2,g,cell-gene scale,100-dataset atlas
+S2,h,sparsity,100-dataset atlas
+S2,i,simulation axes,100-dataset atlas
+S2,j,simulated scale,100-dataset atlas
+S2,k,largest datasets,100-dataset atlas
+S2,l,availability,100-dataset atlas
+S3,a,source collections,real-dataset landscape
+S3,b,cell-gene scale,real-dataset landscape
+S3,c,sparsity,real-dataset landscape
+S3,d,cell types,real-dataset landscape
+S3,e,largest cell counts,real-dataset landscape
+S3,f,largest gene spaces,real-dataset landscape
+S3,g,matrix size,real-dataset landscape
+S3,h,scaled collection profile,real-dataset landscape
+S3,i,metadata completeness,real-dataset landscape
+S4,a,axis coverage,simulated-parameter atlas
+S4,b,cell settings,simulated-parameter atlas
+S4,c,gene settings,simulated-parameter atlas
+S4,d,sparsity settings,simulated-parameter atlas
+S4,e,batch settings,simulated-parameter atlas
+S4,f,cell-type settings,simulated-parameter atlas
+S4,g,cell-gene scale,simulated-parameter atlas
+S4,h,scaled parameter profile,simulated-parameter atlas
+S4,i,matrix size,simulated-parameter atlas
+S5,a,full score matrix,profile-score source data
+S5,b,component means,profile-score source data
+S5,c,method means,profile-score source data
+S5,d,family medians,profile-score source data
+S5,e,component agreement,profile-score source data
+S5,f,component spread,profile-score source data
+S5,g,top frequency,profile-score source data
+S5,h,component distributions,profile-score source data
+S5,i,family distributions,profile-score source data
+S6,a,NKR 10 across reference collections,structure preservation long table
+S6,b,NKR 20 across reference collections,structure preservation long table
+S6,c,NKR 30 across reference collections,structure preservation long table
+S6,d,AJI 10 across reference collections,structure preservation long table
+S6,e,AJI 20 across reference collections,structure preservation long table
+S6,f,AJI 30 across reference collections,structure preservation long table
+S6,g,MRRE missing 10 across reference collections,structure preservation long table
+S6,h,MRRE missing 20 across reference collections,structure preservation long table
+S6,i,MRRE missing 30 across reference collections,structure preservation long table
+S7,a,trustworthiness 10 collection matrix,structure preservation long table
+S7,b,trustworthiness 20 collection matrix,structure preservation long table
+S7,c,trustworthiness 30 collection matrix,structure preservation long table
+S7,d,continuity 10 collection matrix,structure preservation long table
+S7,e,continuity 20 collection matrix,structure preservation long table
+S7,f,continuity 30 collection matrix,structure preservation long table
+S7,g,NH 10 collection matrix,structure preservation long table
+S7,h,NH 20 collection matrix,structure preservation long table
+S7,i,NH 30 collection matrix,structure preservation long table
+S7,j,KNN 10 collection matrix,structure preservation long table
+S7,k,KNN 20 collection matrix,structure preservation long table
+S7,l,KNN 30 collection matrix,structure preservation long table
+S8,a,random triplet collection matrix,structure preservation long table
+S8,b,Spearman collection matrix,structure preservation long table
+S8,c,Pearson collection matrix,structure preservation long table
+S8,d,k-nearest collection matrix,structure preservation long table
+S8,e,centroid distance collection matrix,structure preservation long table
+S8,f,AUC collection matrix,structure preservation long table
+S8,g,Qglobal collection matrix,structure preservation long table
+S8,h,Qlocal collection matrix,structure preservation long table
+S8,i,kmax collection matrix,structure preservation long table
+S8,j,SVM collection matrix,structure preservation long table
+S8,k,metric agreement,aggregated global metrics
+S8,l,method-level global summary,aggregated global metrics
+S9,a,ARI by algorithm,clustering long table
+S9,b,NMI by algorithm,clustering long table
+S9,c,SIL by algorithm,clustering long table
+S9,d,HOMO by algorithm,clustering long table
+S9,e,COMP by algorithm,clustering long table
+S9,f,algorithm median,clustering long table
+S9,g,k-means ARI collections,clustering long table
+S9,h,Louvain ARI collections,clustering long table
+S9,i,spectral ARI collections,clustering long table
+S9,j,ARI-NMI agreement,clustering long table
+S9,k,top-three ARI frequency,clustering long table
+S9,l,metric distributions,clustering long table
+S10,a,stability matrix,simulated robustness data
+S10,b,family stability,simulated robustness data
+S10,c,method stability,simulated robustness data
+S10,d,axis spread,simulated robustness data
+S10,e,simulated local metrics,simulated robustness data
+S10,f,simulated global metrics,simulated robustness data
+S10,g,simulated clustering metrics,simulated robustness data
+S10,h,simulated task coverage,simulated robustness data
+S10,i,rank volatility,simulated robustness data
+S10,j,axis means,simulated robustness data
+S10,k,robustness components,simulated robustness data
+S10,l,local-stability association,simulated robustness data
+S11,a,ARI dimension,scVI targeted reference analysis
+S11,b,NMI dimension,scVI targeted reference analysis
+S11,c,trustworthiness dimension,scVI targeted reference analysis
+S11,d,runtime dimension,scVI targeted reference analysis
+S11,e,epoch effect,scVI targeted reference analysis
+S11,f,memory,scVI targeted reference analysis
+S11,g,scale-runtime,scVI targeted reference analysis
+S11,h,dataset-level ARI,scVI targeted reference analysis
+S12,a,ARI dimension matrix,latent dimension sensitivity
+S12,b,NMI dimension matrix,latent dimension sensitivity
+S12,c,trustworthiness dimension matrix,latent dimension sensitivity
+S12,d,runtime dimension matrix,latent dimension sensitivity
+S12,e,ARI distribution,latent dimension sensitivity
+S12,f,NMI distribution,latent dimension sensitivity
+S12,g,explained variance,latent dimension sensitivity
+S12,h,method sensitivity,latent dimension sensitivity
+S13,a,ARI workflow,workflow comparison
+S13,b,NMI workflow,workflow comparison
+S13,c,trustworthiness workflow,workflow comparison
+S13,d,runtime workflow,workflow comparison
+S13,e,ARI method matrix,workflow comparison
+S13,f,NMI method matrix,workflow comparison
+S13,g,trustworthiness method matrix,workflow comparison
+S13,h,runtime method matrix,workflow comparison
+S14,a,ARI gene matrix,input-gene sensitivity
+S14,b,NMI gene matrix,input-gene sensitivity
+S14,c,trustworthiness gene matrix,input-gene sensitivity
+S14,d,runtime gene matrix,input-gene sensitivity
+S14,e,ARI distribution,input-gene sensitivity
+S14,f,NMI distribution,input-gene sensitivity
+S14,g,runtime scaling,input-gene sensitivity
+S14,h,method sensitivity,input-gene sensitivity
+S15,a,implementation verification,reproducibility and coverage audit
+S15,b,role accounting,reproducibility and coverage audit
+S15,c,language footprint,reproducibility and coverage audit
+S15,d,method scope,reproducibility and coverage audit
+S15,e,commit records,reproducibility and coverage audit
+S15,f,export formats,reproducibility and coverage audit
+S15,g,source-data records,reproducibility and coverage audit
+S15,h,old supplement coverage,reproducibility and coverage audit
+S15,i,canonical method audit,reproducibility and coverage audit

@@ -1,0 +1,2 @@
+Method,knn_10,knn_20,knn_30,svm,nkr_10,aji_10,nkr_20,aji_20,nkr_30,aji_30,random_triplet,spearman,k-nearest,centroid_distance
+VASC,0.177,0.184,0.184,0.299,0.002,0.001,0.003,0.002,0.01,0.005,0.494,0.0,0.6,0.508

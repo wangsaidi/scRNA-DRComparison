@@ -1,0 +1,186 @@
+method,language,role,source,install_channel,package_or_repo,environment,status,notes,commit,method_id,parent_method,benchmark_scope,method_family_raw,method_family,implementation_principle,implementation_language,source_or_url,publication_year,reference,is_variant,variant_note,method_order,panel_source,old_figure,new_figure,consolidated_role
+PCA,R,Baseline,install_manifest,conda,r-base,R benchmark,installed_verified,Use stats::prcomp from the R base stats package.,,,,,,,,,,,,,,,reproducibility,,,
+GLMPCA,R,Latent-dimension sensitivity,install_manifest,R,glmpca,R benchmark,installed_verified,Install from CRAN/r-universe or GitHub if needed.,,,,,,,,,,,,,,,reproducibility,,,
+pCMF,R,Latent-dimension sensitivity,install_manifest,manual_source,pCMF,R benchmark,installed_verified,Table S1 points to DRComparison data rather than a standalone pCMF package.,,,,,,,,,,,,,,,reproducibility,,,
+ZIFA,python,Latent-dimension sensitivity,install_manifest,manual_source,ZIFA,Python legacy,installed_verified,Table S1 points to DRComparison data; identify usable Python implementation before running.,,,,,,,,,,,,,,,reproducibility,,,
+scGBM,R,Latent-dimension sensitivity,install_manifest,R,scGBM,R benchmark,installed_verified,Install from GitHub with remotes.,,,,,,,,,,,,,,,reproducibility,,,
+SSNMDI,MATLAB,Label-sensitive method,install_manifest,git,SSNMDI,octave,Source import verified,Extracted MATLAB source; Octave 10.3 smoke test loaded Zheng_pre.mat and executed constructW.,,,,,,,,,,,,,,,reproducibility,,,
+tGPLVM,python,Optional latent method,install_manifest,git,tGPLVM,Python 3.6 tGPLVM,Source import verified,Source compiles and smoke run completed on bundled Test_3_Pollen.h5 in isolated Python 3.6 TensorFlow 1.6 Edward 1.3.5 environment; patched indentation Python 3 print and HDF5 byte-string metadata.,,,,,,,,,,,,,,,reproducibility,,,
+VAE,python,Latent-dimension sensitivity,install_manifest,git,CZI-Latent-Assessment,Python legacy,Source import verified,CZI VAE script checked out; Keras import path patched; py_compile and dependency imports verified.,,,,,,,,,,,,,,,reproducibility,,,
+scvis,python,Legacy visualization,install_manifest,git,scvis-dev,Python legacy,installed_verified,pip installed from cloned source; import verified in Python legacy.,,,,,,,,,,,,,,,reproducibility,,,
+VASC,python,Legacy deep method,install_manifest,git,VASC,Python legacy,Source import verified,Source import verified after Keras merge compatibility patch.,,,,,,,,,,,,,,,reproducibility,,,
+SAUCIE,python,Legacy deep method,install_manifest,git,SAUCIE,Python legacy,Source import verified,Source import verified in Python legacy; full TF1-style training runtime still needs smoke test.,,,,,,,,,,,,,,,reproducibility,,,
+scScope,python,Legacy deep method,install_manifest,manual_source,scScope,Python legacy,installed_verified,Table S1 points to DRComparison data; identify original source or archived implementation.,,,,,,,,,,,,,,,reproducibility,,,
+SCDRHA,python,Legacy deep method,install_manifest,git,SCDRHA,Python SCDH,Source import verified,Source import verified in isolated TensorFlow 2.4/DCA environment with python-louvain and PyYAML compatibility pins.,,,,,,,,,,,,,,,reproducibility,,,
+scGAE,python,Legacy deep method,install_manifest,git,scGAE,Python legacy,Source import verified,Source import verified in Python legacy after installing TensorFlow-probability spektral umap-learn and scanpy.,,,,,,,,,,,,,,,reproducibility,,,
+DREAM,python,Legacy deep method,install_manifest,git,DREAM,Python modern,installed_verified,pip installed from cloned source after adding missing requirements file; import verified.,,,,,,,,,,,,,,,reproducibility,,,
+DRA,python,Legacy deep method,install_manifest,git,DRA,Python TF1,Source import verified,Source modules compile and import in isolated TensorFlow 1.15 environment with PyTables.,,,,,,,,,,,,,,,reproducibility,,,
+UMAP,python,2D visualization,install_manifest,pip,umap-learn,Python modern,installed_verified,Install from PyPI/conda-forge; run direct 2D and PCA50->UMAP.,,,,,,,,,,,,,,,reproducibility,,,
+SIMLR,R,2D visualization,install_manifest,Bioconductor,SIMLR,R benchmark,installed_verified,Install through Bioconductor or GitHub.,,,,,,,,,,,,,,,reproducibility,,,
+PHATE,python,2D visualization,install_manifest,pip,phate,Python modern,installed_verified,Install from PyPI/conda-forge.,,,,,,,,,,,,,,,reproducibility,,,
+EDGE,R,2D visualization,install_manifest,R,EDGE,R benchmark,installed_verified,Install from GitHub with remotes.,,,,,,,,,,,,,,,reproducibility,,,
+SPDR,python,2D visualization,install_manifest,git,SPDR,Python modern,Source import verified,Source import verified in Python modern after installing hnswlib.,,,,,,,,,,,,,,,reproducibility,,,
+IVIS,python,2D visualization,install_manifest,pip,ivis,Python legacy,installed_verified,TensorFlow dependency; isolate if it conflicts with modern stack.,,,,,,,,,,,,,,,reproducibility,,,
+PaCMAP,python,2D visualization,install_manifest,pip,pacmap,Python modern,installed_verified,Install from PyPI/conda-forge.,,,,,,,,,,,,,,,reproducibility,,,
+t-SNE,R,2D visualization,install_manifest,R,Rtsne,R benchmark,installed_verified,Install Rtsne in R environment; also allow sklearn TSNE for Python checks if needed.,,,,,,,,,,,,,,,reproducibility,,,
+TriMap,python,2D visualization,install_manifest,pip,trimap,Python modern,installed_verified,Install from PyPI if available; otherwise GitHub source.,,,,,,,,,,,,,,,reproducibility,,,
+SQuaD-MDS,python,2D visualization,install_manifest,git,SQuaD-MDS-and-FItSNE-hybrid,Python modern,Source import verified,Source import verified in Python modern.,,,,,,,,,,,,,,,reproducibility,,,
+scVI,python,Targeted reference method,install_manifest,pip,scvi-tools,Python modern,installed_verified,Targeted reference method included for sensitivity analysis; official docs support pip or conda installation.,,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,4946375737b45391526e150ec47822fcf5d15e81,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,6f188f14ce8cc5af7713999305c178aa7771ea2f,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,fdf64830af2551f07b4bc6b2fbb56cfc752abd16,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,8ffcdd4bb4ebf1635ba0e2ca1d0e914adc3668ae,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,5ab7976fc8d19a3823b6005f51736dc70f2017fb,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,c7c3c12b3e60f8a747650c242ebd3395adb5b0de,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,1bcba77cd4bb83c6f914bb1a1e73d3f486741101,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,4cfa8b4c462da6101bf9664fd86458910a9164f4,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,880df88eed6a60118c9ecf03b00e3925406c4807,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,f17ad2def9b75920c2321bf761647ec3df9b43c1,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,ab7213ac63e9f1ea6351a86514ef9cb708ddf0f3,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,230332695f30b7c828a17e3c01bddb8f04f86b46,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,70e512f8590155537efad8dd9f7c29adfab33232,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,50f500445112900c4ed03c12bdeb2e6a3df6ae8b,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,3fd7e39bf858db31b73e08e6f046f27e146d54d2,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,af73849679e8f84d80e4418d0badf5ea9d9a87af,,,,,,,,,,,,,,reproducibility,,,
+,,,source_commits,,,,,,a76fd66d417c5d0c31b5f84fe1180e95596d2df7,,,,,,,,,,,,,,reproducibility,,,
+,,,method_manifest,,,,,,,PCA,PCA,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,PCA achieves dimensionality reduction by projecting high-dimensional data onto low-dimensional principal components with maximum variance through linear transformation,R,stats 4.3.3,1987.0,"(Greenacre et al., n.d.)",False,,1.0,reproducibility,,,
+,,,method_manifest,,,,,,,GLMPCA,GLMPCA,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,GLMPCA models raw counts using Poisson or negative binomial likelihoods and employs bias residuals for rapid approximate computation,R,https://github.com/xzhoulab/DRComparison/tree/master/data,2019.0,"(Townes et al., 2019)",False,,2.0,reproducibility,,,
+,,,method_manifest,,,,,,,pCMF,pCMF,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,pCMF achieves dimensionality reduction by probabilistically decomposing data through a sparse Gamma-Poisson factor model,R,https://github.com/xzhoulab/DRComparison/tree/master/data,2019.0,"(Durif et al., n.d.)",False,,3.0,reproducibility,,,
+,,,method_manifest,,,,,,,ZIFA,ZIFA,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,ZIFA maps high-dimensional data to a low-dimensional space by introducing factor analysis with a zero-inflation model,python,https://github.com/xzhoulab/DRComparison/tree/master/data,2016.0,"(“ZIFA: Dimensionality reduction for zero-inflated single-cell gene expression analysis,” n.d.)",False,,4.0,reproducibility,,,
+,,,method_manifest,,,,,,,scGBM,scGBM,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,"scGBM directly models data through a Poisson bilinear model, achieving dimensionality reduction by introducing a low-dimensional factor structure in the log-mean representation",R,https://github.com/phillipnicol/scGBM,2023.0,"(Nicol and Miller, 2023)",False,,5.0,reproducibility,,,
+,,,method_manifest,,,,,,,SSNMDI,SSNMDI,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,"SSNMDI projects high-dimensional data onto a low-dimensional space through non-negative matrix factorization, integrating data interpolation and label information within the framework to optimize dimensionality reduction",MATLAB,https://github.com/yushanqiu/SSNMDI,2023.0,"(Qiu et al., 2023)",False,,6.0,reproducibility,,,
+,,,method_manifest,,,,,,,tGPLVM,tGPLVM,Full benchmark,Linear and Probabilistic Factor Models,linear/probabilistic,tGPLVM maps high-dimensional data to low dimensions via Gaussian processes and models noise using a heavy-tailed t-distribution,python,https://github.com/architverma1/tGPLVM,2020.0,"(Verma and Engelhardt, 2020)",False,,7.0,reproducibility,,,
+,,,method_manifest,,,,,,,VAE,VAE,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,"VAE maps high-dimensional data to a low-dimensional latent distribution via an encoder, then reconstructs it using a decoder to maximize the ELBO for dimensionality reduction",python,https://github.com/greenelab/CZI-Latent-Assessment/tree/master/single_cell_analysis,2019.0,"(Hu and Greene, 2019)",False,,8.0,reproducibility,,,
+,,,method_manifest,,,,,,,scvis,scvis,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,scvis combines variational autoencoders with t-SNE regularization to learn a probabilistic mapping function for dimensionality reduction,python,https://bitbucket.org/jerry00/scvis-dev,2018.0,"(Ding et al., 2018)",False,,9.0,reproducibility,,,
+,,,method_manifest,,,,,,,VASC,VASC,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,VASC employs a deep variational autoencoder for dimensionality reduction and utilizes a ZI layer to handle dropout events,python,https://github.com/wang-research/VASC,2018.0,"(Wang and Gu, 2018)",False,,10.0,reproducibility,,,
+,,,method_manifest,,,,,,,SAUCIE,SAUCIE,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,"SAUCIE employs a deep autoencoder with multiple regularization terms to simultaneously accomplish tasks such as dimensionality reduction, denoising, and clustering",python,https://github.com/KrishnaswamyLab/SAUCIE,2019.0,"(Amodio et al., 2019)",False,,11.0,reproducibility,,,
+,,,method_manifest,,,,,,,scScope,scScope,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,scScope employs a deep recurrent autoencoder to iteratively repair missing values in scRNA-seq data while simultaneously performing batch normalization and feature learning,python,https://github.com/xzhoulab/DRComparison/tree/master/data,2019.0,"(Deng et al., 2019)",False,,12.0,reproducibility,,,
+,,,method_manifest,,,,,,,SCDRHA,SCDRHA,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,"SCDRHA first applies DCA for denoising, then employs a graph attention autoencoder for dimensionality reduction",python,https://github.com/WHY-17/SCDRHA,2021.0,"(Zhao et al., 2021)",False,,13.0,reproducibility,,,
+,,,method_manifest,,,,,,,scGAE,scGAE,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,scGAE achieves dimensionality reduction by constructing cell maps and using graph autoencoders,python,https://github.com/ZixiangLuo1161/scGAE,2021.0,"(Luo et al., 2021)",False,,14.0,reproducibility,,,
+,,,method_manifest,,,,,,,DREAM,DREAM,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,"DREAM employs a combination of variational autoencoders and mixture of Gaussians for dimensionality reduction of scRNA-seq data, utilizing a ZI layer to handle dropout events",python,https://github.com/Crystal-JJ/DREAM,2023.0,"(Jiang et al., 2023)",False,,15.0,reproducibility,,,
+,,,method_manifest,,,,,,,DRA,DRA,Full benchmark,Deep Autoencoders and Generative Models,deep generative/autoencoder,DRA employs adversarial variational autoencoders for dimensionality reduction,python,https://github.com/eugenelin1/DRA,2020.0,"(Lin et al., 2020)",False,,16.0,reproducibility,,,
+,,,method_manifest,,,,,,,UMAP,UMAP,Full benchmark,Graph-Based and Diffusion Geometry Models,graph/diffusion,UMAP achieves nonlinear dimensionality reduction by constructing a proximity graph in high-dimensional space and optimizing low-dimensional embeddings to preserve its neighborhood structure.,python,https://github.com/lmcinnes/umap,2018.0,"(Becht et al., 2019)",False,,17.0,reproducibility,,,
+,,,method_manifest,,,,,,,SIMLR,SIMLR,Full benchmark,Graph-Based and Diffusion Geometry Models,graph/diffusion,"SIMLR adaptively learns the optimal similarity matrix between cells through multi-core learning, utilizing this matrix for dimensionality reduction.",R,https://github.com/BatzoglouLabSU/SIMLR,2017.0,"(B. Wang et al., n.d.)",False,,18.0,reproducibility,,,
+,,,method_manifest,,,,,,,PHATE,PHATE,Full benchmark,Graph-Based and Diffusion Geometry Models,graph/diffusion,PHATE performs dimensionality reduction through multidimensional scaling analysis while preserving geometric information by constructing the diffusion geometry of the data.,python,https://github.com/KrishnaswamyLab/PHATE,2017.0,"(Moon et al., 2019)",False,,19.0,reproducibility,,,
+,,,method_manifest,,,,,,,EDGE,EDGE,Full benchmark,Graph-Based and Diffusion Geometry Models,graph/diffusion,EDGE constructs an inter-cell similarity matrix by integrating numerous weak learners and performs dimensionality reduction based on this matrix.,R,https://github.com/shawnstat/EDGE,2020.0,"(Sun et al., 2020)",False,,20.0,reproducibility,,,
+,,,method_manifest,,,,,,,SPDR,SPDR,Full benchmark,Graph-Based and Diffusion Geometry Models,graph/diffusion,SPDR achieves dimension reduction that preserves data structure while correcting batch effects by cross-batch sampling triplets and optimizing the loss function.,python,https://github.com/eleozzr/SPDR,2023.0,"(Xu and Li, 2023)",False,,21.0,reproducibility,,,
+,,,method_manifest,,,,,,,IVIS,IVIS,Full benchmark,Metric Learning and Structure-Aware Embedding,metric/structure-aware,Ivis employs a concatenated neural network and triplet loss to map high-dimensional data to low dimensions while supporting rapid embedding of new data points.,python,https://github.com/beringresearch/ivis,2019.0,"(Szubert et al., 2019)",False,,22.0,reproducibility,,,
+,,,method_manifest,,,,,,,PaCMAP,PaCMAP,Full benchmark,Metric Learning and Structure-Aware Embedding,metric/structure-aware,"PaCMAP preserves the neighborhood structure of data while performing dimensionality reduction by constructing three types of point pairs: nearest neighbors, intermediate neighbors, and distant neighbors.",python,https://github.com/YingfanWang/PaCMAP,2021.0,"(Y. Wang et al., n.d.)",False,,23.0,reproducibility,,,
+,,,method_manifest,,,,,,,t-SNE,t-SNE,Full benchmark,Metric Learning and Structure-Aware Embedding,metric/structure-aware,t-SNE transforms the similarity between high-dimensional points into probability distributions and matches these distributions in a low-dimensional space to achieve dimensionality reduction while preserving structural information.,R,Rtsne 0.17,2008.0,"(Hinton and Roweis, n.d.)",False,,24.0,reproducibility,,,
+,,,method_manifest,,,,,,,TriMap,TriMap,Full benchmark,Metric Learning and Structure-Aware Embedding,metric/structure-aware,TriMap learns low-dimensional embeddings by sampling triplet constraints from high-dimensional data and optimizing the loss function.,python,https://github.com/eamid/trimap?tab=readme-ov-file,2019.0,"(Amid and Warmuth, 2022)",False,,25.0,reproducibility,,,
+,,,method_manifest,,,,,,,SQuaD-MDS,SQuaD-MDS,Full benchmark,Metric Learning and Structure-Aware Embedding,metric/structure-aware,"SQuadMDS randomly groups data into quadruplets and utilizes gradient descent to optimize relative distance error, achieving multidimensional scaling with linear complexity.",python,https://github.com/PierreLambert3/SQuaD-MDS-and-FItSNE-hybrid,2022.0,"(Lambert et al., 2022)",False,,26.0,reproducibility,,,
+,,,method_manifest,,,,,,,Parametric UMAP 50,UMAP,Result variants,Graph-Based and Diffusion Geometry Models,graph/diffusion,UMAP achieves nonlinear dimensionality reduction by constructing a proximity graph in high-dimensional space and optimizing low-dimensional embeddings to preserve its neighborhood structure.,python,https://github.com/lmcinnes/umap,2018.0,"(Becht et al., 2019)",True,Shown in benchmark result files as a parameter/workflow variant.,27.0,reproducibility,,,
+,,,method_manifest,,,,,,,Parametric UMAP 200,UMAP,Result variants,Graph-Based and Diffusion Geometry Models,graph/diffusion,UMAP achieves nonlinear dimensionality reduction by constructing a proximity graph in high-dimensional space and optimizing low-dimensional embeddings to preserve its neighborhood structure.,python,https://github.com/lmcinnes/umap,2018.0,"(Becht et al., 2019)",True,Shown in benchmark result files as a parameter/workflow variant.,28.0,reproducibility,,,
+,,,method_manifest,,,,,,,SQuaD-MDS hybrid,SQuaD-MDS,Result variants,Metric Learning and Structure-Aware Embedding,metric/structure-aware,"SQuadMDS randomly groups data into quadruplets and utilizes gradient descent to optimize relative distance error, achieving multidimensional scaling with linear complexity.",python,https://github.com/PierreLambert3/SQuaD-MDS-and-FItSNE-hybrid,2022.0,"(Lambert et al., 2022)",True,Shown in benchmark result files as a parameter/workflow variant.,29.0,reproducibility,,,
+,,,method_manifest,,,,,,,scVI,scVI,Targeted analysis,Deep Autoencoders and Generative Models,deep generative/autoencoder,Deep generative model included only in targeted sensitivity analyses.,Python,scvi-tools,,,False,Not counted as a full 100-dataset benchmark method in the manuscript.,30.0,reproducibility,,,
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S1,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S2,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S3,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S4,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S5,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S6,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S7,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S8,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S9,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S10,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S11,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S12,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S13,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S14,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S15,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S16,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S17,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S18,S6,local structure: NKR/AJI/MRRE
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S19,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S20,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S21,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S22,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S23,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S24,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S25,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S26,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S27,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S28,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S29,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S30,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S31,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S32,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S33,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S34,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S35,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S36,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S37,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S38,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S39,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S40,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S41,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S42,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S43,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S44,S7,trustworthiness/continuity/NH/KNN/SVM
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S45,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S46,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S47,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S48,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S49,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S50,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S51,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S52,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S53,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S54,S8,global/class geometry
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S55,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S56,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S57,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S58,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S59,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S60,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S61,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S62,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S63,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S64,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S65,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S66,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S67,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S68,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S69,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S70,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S71,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S72,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S73,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S74,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S75,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S76,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S77,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S78,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S79,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S80,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S81,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S82,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S83,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S84,S9,clustering concordance
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S85,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S86,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S87,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S88,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S89,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S90,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S91,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S92,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S93,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S94,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S95,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S96,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S97,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S98,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S99,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S100,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S101,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S102,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S103,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S104,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S105,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S106,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S107,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S108,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S109,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S110,S10,synthetic perturbation
+,,,,,,,,,,,,,,,,,,,,,,,old_docx_mapping,S111,S10,synthetic perturbation

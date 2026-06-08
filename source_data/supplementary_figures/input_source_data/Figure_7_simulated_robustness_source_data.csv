@@ -1,0 +1,253 @@
+method_raw,method_id,parent_method,perturbation_axis,score,family
+DRA,DRA,DRA,batch_number,0.1228004943800916,deep generative/autoencoder
+DREAM,DREAM,DREAM,batch_number,0.2346611056350288,deep generative/autoencoder
+EDGE,EDGE,EDGE,batch_number,0.6047432946958767,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,batch_number,0.5822375728962703,linear/probabilistic
+PCA,PCA,PCA,batch_number,0.6230615936038728,linear/probabilistic
+PHATE,PHATE,PHATE,batch_number,0.7509444010430857,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,batch_number,0.1612423976576456,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,batch_number,0.7318519296756356,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,batch_number,0.7226460330751955,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,batch_number,0.0967731072780321,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,batch_number,0.5684412422141812,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,batch_number,0.734441897406966,graph/diffusion
+SPDR,SPDR,SPDR,batch_number,0.828186730149157,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,batch_number,0.4389382649974664,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,batch_number,0.6307819992621655,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,batch_number,0.1238912957608975,linear/probabilistic
+TSNE,t-SNE,t-SNE,batch_number,0.8127512213431818,metric/structure-aware
+TriMap,TriMap,TriMap,batch_number,0.831850874082982,metric/structure-aware
+UMAP,UMAP,UMAP,batch_number,0.7114589363686984,graph/diffusion
+VAE,VAE,VAE,batch_number,0.6998787746973938,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,batch_number,0.6164117674080922,linear/probabilistic
+ivis,IVIS,IVIS,batch_number,0.4147993450872369,metric/structure-aware
+pCMF,pCMF,pCMF,batch_number,0.0841578713968135,linear/probabilistic
+scGAE,scGAE,scGAE,batch_number,0.1861098846400222,deep generative/autoencoder
+scGBM,scGBM,scGBM,batch_number,0.5977214925743723,linear/probabilistic
+scScope,scScope,scScope,batch_number,0.1211816426341798,deep generative/autoencoder
+scvis,scvis,scvis,batch_number,0.1518117335397595,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,batch_number,0.6324226350305697,linear/probabilistic
+DRA,DRA,DRA,batch_strength,0.0821565199607506,deep generative/autoencoder
+DREAM,DREAM,DREAM,batch_strength,0.3518784368393156,deep generative/autoencoder
+EDGE,EDGE,EDGE,batch_strength,0.6340310914466445,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,batch_strength,0.4371419213369575,linear/probabilistic
+PCA,PCA,PCA,batch_strength,0.6483941740179835,linear/probabilistic
+PHATE,PHATE,PHATE,batch_strength,0.7758320285952033,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,batch_strength,0.2073143894984769,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,batch_strength,0.7823971672712663,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,batch_strength,0.7796487722495822,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,batch_strength,0.2534541835016986,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,batch_strength,0.5808443621510366,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,batch_strength,0.8334878435537535,graph/diffusion
+SPDR,SPDR,SPDR,batch_strength,0.8264667231283578,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,batch_strength,0.458813918004395,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,batch_strength,0.7068702956246898,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,batch_strength,0.1985116978210893,linear/probabilistic
+TSNE,t-SNE,t-SNE,batch_strength,0.7848551977001316,metric/structure-aware
+TriMap,TriMap,TriMap,batch_strength,0.8094769321154288,metric/structure-aware
+UMAP,UMAP,UMAP,batch_strength,0.7606701177924915,graph/diffusion
+VAE,VAE,VAE,batch_strength,0.7382082870927953,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,batch_strength,0.6223631470037259,linear/probabilistic
+ivis,IVIS,IVIS,batch_strength,0.4213747112021974,metric/structure-aware
+pCMF,pCMF,pCMF,batch_strength,0.2964166369268523,linear/probabilistic
+scGAE,scGAE,scGAE,batch_strength,0.2912802778722371,deep generative/autoencoder
+scGBM,scGBM,scGBM,batch_strength,0.629440459246491,linear/probabilistic
+scScope,scScope,scScope,batch_strength,0.3312594971256926,deep generative/autoencoder
+scvis,scvis,scvis,batch_strength,0.518506847587674,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,batch_strength,0.4485986140413407,linear/probabilistic
+DRA,DRA,DRA,cell_number,0.1535383598699765,deep generative/autoencoder
+DREAM,DREAM,DREAM,cell_number,0.3664763951258211,deep generative/autoencoder
+EDGE,EDGE,EDGE,cell_number,0.5464203446354687,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,cell_number,0.5604109288696338,linear/probabilistic
+PCA,PCA,PCA,cell_number,0.6038211197703784,linear/probabilistic
+PHATE,PHATE,PHATE,cell_number,0.6312243922472263,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,cell_number,0.1795242350833878,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,cell_number,0.6181363627113978,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,cell_number,0.6162672987838309,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,cell_number,0.1439438252657219,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,cell_number,0.4028404218904555,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,cell_number,0.6367869190209426,graph/diffusion
+SPDR,SPDR,SPDR,cell_number,0.6460355725123851,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,cell_number,0.4490900524738895,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,cell_number,0.5723336199439802,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,cell_number,0.1525368911175403,linear/probabilistic
+TSNE,t-SNE,t-SNE,cell_number,0.6450669752590636,metric/structure-aware
+TriMap,TriMap,TriMap,cell_number,0.6716729903583395,metric/structure-aware
+UMAP,UMAP,UMAP,cell_number,0.5956482605983382,graph/diffusion
+VAE,VAE,VAE,cell_number,0.5558215913720532,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,cell_number,0.5968468533563878,linear/probabilistic
+ivis,IVIS,IVIS,cell_number,0.4502708049824035,metric/structure-aware
+pCMF,pCMF,pCMF,cell_number,0.1411782380973407,linear/probabilistic
+scGAE,scGAE,scGAE,cell_number,0.1974263772119363,deep generative/autoencoder
+scGBM,scGBM,scGBM,cell_number,0.5769744201453216,linear/probabilistic
+scScope,scScope,scScope,cell_number,0.3961535432226534,deep generative/autoencoder
+scvis,scvis,scvis,cell_number,0.1850854847117535,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,cell_number,0.530008274882307,linear/probabilistic
+DRA,DRA,DRA,celltype_number,0.1897027789285673,deep generative/autoencoder
+DREAM,DREAM,DREAM,celltype_number,0.1828705394258632,deep generative/autoencoder
+EDGE,EDGE,EDGE,celltype_number,0.4338243337702144,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,celltype_number,0.5026220326492223,linear/probabilistic
+PCA,PCA,PCA,celltype_number,0.5218423417834868,linear/probabilistic
+PHATE,PHATE,PHATE,celltype_number,0.7789163288038138,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,celltype_number,0.1975444165601582,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,celltype_number,0.7238414612986173,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,celltype_number,0.7037051022095839,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,celltype_number,0.1311059636806396,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,celltype_number,0.5249158704032002,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,celltype_number,0.791543270573378,graph/diffusion
+SPDR,SPDR,SPDR,celltype_number,0.8453809551740825,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,celltype_number,0.4278702038080252,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,celltype_number,0.5740789307780407,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,celltype_number,0.1804233749632076,linear/probabilistic
+TSNE,t-SNE,t-SNE,celltype_number,0.8419310280858696,metric/structure-aware
+TriMap,TriMap,TriMap,celltype_number,0.8600449010109694,metric/structure-aware
+UMAP,UMAP,UMAP,celltype_number,0.6764701106838252,graph/diffusion
+VAE,VAE,VAE,celltype_number,0.7965530058421662,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,celltype_number,0.4636743020996,linear/probabilistic
+ivis,IVIS,IVIS,celltype_number,0.2251230066970115,metric/structure-aware
+pCMF,pCMF,pCMF,celltype_number,0.1593842630473728,linear/probabilistic
+scGAE,scGAE,scGAE,celltype_number,0.1539534034706363,deep generative/autoencoder
+scGBM,scGBM,scGBM,celltype_number,0.4844445283960202,linear/probabilistic
+scScope,scScope,scScope,celltype_number,0.1863982237123593,deep generative/autoencoder
+scvis,scvis,scvis,celltype_number,0.183199617653187,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,celltype_number,0.1870430349676848,linear/probabilistic
+DRA,DRA,DRA,de_prob,0.1341300050401535,deep generative/autoencoder
+DREAM,DREAM,DREAM,de_prob,0.4931920378563125,deep generative/autoencoder
+EDGE,EDGE,EDGE,de_prob,0.6957527926043161,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,de_prob,0.7033934583945955,linear/probabilistic
+PCA,PCA,PCA,de_prob,0.7185274215841633,linear/probabilistic
+PHATE,PHATE,PHATE,de_prob,0.7602835786759344,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,de_prob,0.1442852232794601,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,de_prob,0.759441608993485,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,de_prob,0.7633340815143081,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,de_prob,0.1208845555915354,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,de_prob,0.6195030601711375,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,de_prob,0.783084122225534,graph/diffusion
+SPDR,SPDR,SPDR,de_prob,0.7952325699240155,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,de_prob,0.493623263212784,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,de_prob,0.7128200373851867,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,de_prob,0.113809239271635,linear/probabilistic
+TSNE,t-SNE,t-SNE,de_prob,0.7771813927839413,metric/structure-aware
+TriMap,TriMap,TriMap,de_prob,0.8126512024667181,metric/structure-aware
+UMAP,UMAP,UMAP,de_prob,0.6916536163875884,graph/diffusion
+VAE,VAE,VAE,de_prob,0.7556558274408287,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,de_prob,0.7139013804454073,linear/probabilistic
+ivis,IVIS,IVIS,de_prob,0.6314717928546049,metric/structure-aware
+pCMF,pCMF,pCMF,de_prob,0.1021008740156151,linear/probabilistic
+scGAE,scGAE,scGAE,de_prob,0.4748586128830068,deep generative/autoencoder
+scGBM,scGBM,scGBM,de_prob,0.6794514760435607,linear/probabilistic
+scScope,scScope,scScope,de_prob,0.3193103534510967,deep generative/autoencoder
+scvis,scvis,scvis,de_prob,0.137045855559145,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,de_prob,0.6707848152216693,linear/probabilistic
+DRA,DRA,DRA,de_strength,0.1107934418902619,deep generative/autoencoder
+DREAM,DREAM,DREAM,de_strength,0.6141548804024761,deep generative/autoencoder
+EDGE,EDGE,EDGE,de_strength,0.6779461762148894,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,de_strength,0.7173683363585628,linear/probabilistic
+PCA,PCA,PCA,de_strength,0.749515427393428,linear/probabilistic
+PHATE,PHATE,PHATE,de_strength,0.7749988779566965,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,de_strength,0.1319666910349156,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,de_strength,0.7555478074958912,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,de_strength,0.7469879941883032,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,de_strength,0.1317229251947831,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,de_strength,0.6717888944927923,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,de_strength,0.7839826480835557,graph/diffusion
+SPDR,SPDR,SPDR,de_strength,0.8122536929698768,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,de_strength,0.6154022145396465,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,de_strength,0.7158683976436564,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,de_strength,0.0928338108205176,linear/probabilistic
+TSNE,t-SNE,t-SNE,de_strength,0.7766570928753362,metric/structure-aware
+TriMap,TriMap,TriMap,de_strength,0.8237615995564432,metric/structure-aware
+UMAP,UMAP,UMAP,de_strength,0.6986234504367085,graph/diffusion
+VAE,VAE,VAE,de_strength,0.7761827332863378,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,de_strength,0.7515767634582382,linear/probabilistic
+ivis,IVIS,IVIS,de_strength,0.6866645784564177,metric/structure-aware
+pCMF,pCMF,pCMF,de_strength,0.2987736647223162,linear/probabilistic
+scGAE,scGAE,scGAE,de_strength,0.4384595977279435,deep generative/autoencoder
+scGBM,scGBM,scGBM,de_strength,0.7124584288470471,linear/probabilistic
+scScope,scScope,scScope,de_strength,0.5525121025378337,deep generative/autoencoder
+scvis,scvis,scvis,de_strength,0.4408195736242289,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,de_strength,0.6703593002281977,linear/probabilistic
+DRA,DRA,DRA,dropout,0.1273928173114777,deep generative/autoencoder
+DREAM,DREAM,DREAM,dropout,0.1914739352829793,deep generative/autoencoder
+EDGE,EDGE,EDGE,dropout,0.5517693312141507,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,dropout,0.6186487496708308,linear/probabilistic
+PCA,PCA,PCA,dropout,0.6081452808882156,linear/probabilistic
+PHATE,PHATE,PHATE,dropout,0.6866938421518171,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,dropout,0.1356408281333702,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,dropout,0.7479939184828115,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,dropout,0.7199707532023074,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,dropout,0.1203870940725305,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,dropout,0.4213656645124295,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,dropout,0.7347885983235841,graph/diffusion
+SPDR,SPDR,SPDR,dropout,0.7858076853041296,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,dropout,0.4605976736673461,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,dropout,0.6846167699917001,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,dropout,0.1049516629520352,linear/probabilistic
+TSNE,t-SNE,t-SNE,dropout,0.718298695448338,metric/structure-aware
+TriMap,TriMap,TriMap,dropout,0.8059760791111067,metric/structure-aware
+UMAP,UMAP,UMAP,dropout,0.7291739910202365,graph/diffusion
+VAE,VAE,VAE,dropout,0.6440316242864108,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,dropout,0.6658250217671839,linear/probabilistic
+ivis,IVIS,IVIS,dropout,0.5059534193078405,metric/structure-aware
+pCMF,pCMF,pCMF,dropout,0.1325848821346411,linear/probabilistic
+scGAE,scGAE,scGAE,dropout,0.2501117492795352,deep generative/autoencoder
+scGBM,scGBM,scGBM,dropout,0.6220572274782826,linear/probabilistic
+scScope,scScope,scScope,dropout,0.1955885016766765,deep generative/autoencoder
+scvis,scvis,scvis,dropout,0.1666444455347927,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,dropout,0.3236951819991585,linear/probabilistic
+DRA,DRA,DRA,gene_number,0.1268352225840869,deep generative/autoencoder
+DREAM,DREAM,DREAM,gene_number,0.3159615557998821,deep generative/autoencoder
+EDGE,EDGE,EDGE,gene_number,0.7068173817801396,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,gene_number,0.6845245728826419,linear/probabilistic
+PCA,PCA,PCA,gene_number,0.7001763037498774,linear/probabilistic
+PHATE,PHATE,PHATE,gene_number,0.7841433984560197,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,gene_number,0.1267127735312762,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,gene_number,0.7999898917236961,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,gene_number,0.7907192062802133,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,gene_number,0.1120970586575799,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,gene_number,0.6064762149337747,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,gene_number,0.8370057719138172,graph/diffusion
+SPDR,SPDR,SPDR,gene_number,0.8189764504787866,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,gene_number,0.4692071435395464,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,gene_number,0.7475143360739172,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,gene_number,0.1157900611119457,linear/probabilistic
+TSNE,t-SNE,t-SNE,gene_number,0.7953373267485098,metric/structure-aware
+TriMap,TriMap,TriMap,gene_number,0.8512334683184696,metric/structure-aware
+UMAP,UMAP,UMAP,gene_number,0.7935960101449436,graph/diffusion
+VAE,VAE,VAE,gene_number,0.7807259917859365,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,gene_number,0.6908678322810575,linear/probabilistic
+ivis,IVIS,IVIS,gene_number,0.5644777049135854,metric/structure-aware
+pCMF,pCMF,pCMF,gene_number,0.0979905853096566,linear/probabilistic
+scGAE,scGAE,scGAE,gene_number,0.3510799672265158,deep generative/autoencoder
+scGBM,scGBM,scGBM,gene_number,0.6668585133548699,linear/probabilistic
+scScope,scScope,scScope,gene_number,0.4071308257928955,deep generative/autoencoder
+scvis,scvis,scvis,gene_number,0.1444898949919613,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,gene_number,0.6634920964625806,linear/probabilistic
+DRA,DRA,DRA,out,0.1158981811977128,deep generative/autoencoder
+DREAM,DREAM,DREAM,out,0.1853637365239483,deep generative/autoencoder
+EDGE,EDGE,EDGE,out,0.7668973857182563,graph/diffusion
+GLMPCA,GLMPCA,GLMPCA,out,0.7124871307346232,linear/probabilistic
+PCA,PCA,PCA,out,0.7315586445677992,linear/probabilistic
+PHATE,PHATE,PHATE,out,0.7813167532325929,graph/diffusion
+PaCMAP,PaCMAP,PaCMAP,out,0.1318758497676365,metric/structure-aware
+ParametricUMAP200,Parametric UMAP 200,UMAP,out,0.8143651431163864,graph/diffusion
+ParametricUMAP50,Parametric UMAP 50,UMAP,out,0.8024862759317974,graph/diffusion
+SAUCIE,SAUCIE,SAUCIE,out,0.108303561883114,deep generative/autoencoder
+SCDRHA,SCDRHA,SCDRHA,out,0.6141812752529228,deep generative/autoencoder
+SIMLR,SIMLR,SIMLR,out,0.8387094083943897,graph/diffusion
+SPDR,SPDR,SPDR,out,0.8214120005093969,graph/diffusion
+SQuaD_MDS,SQuaD-MDS,SQuaD-MDS,out,0.487793790407442,metric/structure-aware
+SQuaD_MDS_hybrid,SQuaD-MDS hybrid,SQuaD-MDS,out,0.7884464321838364,metric/structure-aware
+SSNMDI,SSNMDI,SSNMDI,out,0.0998644063398621,linear/probabilistic
+TSNE,t-SNE,t-SNE,out,0.803903792769977,metric/structure-aware
+TriMap,TriMap,TriMap,out,0.8441076213470406,metric/structure-aware
+UMAP,UMAP,UMAP,out,0.8009498387535391,graph/diffusion
+VAE,VAE,VAE,out,0.7733149671302559,deep generative/autoencoder
+ZIFA,ZIFA,ZIFA,out,0.72476254464467,linear/probabilistic
+ivis,IVIS,IVIS,out,0.3879464112942643,metric/structure-aware
+pCMF,pCMF,pCMF,out,0.0867358942694987,linear/probabilistic
+scGAE,scGAE,scGAE,out,0.1525634306687256,deep generative/autoencoder
+scGBM,scGBM,scGBM,out,0.6967254333278222,linear/probabilistic
+scScope,scScope,scScope,out,0.1467617060364649,deep generative/autoencoder
+scvis,scvis,scvis,out,0.0843209295006849,deep generative/autoencoder
+tGPLVM,tGPLVM,tGPLVM,out,0.7239743458621144,linear/probabilistic

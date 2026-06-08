@@ -1,0 +1,10 @@
+axis,scored,incomplete,total
+cell_number,7,2,9
+gene_number,5,0,5
+celltype_number,5,0,5
+batch_number,5,0,5
+batch_strength,5,0,5
+dropout,5,0,5
+de_prob,5,0,5
+de_strength,5,0,5
+out,5,0,5

@@ -1,0 +1,2 @@
+Method,AUC,Qlocal,Qglobal,T_10,T_20,T_30,C_10,C_20,C_30,kmax
+VASC,,,,0.547,0.55,0.529,0.535,0.528,0.527,

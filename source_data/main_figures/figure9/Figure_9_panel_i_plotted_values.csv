@@ -1,0 +1,41 @@
+method_id,control_layer,control_label,n_runs,n_datasets,family_short
+GLMPCA,dimension,Latent dim.,120,8,linear
+GLMPCA,workflow,Workflow,0,0,linear
+GLMPCA,hvg,Input genes,96,8,linear
+GLMPCA,scvi,scVI ref.,0,0,linear
+PCA,dimension,Latent dim.,40,8,linear
+PCA,workflow,Workflow,0,0,linear
+PCA,hvg,Input genes,96,8,linear
+PCA,scvi,scVI ref.,0,0,linear
+pCMF,dimension,Latent dim.,120,8,linear
+pCMF,workflow,Workflow,0,0,linear
+pCMF,hvg,Input genes,0,0,linear
+pCMF,scvi,scVI ref.,0,0,linear
+scGBM,dimension,Latent dim.,120,8,linear
+scGBM,workflow,Workflow,0,0,linear
+scGBM,hvg,Input genes,96,8,linear
+scGBM,scvi,scVI ref.,0,0,linear
+SAUCIE,dimension,Latent dim.,120,8,deep
+SAUCIE,workflow,Workflow,0,0,deep
+SAUCIE,hvg,Input genes,0,0,deep
+SAUCIE,scvi,scVI ref.,0,0,deep
+UMAP,dimension,Latent dim.,0,0,graph
+UMAP,workflow,Workflow,48,8,graph
+UMAP,hvg,Input genes,96,8,graph
+UMAP,scvi,scVI ref.,0,0,graph
+t-SNE,dimension,Latent dim.,0,0,metric
+t-SNE,workflow,Workflow,48,8,metric
+t-SNE,hvg,Input genes,96,8,metric
+t-SNE,scvi,scVI ref.,0,0,metric
+PHATE,dimension,Latent dim.,0,0,graph
+PHATE,workflow,Workflow,48,8,graph
+PHATE,hvg,Input genes,0,0,graph
+PHATE,scvi,scVI ref.,0,0,graph
+PaCMAP,dimension,Latent dim.,0,0,metric
+PaCMAP,workflow,Workflow,48,8,metric
+PaCMAP,hvg,Input genes,0,0,metric
+PaCMAP,scvi,scVI ref.,0,0,metric
+scVI,dimension,Latent dim.,120,8,control
+scVI,workflow,Workflow,0,0,control
+scVI,hvg,Input genes,96,8,control
+scVI,scvi,scVI ref.,215,15,control

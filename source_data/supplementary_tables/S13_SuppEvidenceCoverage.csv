@@ -1,0 +1,6 @@
+﻿supplementary_figure,evidence_layer,coverage_scope,evidence_units,source_layer_type,reader_use
+S10,synthetic perturbation,controlled simulated perturbation axes,27,metric-level supplementary evidence,Use this row to locate the supplementary figure that summarizes this evidence layer.
+S6,local structure: NKR/AJI/MRRE,local-neighborhood preservation metrics,18,metric-level supplementary evidence,Use this row to locate the supplementary figure that summarizes this evidence layer.
+S7,trustworthiness/continuity/NH/KNN/SVM,local-manifold and neighborhood-classification metrics,26,metric-level supplementary evidence,Use this row to locate the supplementary figure that summarizes this evidence layer.
+S8,global/class geometry,global geometry and class-separation metrics,10,metric-level supplementary evidence,Use this row to locate the supplementary figure that summarizes this evidence layer.
+S9,clustering concordance,cluster-label concordance metrics,30,metric-level supplementary evidence,Use this row to locate the supplementary figure that summarizes this evidence layer.

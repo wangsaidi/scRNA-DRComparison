@@ -1,0 +1,51 @@
+atlas_layer,dataset_type,source_table,source_row,dataset_label,dataset_group,source_repository,species,tissue_or_cell_type,condition,cells,cell_count_text,sequencing_technology,year,counting_rule
+manuscript_100_dataset_atlas,real,Supplementary Table S2,1,yan,yan,GSE36552,Human,Embryonic stem cells,Developmental,90.0,90,Tang,2013,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,2,Baron,Baron,GSE84133,Human、Mouse,Pancreas,Healthy,10455.0,8569、1886,inDrop,2016,baron_human_mouse_counted_as_one_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,3,Xin,Xin,GSE81608,Human,Islet Cells,Disease,1600.0,1600,SMARTer,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,4,Biase,Biase,GSE57249,Mouse,Embryonic cells,Developmental,56.0,56,SMARTer,2014,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,5,Zeisel,Zeisel,GSE60361,Mouse,Brain,Healthy,3005.0,3005,STRT-Seq,2015,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,6,Goolam,Goolam,E-MTAB-3321,Mouse,Embryonic cells,Developmental,124.0,124,Smart-Seq2,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,7,Pollen,Pollen,SRP041736,Human,cerebral cortex,Developmental,301.0,301,SMARTer,2014,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,8,Usoskin,Usoskin,GSE59739,Mouse,Brain,Healthy,622.0,622,STRT-Seq,2014,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,9,Macosko,Macosko,GSE63473,Mouse,Retina,Healthy,44808.0,44808,Drop-Seq,2015,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,10,Zheng-68 k,Zheng-68 k,SRP073767,Human,PBMCs,Healthy,68579.0,68579,10x Genomics,2017,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,11,Zheng-73 k,Zheng-73 k,SRP073767,Human,Peripheral Blood,Healthy,73233.0,73233,10x Genomics,2017,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,12,Darmanis,Darmanis,GSE67835,Human,Brain,Healthy,466.0,466,Smart-Seq2,2015,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,13,Pancreatic,Pancreatic,GSE73727,Human,Islet Cells,Healthy,60.0,60,Smart-Seq2,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,14,Silver,Silver,GSE115189,Human,PBMCs,Healthy,2590.0,2590,10x Genomics Chromium,2018,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,15,Zhengmix4eq,Zhengmix4eq,SRP073767,Human,Peripheral Blood,Healthy,3994.0,3994,10x Genomics,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,16,ACINAR,ACINAR,ACINAR,Human,Prostate tissue,Disease,3043.0,3043,10x Visium,2022,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,17,ATAC,ATAC,GSE129785,Human,PBMCs,Healthy、Developmental,7034.0,7034,10x scATAC-seq,2019,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,18,BATCH,BATCH,GSE132044,Human,PBMCs,Healthy,6276.0,6276,10x scRNA-seq（V2/V3）,2019,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,19,CITE,CITE,GSE100866,Human,CBMCs,Healthy,8617.0,8617,CITE-seq,2017,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,20,EMBYRO,EMBYRO,E-MTAB-3929,Human,Embryonic cells,Developmental、Healthy,1289.0,1289,scRNA-seq,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,21,IFNB,IFNB,GSE96583,Human,PBMCs,Disease+Treatment,13999.0,13999,10x scRNA-seq,2017,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,22,MARROW,MARROW,GSE72857,Mouse,Bone marrow,Developmental,2660.0,2660,MARS-seq,2015,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,23,MOBSC,MOBSC,GSE121891,Mouse,olfactory bulb,Health+Sensory manipulation,12640.0,12640,10x Chromium,2018,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,24,OVARIAN,OVARIAN,OVARIAN,Human,ovarian,Disease,3455.0,3455,10x Visium,2022,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,25,PANCREAS,PANCREAS,GSE132188,Mouse,pancreatic,Developmental,2087.0,2087,10x scRNA-seq,2019,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,26,SCGEMMETH,SCGEMMETH,SRP077853,Human,foreskin fibroblasts,Developmental,142.0,142,scGEM,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,27,SCGEMRNA,SCGEMRNA,SRP077853,Human,foreskin fibroblasts,Developmental,177.0,177,scGEM,2016,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,28,SCIATAC,SCIATAC,GSE111586,Mouse,bone marrow,Healthy,4025.0,4025,sci-ATAC-seq,2018,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,29,SLIDE,SLIDE,SCP354,Mouse,coronal cerebellum,Healthy,23372.0,23372,Slide-seq,2021,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,30,VISIUM,VISIUM,SeuratData,Mouse,Brain,Healthy,2696.0,2696,10x Visium,2019,single_row_dataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,31,GSE74767/epiblast,Nakamura,GSE74767,macaque,Embryonic cells,Developmental,182.0,182、82、272、348,SC3-seq,2016,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,31,GSE74767/trophectoderm,Nakamura,GSE74767,macaque,Embryonic cells,Developmental,82.0,182、82、272、348,SC3-seq,2016,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,31,GSE74767/ICM,Nakamura,GSE74767,macaque,Embryonic cells,Developmental,272.0,182、82、272、348,SC3-seq,2016,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,31,GSE74767/blastocyst,Nakamura,GSE74767,macaque,Embryonic cells,Developmental,348.0,182、82、272、348,SC3-seq,2016,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,32,GSE100058/DA1_horns,Horns,GSE100058,fly,Olfactory projection neurons,Developmental,277.0,277、168、454,smart-seq2,2017,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,32,GSE100058/DC3_VA1d_horns,Horns,GSE100058,fly,Olfactory projection neurons,Developmental,168.0,277、168、454,smart-seq2,2017,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,32,GSE100058/horns,Horns,GSE100058,fly,Olfactory projection neurons,Developmental,454.0,277、168、454,smart-seq2,2017,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/combination-1,Plass,GSE103633,planaria,whole organism level,Healthy,4288.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/combination-2,Plass,GSE103633,planaria,whole organism level,Healthy,4341.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/combination-3,Plass,GSE103633,planaria,whole organism level,Healthy,2270.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/epidermis,Plass,GSE103633,planaria,whole organism level,Healthy,4003.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/muscle,Plass,GSE103633,planaria,whole organism level,Healthy,2338.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/neuron,Plass,GSE103633,planaria,whole organism level,Healthy,2349.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/pair-1,Plass,GSE103633,planaria,whole organism level,Healthy,10578.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/pair-2,Plass,GSE103633,planaria,whole organism level,Healthy,10653.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/pair-3,Plass,GSE103633,planaria,whole organism level,Healthy,8589.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/pair-4,Plass,GSE103633,planaria,whole organism level,Healthy,8960.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/parenchyme,Plass,GSE103633,planaria,whole organism level,Healthy,1986.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/phagocyte,Plass,GSE103633,planaria,whole organism level,Healthy,694.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset
+manuscript_100_dataset_atlas,real,Supplementary Table S2,33,GSE103633/pharynx,Plass,GSE103633,planaria,whole organism level,Healthy,292.0,4288、4341、 2270、 4003、2338、2349、10578、10653、8589、8960、1986、694、292,drop-seq,2018,expanded_subdataset

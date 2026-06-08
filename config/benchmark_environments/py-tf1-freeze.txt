@@ -1,0 +1,52 @@
+absl-py==2.1.0
+astor==0.8.1
+cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
+edward==1.3.5
+fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1666389892786/work
+gast==0.2.2
+google-pasta==0.2.0
+grpcio==1.62.3
+h5py==2.10.0
+importlib-metadata==6.7.0
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1691577114857/work
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_1657953088445/work
+Markdown==3.4.4
+MarkupSafe==2.1.5
+matplotlib @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-suite_1661439848456/work
+munkres==1.1.4
+numexpr==2.8.6
+numpy==1.18.5
+opt-einsum==3.3.0
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1696202382185/work
+pandas==1.3.5
+Pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1660385854171/work
+ply @ file:///home/conda/feedstock_root/build_artifacts/ply_1712242996588/work
+protobuf==3.19.6
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1724616129934/work
+PyQt5==5.15.7
+PyQt5-sip==12.11.0
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1726055524169/work
+PyYAML==6.0.1
+scikit-learn @ file:///home/conda/feedstock_root/build_artifacts/scikit-learn_1640464152916/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy_1637806658031/work
+sip @ file:///home/conda/feedstock_root/build_artifacts/sip_1665592359543/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+tables==3.6.1
+tensorboard==1.15.0
+tensorflow==1.15.5
+tensorflow-estimator==1.15.1
+termcolor==2.3.0
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1643647933166/work
+toml @ file:///home/conda/feedstock_root/build_artifacts/toml_1604308577558/work
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1656937818679/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1688315532570/work
+unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_1649111917568/work
+Werkzeug==2.2.3
+wrapt==1.16.0
+zipp==3.15.0

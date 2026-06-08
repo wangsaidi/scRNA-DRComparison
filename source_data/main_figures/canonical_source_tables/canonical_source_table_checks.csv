@@ -1,0 +1,9 @@
+check,value,expected
+full_benchmark_methods,26,26
+real_manuscript_atlas_rows,50,50
+real_excel_explicit_rows,49,49
+simulated_atlas_rows,50,50
+revision_manifest_rows,60,60
+topology_raw_rows,92996,nonzero
+clustering_raw_rows,40830,nonzero
+efficiency_rows,247,nonzero

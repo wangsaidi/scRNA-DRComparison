@@ -1,0 +1,79 @@
+dataset_dir,dataset_id,parent_method,status,file,label_rows
+Macosko,Macosko,PCA,completed,results\DRA\Macosko\PCA_2.csv,44808
+Macosko,Macosko,GLMPCA,completed,results\DRA\Macosko\GLMPCA_2.csv,44808
+Macosko,Macosko,pCMF,completed,results\DRA\Macosko\pCMF_2.csv,44808
+Macosko,Macosko,ZIFA,completed,results\DRA\Macosko\ZIFA_2.csv,44808
+Macosko,Macosko,scGBM,completed,results\DRA\Macosko\scGBM_2.csv,44808
+Macosko,Macosko,SSNMDI,completed,results\DRA\Macosko\SSNMDI_2.csv,44808
+Macosko,Macosko,tGPLVM,completed,results\DRA\Macosko\tGPLVM_2.csv,44808
+Macosko,Macosko,VAE,invalid_output,results\DRA\Macosko\VAE_2.csv,44808
+Macosko,Macosko,scvis,completed,results\DRA\Macosko\scvis_2.csv,44808
+Macosko,Macosko,VASC,completed,results\DRA\Macosko\VASC_2.csv,44808
+Macosko,Macosko,SAUCIE,completed,results\DRA\Macosko\SAUCIE_2.csv,44808
+Macosko,Macosko,scScope,completed,results\DRA\Macosko\scScope_2.csv,44808
+Macosko,Macosko,SCDRHA,missing_result,,44808
+Macosko,Macosko,scGAE,missing_result,,44808
+Macosko,Macosko,DREAM,missing_result,,44808
+Macosko,Macosko,DRA,completed,results\DRA\Macosko\DRA_2.csv,44808
+Macosko,Macosko,UMAP,completed,results\DRA\Macosko\UMAP_2.csv,44808
+Macosko,Macosko,SIMLR,missing_result,,44808
+Macosko,Macosko,PHATE,completed,results\DRA\Macosko\PHATE_2.csv,44808
+Macosko,Macosko,EDGE,completed,results\DRA\Macosko\EDGE_2.csv,44808
+Macosko,Macosko,SPDR,completed,results\DRA\Macosko\SPDR_2.csv,44808
+Macosko,Macosko,IVIS,completed,results\DRA\Macosko\ivis_2.csv,44808
+Macosko,Macosko,PaCMAP,completed,results\DRA\Macosko\PaCMAP_2.csv,44808
+Macosko,Macosko,t-SNE,completed,results\DRA\Macosko\TSNE_2.csv,44808
+Macosko,Macosko,TriMap,completed,results\DRA\Macosko\TriMap_2.csv,44808
+Macosko,Macosko,SQuaD-MDS,completed,results\DRA\Macosko\SQuaD_MDS_2.csv,44808
+10x_68k,Zheng-68 k,PCA,completed,results\DRA\10x_68k\PCA_2.csv,68579
+10x_68k,Zheng-68 k,GLMPCA,completed,results\DRA\10x_68k\GLMPCA_2.csv,68579
+10x_68k,Zheng-68 k,pCMF,completed,results\DRA\10x_68k\pCMF_2.csv,68579
+10x_68k,Zheng-68 k,ZIFA,completed,results\DRA\10x_68k\ZIFA_2.csv,68579
+10x_68k,Zheng-68 k,scGBM,completed,results\DRA\10x_68k\scGBM_2.csv,68579
+10x_68k,Zheng-68 k,SSNMDI,completed,results\DRA\10x_68k\SSNMDI_2.csv,68579
+10x_68k,Zheng-68 k,tGPLVM,completed,results\DRA\10x_68k\tGPLVM_2.csv,68579
+10x_68k,Zheng-68 k,VAE,invalid_output,results\DRA\10x_68k\VAE_2.csv,68579
+10x_68k,Zheng-68 k,scvis,completed,results\DRA\10x_68k\scvis_2.csv,68579
+10x_68k,Zheng-68 k,VASC,completed,results\DRA\10x_68k\VASC_2.csv,68579
+10x_68k,Zheng-68 k,SAUCIE,completed,results\DRA\10x_68k\SAUCIE_2.csv,68579
+10x_68k,Zheng-68 k,scScope,completed,results\DRA\10x_68k\scScope_2.csv,68579
+10x_68k,Zheng-68 k,SCDRHA,missing_result,,68579
+10x_68k,Zheng-68 k,scGAE,missing_result,,68579
+10x_68k,Zheng-68 k,DREAM,missing_result,,68579
+10x_68k,Zheng-68 k,DRA,completed,results\DRA\10x_68k\DRA_2.csv,68579
+10x_68k,Zheng-68 k,UMAP,completed,results\DRA\10x_68k\UMAP_2.csv,68579
+10x_68k,Zheng-68 k,SIMLR,missing_result,,68579
+10x_68k,Zheng-68 k,PHATE,completed,results\DRA\10x_68k\PHATE_2.csv,68579
+10x_68k,Zheng-68 k,EDGE,completed,results\DRA\10x_68k\EDGE_2.csv,68579
+10x_68k,Zheng-68 k,SPDR,completed,results\DRA\10x_68k\SPDR_2.csv,68579
+10x_68k,Zheng-68 k,IVIS,completed,results\DRA\10x_68k\ivis_2.csv,68579
+10x_68k,Zheng-68 k,PaCMAP,completed,results\DRA\10x_68k\PaCMAP_2.csv,68579
+10x_68k,Zheng-68 k,t-SNE,completed,results\DRA\10x_68k\TSNE_2.csv,68579
+10x_68k,Zheng-68 k,TriMap,completed,results\DRA\10x_68k\TriMap_2.csv,68579
+10x_68k,Zheng-68 k,SQuaD-MDS,completed,results\DRA\10x_68k\SQuaD_MDS_2.csv,68579
+10x_73k,Zheng-73 k,PCA,completed,results\DRA\10x_73k\PCA_2.csv,73233
+10x_73k,Zheng-73 k,GLMPCA,completed,results\DRA\10x_73k\GLMPCA_2.csv,73233
+10x_73k,Zheng-73 k,pCMF,completed,results\DRA\10x_73k\pCMF_2.csv,73233
+10x_73k,Zheng-73 k,ZIFA,completed,results\DRA\10x_73k\ZIFA_2.csv,73233
+10x_73k,Zheng-73 k,scGBM,completed,results\DRA\10x_73k\scGBM_2.csv,73233
+10x_73k,Zheng-73 k,SSNMDI,completed,results\DRA\10x_73k\SSNMDI_2.csv,73233
+10x_73k,Zheng-73 k,tGPLVM,completed,results\DRA\10x_73k\tGPLVM_2.csv,73233
+10x_73k,Zheng-73 k,VAE,invalid_output,results\DRA\10x_73k\VAE_2.csv,73233
+10x_73k,Zheng-73 k,scvis,completed,results\DRA\10x_73k\scvis_2.csv,73233
+10x_73k,Zheng-73 k,VASC,completed,results\DRA\10x_73k\VASC_2.csv,73233
+10x_73k,Zheng-73 k,SAUCIE,completed,results\DRA\10x_73k\SAUCIE_2.csv,73233
+10x_73k,Zheng-73 k,scScope,completed,results\DRA\10x_73k\scScope_2.csv,73233
+10x_73k,Zheng-73 k,SCDRHA,missing_result,,73233
+10x_73k,Zheng-73 k,scGAE,missing_result,,73233
+10x_73k,Zheng-73 k,DREAM,missing_result,,73233
+10x_73k,Zheng-73 k,DRA,completed,results\DRA\10x_73k\DRA_2.csv,73233
+10x_73k,Zheng-73 k,UMAP,completed,results\DRA\10x_73k\UMAP_2.csv,73233
+10x_73k,Zheng-73 k,SIMLR,missing_result,,73233
+10x_73k,Zheng-73 k,PHATE,completed,results\DRA\10x_73k\PHATE_2.csv,73233
+10x_73k,Zheng-73 k,EDGE,completed,results\DRA\10x_73k\EDGE_2.csv,73233
+10x_73k,Zheng-73 k,SPDR,completed,results\DRA\10x_73k\SPDR_2.csv,73233
+10x_73k,Zheng-73 k,IVIS,completed,results\DRA\10x_73k\ivis_2.csv,73233
+10x_73k,Zheng-73 k,PaCMAP,completed,results\DRA\10x_73k\PaCMAP_2.csv,73233
+10x_73k,Zheng-73 k,t-SNE,completed,results\DRA\10x_73k\TSNE_2.csv,73233
+10x_73k,Zheng-73 k,TriMap,completed,results\DRA\10x_73k\TriMap_2.csv,73233
+10x_73k,Zheng-73 k,SQuaD-MDS,completed,results\DRA\10x_73k\SQuaD_MDS_2.csv,73233

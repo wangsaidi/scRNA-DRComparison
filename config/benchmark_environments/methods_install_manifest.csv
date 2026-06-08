@@ -1,0 +1,28 @@
+method,language,role,source,install_channel,package_or_repo,environment,status,notes
+PCA,R,baseline,base R stats,conda,r-base,r-benchmark,installed_verified,Use stats::prcomp from the R base stats package.
+GLMPCA,R,latent_dimension_sensitivity,https://github.com/willtownes/glmpca,R,glmpca,r-benchmark,installed_verified,Install from CRAN/r-universe or GitHub if needed.
+pCMF,R,latent_dimension_sensitivity,https://github.com/xzhoulab/DRComparison/tree/master/data,manual_source,pCMF,r-benchmark,installed_verified,Table S1 points to DRComparison data rather than a standalone pCMF package.
+ZIFA,python,latent_dimension_sensitivity,https://github.com/xzhoulab/DRComparison/tree/master/data,manual_source,ZIFA,py-legacy,installed_verified,Table S1 points to DRComparison data; identify usable Python implementation before running.
+scGBM,R,latent_dimension_sensitivity,https://github.com/phillipnicol/scGBM,R,scGBM,r-benchmark,installed_verified,Install from GitHub with remotes.
+SSNMDI,MATLAB,label_sensitive_method,https://github.com/yushanqiu/SSNMDI,git,SSNMDI,octave,source_import_verified,Extracted MATLAB source; Octave 10.3 smoke test loaded Zheng_pre.mat and executed constructW.
+tGPLVM,python,optional_latent_method,https://github.com/architverma1/tGPLVM,git,tGPLVM,py36-tgplvm,source_import_verified,Source compiles and smoke run completed on bundled Test_3_Pollen.h5 in isolated Python 3.6 TensorFlow 1.6 Edward 1.3.5 environment; patched indentation Python 3 print and HDF5 byte-string metadata.
+VAE,python,latent_dimension_sensitivity,https://github.com/greenelab/CZI-Latent-Assessment/tree/master/single_cell_analysis,git,CZI-Latent-Assessment,py-legacy,source_import_verified,CZI VAE script checked out; Keras import path patched; py_compile and dependency imports verified.
+scvis,python,legacy_visualization,https://bitbucket.org/jerry00/scvis-dev,git,scvis-dev,py-legacy,installed_verified,pip installed from cloned source; import verified in py-legacy.
+VASC,python,legacy_deep_method,https://github.com/wang-research/VASC,git,VASC,py-legacy,source_import_verified,Source import verified after Keras merge compatibility patch.
+SAUCIE,python,legacy_deep_method,https://github.com/KrishnaswamyLab/SAUCIE,git,SAUCIE,py-legacy,source_import_verified,Source import verified in py-legacy; full TF1-style training runtime still needs smoke test.
+scScope,python,legacy_deep_method,https://github.com/xzhoulab/DRComparison/tree/master/data,manual_source,scScope,py-legacy,installed_verified,Table S1 points to DRComparison data; identify original source or archived implementation.
+SCDRHA,python,legacy_deep_method,https://github.com/WHY-17/SCDRHA,git,SCDRHA,py-scdh,source_import_verified,Source import verified in isolated TensorFlow 2.4/DCA environment with python-louvain and PyYAML compatibility pins.
+scGAE,python,legacy_deep_method,https://github.com/ZixiangLuo1161/scGAE,git,scGAE,py-legacy,source_import_verified,Source import verified in py-legacy after installing TensorFlow-probability spektral umap-learn and scanpy.
+DREAM,python,legacy_deep_method,https://github.com/Crystal-JJ/DREAM,git,DREAM,py-modern,installed_verified,pip installed from cloned source after adding missing requirements file; import verified.
+DRA,python,legacy_deep_method,https://github.com/eugenelin1/DRA,git,DRA,py-tf1,source_import_verified,Source modules compile and import in isolated TensorFlow 1.15 environment with PyTables.
+UMAP,python,visualization_2d,https://github.com/lmcinnes/umap,pip,umap-learn,py-modern,installed_verified,Install from PyPI/conda-forge; run direct 2D and PCA50->UMAP.
+SIMLR,R,visualization_2d,https://github.com/BatzoglouLabSU/SIMLR,Bioconductor,SIMLR,r-benchmark,installed_verified,Install through Bioconductor or GitHub.
+PHATE,python,visualization_2d,https://github.com/KrishnaswamyLab/PHATE,pip,phate,py-modern,installed_verified,Install from PyPI/conda-forge.
+EDGE,R,visualization_2d,https://github.com/shawnstat/EDGE,R,EDGE,r-benchmark,installed_verified,Install from GitHub with remotes.
+SPDR,python,visualization_2d,https://github.com/eleozzr/SPDR,git,SPDR,py-modern,source_import_verified,Source import verified in py-modern after installing hnswlib.
+IVIS,python,visualization_2d,https://github.com/beringresearch/ivis,pip,ivis,py-legacy,installed_verified,TensorFlow dependency; isolate if it conflicts with modern stack.
+PaCMAP,python,visualization_2d,https://github.com/YingfanWang/PaCMAP,pip,pacmap,py-modern,installed_verified,Install from PyPI/conda-forge.
+t-SNE,R,visualization_2d,Rtsne 0.17,R,Rtsne,r-benchmark,installed_verified,Install Rtsne in R environment; also allow sklearn TSNE for Python checks if needed.
+TriMap,python,visualization_2d,https://github.com/eamid/trimap,pip,trimap,py-modern,installed_verified,Install from PyPI if available; otherwise GitHub source.
+SQuaD-MDS,python,visualization_2d,https://github.com/PierreLambert3/SQuaD-MDS-and-FItSNE-hybrid,git,SQuaD-MDS-and-FItSNE-hybrid,py-modern,source_import_verified,Source import verified in py-modern.
+scVI,python,added_reviewer_requested_method,https://docs.scvi-tools.org/en/latest/installation.html,pip,scvi-tools,py-modern,installed_verified,New method added for revision; official docs support pip or conda installation.

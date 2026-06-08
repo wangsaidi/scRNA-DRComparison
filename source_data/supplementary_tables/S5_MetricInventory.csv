@@ -1,0 +1,66 @@
+﻿inventory_layer,domain_or_algorithm,metric_component,display_definition,raw_direction,component_order,profile_weight_per_component,source
+profile score component,Structure,local,Local structure-preservation summary,benefit,1.0,0.0625,Figure 3 score construction
+profile score component,Structure,global,Global geometry-preservation summary,benefit,2.0,0.0625,Figure 3 score construction
+profile score component,Clustering,kmeans,k-means clustering summary,benefit,3.0,0.0625,Figure 3 score construction
+profile score component,Clustering,louvain,Louvain clustering summary,benefit,4.0,0.0625,Figure 3 score construction
+profile score component,Clustering,spectral,Spectral clustering summary,benefit,5.0,0.0625,Figure 3 score construction
+profile score component,Efficiency,runtime_score,Runtime score after direction alignment,cost converted to benefit,6.0,0.0625,Figure 3 score construction
+profile score component,Efficiency,memory_score,Memory score after direction alignment,cost converted to benefit,7.0,0.0625,Figure 3 score construction
+profile score component,Stability,cell_number,Cell-number perturbation stability,benefit,8.0,0.0625,Figure 3 score construction
+profile score component,Stability,gene_number,Gene-number perturbation stability,benefit,9.0,0.0625,Figure 3 score construction
+profile score component,Stability,celltype_number,Cell-type-number perturbation stability,benefit,10.0,0.0625,Figure 3 score construction
+profile score component,Stability,dropout,Dropout perturbation stability,benefit,11.0,0.0625,Figure 3 score construction
+profile score component,Stability,batch_number,Batch-number perturbation stability,benefit,12.0,0.0625,Figure 3 score construction
+profile score component,Stability,batch_strength,Batch-strength perturbation stability,benefit,13.0,0.0625,Figure 3 score construction
+profile score component,Stability,de_prob,Differential-expression proportion stability,benefit,14.0,0.0625,Figure 3 score construction
+profile score component,Stability,de_strength,Differential-expression strength stability,benefit,15.0,0.0625,Figure 3 score construction
+profile score component,Stability,out,Outlier-proportion perturbation stability,benefit,16.0,0.0625,Figure 3 score construction
+structure preservation metric,global/geometry,AUC,AUC,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,C_10,C_10,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,C_20,C_20,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,C_30,C_30,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,Mrre_false_10,Mrre_false_10,cost or rank-error,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,Mrre_false_20,Mrre_false_20,cost or rank-error,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,Mrre_false_30,Mrre_false_30,cost or rank-error,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,Mrre_missing_10,Mrre_missing_10,cost or rank-error,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,Mrre_missing_20,Mrre_missing_20,cost or rank-error,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,Mrre_missing_30,Mrre_missing_30,cost or rank-error,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,Pearson,Pearson,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,Qglobal,Qglobal,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,Qlocal,Qlocal,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,T_10,T_10,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,T_20,T_20,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,T_30,T_30,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,aji_10,aji_10,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,aji_20,aji_20,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,aji_30,aji_30,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,centroid_distance,centroid_distance,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,k-nearest,k-nearest,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,kmax,kmax,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,knn_10,knn_10,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,knn_20,knn_20,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,knn_30,knn_30,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,nh_10,nh_10,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,nh_20,nh_20,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,nh_30,nh_30,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,nkr_10,nkr_10,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,nkr_20,nkr_20,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,nkr_30,nkr_30,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,random_triplet,random_triplet,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,global/geometry,spearman,spearman,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+structure preservation metric,local/topology,svm,svm,benefit,not applicable,not applicable,Figure 4 and Supplementary Figures S6-S8
+clustering concordance metric,kmeans,ARI,ARI under kmeans clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,kmeans,COMP,COMP under kmeans clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,kmeans,HOMO,HOMO under kmeans clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,kmeans,NMI,NMI under kmeans clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,kmeans,SIL,SIL under kmeans clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,louvain,ARI,ARI under louvain clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,louvain,COMP,COMP under louvain clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,louvain,HOMO,HOMO under louvain clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,louvain,NMI,NMI under louvain clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,louvain,SIL,SIL under louvain clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,spectral,ARI,ARI under spectral clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,spectral,COMP,COMP under spectral clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,spectral,HOMO,HOMO under spectral clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,spectral,NMI,NMI under spectral clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9
+clustering concordance metric,spectral,SIL,SIL under spectral clustering,benefit,not applicable,not applicable,Figure 5 and Supplementary Figure S9

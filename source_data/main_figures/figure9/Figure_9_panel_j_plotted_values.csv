@@ -1,0 +1,18 @@
+method_id,control_layer,control_label,sensitivity,effect_definition,family_short
+GLMPCA,dimension,Latent dim.,0.18159146021147712,"median absolute ARI change from 2D to 50D, fallback to within-dataset range",linear
+GLMPCA,hvg,Input genes,0.12330212494529653,median within-dataset ARI IQR across requested HVG cutoffs,linear
+PCA,dimension,Latent dim.,0.14366383471637584,"median absolute ARI change from 2D to 50D, fallback to within-dataset range",linear
+PCA,hvg,Input genes,0.06363725987722557,median within-dataset ARI IQR across requested HVG cutoffs,linear
+pCMF,dimension,Latent dim.,0.00029120285575361864,"median absolute ARI change from 2D to 50D, fallback to within-dataset range",linear
+scGBM,dimension,Latent dim.,0.19946408710299807,"median absolute ARI change from 2D to 50D, fallback to within-dataset range",linear
+scGBM,hvg,Input genes,0.06950634339499734,median within-dataset ARI IQR across requested HVG cutoffs,linear
+SAUCIE,dimension,Latent dim.,0.0021082705333907003,"median absolute ARI change from 2D to 50D, fallback to within-dataset range",deep
+UMAP,workflow,Workflow,0.4346540324576611,median absolute ARI change between PCA50-to-2D and direct-2D workflows,graph
+UMAP,hvg,Input genes,0.09582296158168419,median within-dataset ARI IQR across requested HVG cutoffs,graph
+t-SNE,workflow,Workflow,0.197900045058786,median absolute ARI change between PCA50-to-2D and direct-2D workflows,metric
+t-SNE,hvg,Input genes,0.15964902436399564,median within-dataset ARI IQR across requested HVG cutoffs,metric
+PHATE,workflow,Workflow,0.0030621423823464777,median absolute ARI change between PCA50-to-2D and direct-2D workflows,graph
+PaCMAP,workflow,Workflow,0.002733468906417791,median absolute ARI change between PCA50-to-2D and direct-2D workflows,metric
+scVI,dimension,Latent dim.,0.7023671772787872,"median absolute ARI change from 2D to 50D, fallback to within-dataset range",control
+scVI,hvg,Input genes,0.09285792018045369,median within-dataset ARI IQR across requested HVG cutoffs,control
+scVI,scvi,scVI ref.,0.0815343231350591,median within-dataset ARI range across scVI latent dimensions,control

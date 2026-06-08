@@ -1,0 +1,925 @@
+method_id,method_raw,parent_method,metric,value,raw_metric_value,dataset_category,dataset_id,dataset_dir,source,structure_table,metric_sample_n,distance_sample_n
+DRA,DRA,DRA,nkr_10,0.013125,0.013125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_10,0.006944444444444444,0.006944444444444444,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_20,0.0268125,0.0268125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_20,0.013899542254805412,0.013899542254805412,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_30,0.037375,0.037375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_30,0.01932375320240988,0.01932375320240988,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,T_30,0.5057096863264855,0.5057096863264855,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,C_30,0.5130377181356307,0.5130377181356307,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nh_30,0.41825,0.41825,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,random_triplet,0.5075,0.5075,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,spearman,2.1752865299619474e-05,2.1752865299619474e-05,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,Pearson,-0.03915553952481552,-0.03915553952481552,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,k-nearest,0.0,0.0,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,centroid_distance,0.15690755714206173,0.15690755714206173,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_10,0.1355,0.1355,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_10,0.08028393121756125,0.08028393121756125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_20,0.19975,0.19975,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_20,0.12102998369510268,0.12102998369510268,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_30,0.24454166666666666,0.24454166666666666,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_30,0.15087012217712448,0.15087012217712448,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,T_30,0.7774072233267064,0.7774072233267064,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,C_30,0.7407233267064282,0.7407233267064282,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nh_30,0.7144583333333334,0.7144583333333334,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,random_triplet,0.5255,0.5255,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,spearman,0.04957247407130036,0.04957247407130036,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,Pearson,-0.02013700850530702,-0.02013700850530702,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,k-nearest,0.2564102564102564,0.2564102564102564,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,centroid_distance,0.6051411066762775,0.6051411066762775,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_10,0.03825,0.03825,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_10,0.021144113347093225,0.021144113347093225,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_20,0.0631875,0.0631875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_20,0.03439629690272281,0.03439629690272281,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_30,0.08554166666666667,0.08554166666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_30,0.046594197844042895,0.046594197844042895,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,T_30,0.6066182350342391,0.6066182350342391,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,C_30,0.7196204440026508,0.7196204440026508,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nh_30,0.6356666666666667,0.6356666666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,random_triplet,0.61775,0.61775,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,spearman,0.3912896225863892,0.3912896225863892,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,Pearson,0.1885297804065342,0.1885297804065342,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,k-nearest,0.07692307692307693,0.07692307692307693,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,centroid_distance,0.33941493809343215,0.33941493809343215,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_10,0.094875,0.094875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_10,0.05424635424345176,0.05424635424345176,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_20,0.1420625,0.1420625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_20,0.08358104173269351,0.08358104173269351,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_30,0.17733333333333334,0.17733333333333334,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_30,0.10638926231033857,0.10638926231033857,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,T_30,0.6809596863264855,0.6809596863264855,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,C_30,0.8091070797437596,0.8091070797437596,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nh_30,0.7232500000000001,0.7232500000000001,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,random_triplet,0.6385,0.6385,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,spearman,0.3380694073573453,0.3380694073573453,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,Pearson,0.14744430116059043,0.14744430116059043,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,k-nearest,0.2564102564102564,0.2564102564102564,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,centroid_distance,0.4554760099916305,0.4554760099916305,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_10,0.01575,0.01575,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_10,0.008394392844857242,0.008394392844857242,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_20,0.030625,0.030625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_20,0.015974532224532222,0.015974532224532222,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_30,0.0455,0.0455,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_30,0.023727616092395556,0.023727616092395556,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,T_30,0.519944941462337,0.519944941462337,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,C_30,0.5546238126794787,0.5546238126794787,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nh_30,0.42612500000000003,0.42612500000000003,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,random_triplet,0.52625,0.52625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,spearman,0.15194351824236796,0.15194351824236796,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,Pearson,0.11730155129978032,0.11730155129978032,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,k-nearest,0.07692307692307693,0.07692307692307693,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,centroid_distance,0.21150678217373511,0.21150678217373511,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_10,0.051625,0.051625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_10,0.028528981768145854,0.028528981768145854,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_20,0.0843125,0.0843125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_20,0.04659326744038493,0.04659326744038493,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_30,0.10720833333333334,0.10720833333333334,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_30,0.060043130143294834,0.060043130143294834,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,T_30,0.6128749171636845,0.6128749171636845,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,C_30,0.6487116191738458,0.6487116191738458,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nh_30,0.4860416666666667,0.4860416666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,random_triplet,0.601,0.601,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,spearman,0.3127761853341248,0.3127761853341248,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,Pearson,0.1882057971752558,0.1882057971752558,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,k-nearest,0.10256410256410256,0.10256410256410256,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,centroid_distance,0.19379235905948974,0.19379235905948974,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_10,0.009375,0.009375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_10,0.0051087891296869616,0.0051087891296869616,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_20,0.0151875,0.0151875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_20,0.008271887327614882,0.008271887327614882,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_30,0.022083333333333333,0.022083333333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_30,0.01207827827070954,0.01207827827070954,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,T_30,0.1818288601722995,0.1818288601722995,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,C_30,0.4391547934614535,0.4391547934614535,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nh_30,0.2053333333333333,0.2053333333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,random_triplet,0.50175,0.50175,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,spearman,0.0,0.0,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,Pearson,0.0,0.0,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,k-nearest,0.05128205128205128,0.05128205128205128,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,centroid_distance,0.025191309939384014,0.025191309939384014,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_10,0.093375,0.093375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_10,0.05405750306195353,0.05405750306195353,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_20,0.13675,0.13675,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_20,0.08044296224239368,0.08044296224239368,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_30,0.172125,0.172125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_30,0.10375761208902518,0.10375761208902518,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,T_30,0.6741949966865474,0.6741949966865474,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,C_30,0.7756555666003976,0.7756555666003976,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nh_30,0.7370833333333334,0.7370833333333334,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,random_triplet,0.62425,0.62425,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,spearman,0.4223935274091848,0.4223935274091848,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,Pearson,0.20704449816869372,0.20704449816869372,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,k-nearest,0.28205128205128205,0.28205128205128205,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,centroid_distance,0.5345072164214204,0.5345072164214204,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_10,0.04775,0.04775,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_10,0.026129815961472305,0.026129815961472305,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_20,0.0843125,0.0843125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_20,0.04670444733340448,0.04670444733340448,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_30,0.11691666666666667,0.11691666666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_30,0.06559681865610457,0.06559681865610457,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,T_30,0.6525505301524188,0.6525505301524188,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,C_30,0.7902414402474045,0.7902414402474045,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nh_30,0.5851666666666666,0.5851666666666666,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,random_triplet,0.66375,0.66375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,spearman,0.37564725218828604,0.37564725218828604,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,Pearson,0.20624035802927304,0.20624035802927304,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,k-nearest,0.10256410256410256,0.10256410256410256,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,centroid_distance,0.34526094190371376,0.34526094190371376,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_10,0.079125,0.079125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_10,0.045205522998673156,0.045205522998673156,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_20,0.1245,0.1245,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_20,0.07202622708054332,0.07202622708054332,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_30,0.154375,0.154375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_30,0.09101843150567614,0.09101843150567614,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,T_30,0.6670107687210073,0.6670107687210073,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,C_30,0.7790075104926,0.7790075104926,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nh_30,0.7255000000000001,0.7255000000000001,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,random_triplet,0.62075,0.62075,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,spearman,0.32228886986502586,0.32228886986502586,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,Pearson,0.1581832536266663,0.1581832536266663,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,k-nearest,0.2564102564102564,0.2564102564102564,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,centroid_distance,0.424605547808793,0.424605547808793,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_10,0.16425,0.16425,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_10,0.10065447012138186,0.10065447012138186,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_20,0.21375,0.21375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_20,0.13300896769526296,0.13300896769526296,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_30,0.249375,0.249375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_30,0.15679502942024273,0.15679502942024273,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,T_30,0.7724949745968632,0.7724949745968632,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,C_30,0.8112307819748177,0.8112307819748177,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nh_30,0.7260000000000001,0.7260000000000001,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,random_triplet,0.628,0.628,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,spearman,0.2838917682810841,0.2838917682810841,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,Pearson,0.13737722496227905,0.13737722496227905,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,k-nearest,0.2564102564102564,0.2564102564102564,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,centroid_distance,0.5531859833898993,0.5531859833898993,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_10,0.116625,0.116625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_10,0.06841527602944011,0.06841527602944011,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_20,0.1671875,0.1671875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_20,0.10172025006142711,0.10172025006142711,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_30,0.201,0.201,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_30,0.1233250350174946,0.1233250350174946,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,T_30,0.6976431411530815,0.6976431411530815,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,C_30,0.7558874530594213,0.7558874530594213,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nh_30,0.7180416666666667,0.7180416666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,random_triplet,0.6035,0.6035,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,spearman,0.20130555756668267,0.20130555756668267,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,Pearson,0.0680969602240403,0.0680969602240403,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,k-nearest,0.3076923076923077,0.3076923076923077,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,centroid_distance,0.5063781197715864,0.5063781197715864,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_10,0.121125,0.121125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_10,0.07083579990700732,0.07083579990700732,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_20,0.1704375,0.1704375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_20,0.10136168794629864,0.10136168794629864,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_30,0.21166666666666667,0.21166666666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_30,0.12892948777725952,0.12892948777725952,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,T_30,0.7054774685222001,0.7054774685222001,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,C_30,0.7798760768721007,0.7798760768721007,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nh_30,0.7545416666666668,0.7545416666666668,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,random_triplet,0.605,0.605,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,spearman,0.31916538246330933,0.31916538246330933,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,Pearson,0.14568257670778545,0.14568257670778545,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,k-nearest,0.2564102564102564,0.2564102564102564,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,centroid_distance,0.4890534611653924,0.4890534611653924,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_10,0.119875,0.119875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_10,0.06922414799253035,0.06922414799253035,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_20,0.1751875,0.1751875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_20,0.10244745345751129,0.10244745345751129,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_30,0.21466666666666667,0.21466666666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_30,0.1277568632412244,0.1277568632412244,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,T_30,0.7472393417274132,0.7472393417274132,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,C_30,0.7773703335542301,0.7773703335542301,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nh_30,0.6392083333333334,0.6392083333333334,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,random_triplet,0.5595,0.5595,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,spearman,-0.021253249644898272,-0.021253249644898272,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,Pearson,-0.07890920037762984,-0.07890920037762984,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,k-nearest,0.05128205128205128,0.05128205128205128,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,centroid_distance,0.41973559224683404,0.41973559224683404,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_10,0.0985,0.0985,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_10,0.05701237799438264,0.05701237799438264,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_20,0.14625,0.14625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_20,0.08628393273796296,0.08628393273796296,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_30,0.17795833333333333,0.17795833333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_30,0.10700893075309409,0.10700893075309409,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,T_30,0.6831686547382372,0.6831686547382372,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,C_30,0.7858236138723216,0.7858236138723216,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nh_30,0.7065833333333333,0.7065833333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,random_triplet,0.6225,0.6225,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,spearman,0.21996983847024668,0.21996983847024668,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,Pearson,0.09708790277864492,0.09708790277864492,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,k-nearest,0.2564102564102564,0.2564102564102564,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,centroid_distance,0.6898336930590072,0.6898336930590072,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_10,0.0515,0.0515,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_10,0.028526662858125707,0.028526662858125707,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_20,0.084125,0.084125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_20,0.046471588485408014,0.046471588485408014,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_30,0.10716666666666666,0.10716666666666666,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_30,0.06001484960030841,0.06001484960030841,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,T_30,0.6128512812016789,0.6128512812016789,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,C_30,0.648709410205434,0.648709410205434,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nh_30,0.4860000000000001,0.4860000000000001,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,random_triplet,0.60125,0.60125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,spearman,0.31277264320047016,0.31277264320047016,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,Pearson,0.18820860643555826,0.18820860643555826,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,k-nearest,0.10256410256410256,0.10256410256410256,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,centroid_distance,0.19379235905948974,0.19379235905948974,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_10,0.0575,0.0575,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_10,0.03150767543859649,0.03150767543859649,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_20,0.0939375,0.0939375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_20,0.051449978467293454,0.051449978467293454,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_30,0.128375,0.128375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_30,0.07115509724047538,0.07115509724047538,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,T_30,0.6571704219129666,0.6571704219129666,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,C_30,0.795261486635741,0.795261486635741,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nh_30,0.6262916666666666,0.6262916666666666,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,random_triplet,0.65075,0.65075,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,spearman,0.3347817497651453,0.3347817497651453,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,Pearson,0.1578328474643963,0.1578328474643963,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,k-nearest,0.07692307692307693,0.07692307692307693,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,centroid_distance,0.3160358065039186,0.3160358065039186,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_10,0.136125,0.136125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_10,0.07969819793639453,0.07969819793639453,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_20,0.190375,0.190375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_20,0.11433576747942663,0.11433576747942663,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_30,0.230875,0.230875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_30,0.14211573213499118,0.14211573213499118,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,T_30,0.7432953943008616,0.7432953943008616,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,C_30,0.8175780870333554,0.8175780870333554,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nh_30,0.7480416666666667,0.7480416666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,random_triplet,0.65525,0.65525,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,spearman,0.3767343030428446,0.3767343030428446,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,Pearson,0.17912029805007895,0.17912029805007895,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,k-nearest,0.28205128205128205,0.28205128205128205,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,centroid_distance,0.579369558738835,0.579369558738835,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_10,0.051875,0.051875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_10,0.028702592879256965,0.028702592879256965,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_20,0.0843125,0.0843125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_20,0.04659326744038493,0.04659326744038493,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_30,0.10720833333333334,0.10720833333333334,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_30,0.060043130143294834,0.060043130143294834,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,T_30,0.6129056218246078,0.6129056218246078,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,C_30,0.6487110117075325,0.6487110117075325,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nh_30,0.4860416666666667,0.4860416666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,random_triplet,0.601,0.601,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,spearman,0.31276874551384215,0.31276874551384215,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,Pearson,0.18820572570058652,0.18820572570058652,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,k-nearest,0.15384615384615385,0.15384615384615385,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,centroid_distance,0.1938438693066689,0.1938438693066689,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_10,0.101625,0.101625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_10,0.05868605691264359,0.05868605691264359,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_20,0.146375,0.146375,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_20,0.08592392874183012,0.08592392874183012,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_30,0.17725,0.17725,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_30,0.10645809436030645,0.10645809436030645,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,T_30,0.6952963883366468,0.6952963883366468,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,C_30,0.7285609675281643,0.7285609675281643,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nh_30,0.7368333333333333,0.7368333333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,random_triplet,0.604,0.604,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,spearman,0.3193009394059204,0.3193009394059204,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,Pearson,0.1450333575821406,0.1450333575821406,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,k-nearest,0.28205128205128205,0.28205128205128205,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,centroid_distance,0.7047992205405553,0.7047992205405553,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_10,0.075125,0.075125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_10,0.043523969473079384,0.043523969473079384,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_20,0.1155,0.1155,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_20,0.06810287429987745,0.06810287429987745,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_30,0.14545833333333333,0.14545833333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_30,0.08670449691408914,0.08670449691408914,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,T_30,0.6704597415506959,0.6704597415506959,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,C_30,0.745215595316987,0.745215595316987,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nh_30,0.7177916666666667,0.7177916666666667,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,random_triplet,0.6105,0.6105,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,spearman,0.48327952921272277,0.48327952921272277,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,Pearson,0.22938832696475325,0.22938832696475325,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,k-nearest,0.1794871794871795,0.1794871794871795,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,centroid_distance,0.46515412518871563,0.46515412518871563,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_10,0.079625,0.079625,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_10,0.04564273499548268,0.04564273499548268,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_20,0.1276875,0.1276875,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_20,0.07392321943061499,0.07392321943061499,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_30,0.165125,0.165125,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_30,0.09687113744998911,0.09687113744998911,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,T_30,0.6706599845372211,0.6706599845372211,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,C_30,0.8007879942566821,0.8007879942566821,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nh_30,0.6859583333333333,0.6859583333333333,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,random_triplet,0.6155,0.6155,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,spearman,0.2424068025727669,0.2424068025727669,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,Pearson,0.07827231010129156,0.07827231010129156,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,k-nearest,0.20512820512820512,0.20512820512820512,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,centroid_distance,0.4116753844480377,0.4116753844480377,DRA_large_real,Macosko,Macosko,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_10,0.01275,0.01275,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_10,0.006776315789473683,0.006776315789473683,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_20,0.0251875,0.0251875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_20,0.013065099512467931,0.013065099512467931,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_30,0.03804166666666667,0.03804166666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_30,0.019705831240117898,0.019705831240117898,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,T_30,0.5124855864811133,0.5124855864811133,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,C_30,0.516688369781312,0.516688369781312,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nh_30,0.13941666666666666,0.13941666666666666,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,random_triplet,0.50725,0.50725,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,spearman,0.020869884593841755,0.020869884593841755,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,Pearson,0.03115068485691252,0.03115068485691252,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,k-nearest,0.3,0.3,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,centroid_distance,0.6034607065609229,0.6034607065609229,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_10,0.135625,0.135625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_10,0.0864635249726194,0.0864635249726194,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_20,0.193625,0.193625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_20,0.1244250482191012,0.1244250482191012,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_30,0.22470833333333334,0.22470833333333334,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_30,0.13953658299702248,0.13953658299702248,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,T_30,0.7977194610117075,0.7977194610117075,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,C_30,0.807598685663795,0.807598685663795,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nh_30,0.4663333333333334,0.4663333333333334,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,random_triplet,0.6825,0.6825,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,spearman,0.5689364255451336,0.5689364255451336,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,Pearson,0.506810220752298,0.506810220752298,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,k-nearest,0.6,0.6,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,centroid_distance,0.7619802931987503,0.7619802931987503,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_10,0.012,0.012,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_10,0.006330409356725146,0.006330409356725146,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_20,0.024125,0.024125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_20,0.012511504419399156,0.012511504419399156,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_30,0.03729166666666667,0.03729166666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_30,0.0193188045228634,0.0193188045228634,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,T_30,0.5075471062513806,0.5075471062513806,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,C_30,0.5082498343273691,0.5082498343273691,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nh_30,0.14025,0.14025,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,random_triplet,0.49775,0.49775,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,spearman,-0.03796761565157543,-0.03796761565157543,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,Pearson,-0.039968933118860406,-0.039968933118860406,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,k-nearest,0.2,0.2,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,centroid_distance,0.3783225186253304,0.3783225186253304,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_10,0.10075,0.10075,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_10,0.06299434988386227,0.06299434988386227,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_20,0.1405625,0.1405625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_20,0.08496889326433803,0.08496889326433803,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_30,0.167,0.167,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_30,0.09902127074611623,0.09902127074611623,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,T_30,0.6850945438480229,0.6850945438480229,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,C_30,0.779572178042854,0.779572178042854,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nh_30,0.5474583333333333,0.5474583333333333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,random_triplet,0.62825,0.62825,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,spearman,0.3915260363224736,0.3915260363224736,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,Pearson,0.12229551729337906,0.12229551729337906,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,k-nearest,0.5,0.5,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,centroid_distance,0.9293439077144916,0.9293439077144916,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_10,0.011625,0.011625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_10,0.0061549707602339175,0.0061549707602339175,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_20,0.0254375,0.0254375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_20,0.013224200921569342,0.013224200921569342,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_30,0.03758333333333334,0.03758333333333334,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_30,0.01947859244173342,0.01947859244173342,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,T_30,0.5075478241661144,0.5075478241661144,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,C_30,0.5053617738016346,0.5053617738016346,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nh_30,0.13841666666666666,0.13841666666666666,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,random_triplet,0.50825,0.50825,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,spearman,0.01372048334120879,0.01372048334120879,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,Pearson,0.014595077405583554,0.014595077405583554,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,k-nearest,0.1,0.1,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,centroid_distance,0.08848834414804134,0.08848834414804134,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_10,0.014875,0.014875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_10,0.007887426900584795,0.007887426900584795,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_20,0.028,0.028,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_20,0.014551935538777643,0.014551935538777643,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_30,0.042375,0.042375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_30,0.02199920988691022,0.02199920988691022,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,T_30,0.5175587585597525,0.5175587585597525,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,C_30,0.5189708968411751,0.5189708968411751,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nh_30,0.14408333333333334,0.14408333333333334,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,random_triplet,0.50025,0.50025,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,spearman,0.024867901913807663,0.024867901913807663,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,Pearson,0.032788346914017094,0.032788346914017094,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,k-nearest,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,centroid_distance,0.5875030040855563,0.5875030040855563,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_10,0.01725,0.01725,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_10,0.009100877192982455,0.009100877192982455,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_20,0.0255625,0.0255625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_20,0.01325696648065069,0.01325696648065069,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_30,0.042791666666666665,0.042791666666666665,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_30,0.02223718666519122,0.02223718666519122,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,T_30,0.4935484868566379,0.4935484868566379,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,C_30,0.49508918709962446,0.49508918709962446,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nh_30,0.13379166666666667,0.13379166666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,random_triplet,0.48575,0.48575,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,spearman,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,Pearson,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,k-nearest,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,centroid_distance,0.09560201874549389,0.09560201874549389,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_10,0.10875,0.10875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_10,0.07067981425179568,0.07067981425179568,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_20,0.150625,0.150625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_20,0.09263290489131457,0.09263290489131457,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_30,0.17595833333333333,0.17595833333333333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_30,0.10613011222610552,0.10613011222610552,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,T_30,0.6930137508283631,0.6930137508283631,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,C_30,0.7805894079964657,0.7805894079964657,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nh_30,0.5624166666666667,0.5624166666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,random_triplet,0.6445,0.6445,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,spearman,0.4706317949275192,0.4706317949275192,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,Pearson,0.4973978370880632,0.4973978370880632,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,k-nearest,0.6,0.6,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,centroid_distance,0.9095409757269886,0.9095409757269886,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_10,0.055,0.055,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_10,0.030763812103788885,0.030763812103788885,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_20,0.09125,0.09125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_20,0.050671220068993265,0.050671220068993265,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_30,0.12375,0.12375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_30,0.06926540221218264,0.06926540221218264,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,T_30,0.7240691407112878,0.7240691407112878,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,C_30,0.7788874530594212,0.7788874530594212,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nh_30,0.22375,0.22375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,random_triplet,0.70175,0.70175,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,spearman,0.49699159520514813,0.49699159520514813,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,Pearson,0.38454200358666574,0.38454200358666574,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,k-nearest,0.3,0.3,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,centroid_distance,0.9617399663542417,0.9617399663542417,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_10,0.08575,0.08575,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_10,0.05132743578660762,0.05132743578660762,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_20,0.1291875,0.1291875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_20,0.07696056351599616,0.07696056351599616,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_30,0.156,0.156,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_30,0.0921697224029405,0.0921697224029405,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,T_30,0.6763803843605036,0.6763803843605036,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,C_30,0.7665144687430969,0.7665144687430969,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nh_30,0.5545,0.5545,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,random_triplet,0.6345,0.6345,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,spearman,0.4164327934753104,0.4164327934753104,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,Pearson,0.37263707374487764,0.37263707374487764,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,k-nearest,0.6,0.6,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,centroid_distance,0.7891852919971162,0.7891852919971162,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_10,0.125875,0.125875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_10,0.07961496482104068,0.07961496482104068,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_20,0.1679375,0.1679375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_20,0.10479970666995954,0.10479970666995954,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_30,0.19225,0.19225,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_30,0.11637172631655485,0.11637172631655485,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,T_30,0.7371378396288932,0.7371378396288932,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,C_30,0.7606307709299757,0.7606307709299757,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nh_30,0.5186666666666667,0.5186666666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,random_triplet,0.62125,0.62125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,spearman,0.3336476938069941,0.3336476938069941,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,Pearson,0.2694345038811901,0.2694345038811901,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,k-nearest,0.7,0.7,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,centroid_distance,0.7522710886806055,0.7522710886806055,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_10,0.112625,0.112625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_10,0.07049293392366147,0.07049293392366147,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_20,0.157,0.157,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_20,0.09482142680663859,0.09482142680663859,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_30,0.18383333333333332,0.18383333333333332,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_30,0.10837951860587478,0.10837951860587478,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,T_30,0.7171424232383476,0.7171424232383476,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,C_30,0.747364093218467,0.747364093218467,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nh_30,0.5495,0.5495,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,random_triplet,0.63,0.63,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,spearman,0.3845969820296165,0.3845969820296165,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,Pearson,0.32136206416764035,0.32136206416764035,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,k-nearest,0.4,0.4,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,centroid_distance,0.9486661860129777,0.9486661860129777,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_10,0.121625,0.121625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_10,0.07795452505011329,0.07795452505011329,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_20,0.1645,0.1645,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_20,0.10335873501483413,0.10335873501483413,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_30,0.190125,0.190125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_30,0.11630856184892421,0.11630856184892421,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,T_30,0.7160014358294676,0.7160014358294676,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,C_30,0.7734314667550254,0.7734314667550254,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nh_30,0.5835833333333333,0.5835833333333333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,random_triplet,0.63075,0.63075,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,spearman,0.41618021881095657,0.41618021881095657,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,Pearson,0.3752481267157887,0.3752481267157887,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,k-nearest,0.5,0.5,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,centroid_distance,0.868589281422735,0.868589281422735,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_10,0.100875,0.100875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_10,0.05924388294454084,0.05924388294454084,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_20,0.1515625,0.1515625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_20,0.08772107945186608,0.08772107945186608,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_30,0.18625,0.18625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_30,0.10773069447847697,0.10773069447847697,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,T_30,0.7662107355864811,0.7662107355864811,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,C_30,0.7417491164126353,0.7417491164126353,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nh_30,0.4254583333333333,0.4254583333333333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,random_triplet,0.60775,0.60775,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,spearman,0.2803402219065854,0.2803402219065854,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,Pearson,0.23134368462026467,0.23134368462026467,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,k-nearest,0.6,0.6,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,centroid_distance,0.9295361691900984,0.9295361691900984,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_10,0.091875,0.091875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_10,0.05624701944941883,0.05624701944941883,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_20,0.1303125,0.1303125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_20,0.07858629876195079,0.07858629876195079,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_30,0.15575,0.15575,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_30,0.09219066695188737,0.09219066695188737,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,T_30,0.6793962337088579,0.6793962337088579,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,C_30,0.735782527059863,0.735782527059863,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nh_30,0.5175,0.5175,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,random_triplet,0.62,0.62,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,spearman,0.3203474441696549,0.3203474441696549,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,Pearson,0.30138418128128547,0.30138418128128547,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,k-nearest,0.6,0.6,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,centroid_distance,0.884450853160298,0.884450853160298,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_10,0.01475,0.01475,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_10,0.007821637426900585,0.007821637426900585,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_20,0.028,0.028,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_20,0.014551935538777643,0.014551935538777643,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_30,0.042375,0.042375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_30,0.02199920988691022,0.02199920988691022,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,T_30,0.5175232493925337,0.5175232493925337,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,C_30,0.5189695162359178,0.5189695162359178,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nh_30,0.14404166666666668,0.14404166666666668,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,random_triplet,0.50025,0.50025,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,spearman,0.024857854980465874,0.024857854980465874,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,Pearson,0.03278848344880373,0.03278848344880373,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,k-nearest,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,centroid_distance,0.5875030040855563,0.5875030040855563,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_10,0.05525,0.05525,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_10,0.03206041647121368,0.03206041647121368,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_20,0.09375,0.09375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_20,0.05327422973163468,0.05327422973163468,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_30,0.12108333333333333,0.12108333333333333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_30,0.06844165508486029,0.06844165508486029,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,T_30,0.6578534349458802,0.6578534349458802,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,C_30,0.7589840954274354,0.7589840954274354,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nh_30,0.37829166666666664,0.37829166666666664,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,random_triplet,0.6435,0.6435,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,spearman,0.4558413853057124,0.4558413853057124,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,Pearson,0.45551461076319677,0.45551461076319677,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,k-nearest,0.7,0.7,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,centroid_distance,0.9605863975006008,0.9605863975006008,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_10,0.125125,0.125125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_10,0.07960599879137031,0.07960599879137031,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_20,0.17425,0.17425,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_20,0.11030204513305884,0.11030204513305884,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_30,0.20020833333333332,0.20020833333333332,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_30,0.12284055861434405,0.12284055861434405,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,T_30,0.7357409432295118,0.7357409432295118,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,C_30,0.7834421802518223,0.7834421802518223,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nh_30,0.5767916666666667,0.5767916666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,random_triplet,0.64475,0.64475,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,spearman,0.46111769084337934,0.46111769084337934,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,Pearson,0.4522201199143795,0.4522201199143795,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,k-nearest,0.5,0.5,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,centroid_distance,0.9389569814948329,0.9389569814948329,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_10,0.014875,0.014875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_10,0.007887426900584795,0.007887426900584795,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_20,0.028,0.028,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_20,0.014551935538777643,0.014551935538777643,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_30,0.042375,0.042375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_30,0.02199920988691022,0.02199920988691022,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,T_30,0.5175430196598189,0.5175430196598189,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,C_30,0.5189708968411751,0.5189708968411751,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nh_30,0.14404166666666668,0.14404166666666668,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,random_triplet,0.50025,0.50025,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,spearman,0.024864433961931467,0.024864433961931467,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,Pearson,0.03278835675380301,0.03278835675380301,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,k-nearest,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,centroid_distance,0.5875030040855563,0.5875030040855563,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_10,0.090875,0.090875,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_10,0.057999457542801204,0.057999457542801204,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_20,0.1308125,0.1308125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_20,0.08185109734490464,0.08185109734490464,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_30,0.14916666666666667,0.14916666666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_30,0.08991723123537174,0.08991723123537174,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,T_30,0.6678408438259333,0.6678408438259333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,C_30,0.7312245416390546,0.7312245416390546,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nh_30,0.5003333333333333,0.5003333333333333,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,random_triplet,0.63125,0.63125,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,spearman,0.44330851978237457,0.44330851978237457,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,Pearson,0.46782959720213835,0.46782959720213835,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,k-nearest,0.6,0.6,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,centroid_distance,0.7766882960826723,0.7766882960826723,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_10,0.01725,0.01725,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_10,0.009100877192982455,0.009100877192982455,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_20,0.0255625,0.0255625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_20,0.01325696648065069,0.01325696648065069,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_30,0.042791666666666665,0.042791666666666665,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_30,0.02223718666519122,0.02223718666519122,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,T_30,0.4935484868566379,0.4935484868566379,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,C_30,0.49508918709962446,0.49508918709962446,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nh_30,0.13379166666666667,0.13379166666666667,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,random_triplet,0.48575,0.48575,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,spearman,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,Pearson,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,k-nearest,0.0,0.0,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,centroid_distance,0.16187753455568327,0.16187753455568327,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_10,0.091625,0.091625,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_10,0.05521481968753641,0.05521481968753641,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_20,0.135375,0.135375,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_20,0.08019705044625085,0.08019705044625085,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_30,0.16620833333333335,0.16620833333333335,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_30,0.09775497635870758,0.09775497635870758,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,T_30,0.6950884139606803,0.6950884139606803,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,C_30,0.8011710293792799,0.8011710293792799,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nh_30,0.4612083333333334,0.4612083333333334,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,random_triplet,0.66025,0.66025,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,spearman,0.508593973039442,0.508593973039442,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,Pearson,0.49576280966492703,0.49576280966492703,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,k-nearest,0.7,0.7,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,centroid_distance,0.9333813987022349,0.9333813987022349,DRA_large_real,Zheng-68 k,10x_68k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_10,0.01325,0.01325,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_10,0.007017543859649122,0.007017543859649122,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_20,0.025375,0.025375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_20,0.013170934091986724,0.013170934091986724,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nkr_30,0.03783333333333333,0.03783333333333333,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,aji_30,0.01959356213022506,0.01959356213022506,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,T_30,0.5062205654959133,0.5062205654959133,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,C_30,0.5139782416611443,0.5139782416611443,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,nh_30,0.14179166666666665,0.14179166666666665,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,random_triplet,0.50525,0.50525,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,spearman,0.013744128156667963,0.013744128156667963,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,Pearson,-0.00415611099089676,-0.00415611099089676,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,k-nearest,0.375,0.375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+DRA,DRA,DRA,centroid_distance,0.4998163789937568,0.4998163789937568,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_10,0.161625,0.161625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_10,0.09990979286451424,0.09990979286451424,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_20,0.232625,0.232625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_20,0.14406292413546798,0.14406292413546798,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nkr_30,0.2826666666666667,0.2826666666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,aji_30,0.17882143276648274,0.17882143276648274,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,T_30,0.8222919703998233,0.8222919703998233,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,C_30,0.8573113540976364,0.8573113540976364,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,nh_30,0.7205416666666666,0.7205416666666666,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,random_triplet,0.588,0.588,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,spearman,0.2161296167993918,0.2161296167993918,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,Pearson,0.1427710676866672,0.1427710676866672,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,k-nearest,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+EDGE,EDGE,EDGE,centroid_distance,0.356959236136614,0.356959236136614,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_10,0.01425,0.01425,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_10,0.007529239766081871,0.007529239766081871,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_20,0.026,0.026,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_20,0.013483149141043876,0.013483149141043876,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nkr_30,0.03808333333333333,0.03808333333333333,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,aji_30,0.01972237108764686,0.01972237108764686,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,T_30,0.508620664899492,0.508620664899492,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,C_30,0.5120388778440468,0.5120388778440468,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,nh_30,0.13395833333333335,0.13395833333333335,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,random_triplet,0.5035,0.5035,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,spearman,0.008542568355452269,0.008542568355452269,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,Pearson,0.020797421266686,0.020797421266686,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,k-nearest,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+GLMPCA,GLMPCA,GLMPCA,centroid_distance,0.19941241278002203,0.19941241278002203,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_10,0.126,0.126,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_10,0.07429239748899191,0.07429239748899191,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_20,0.19225,0.19225,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_20,0.11461197800187609,0.11461197800187609,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nkr_30,0.24266666666666667,0.24266666666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,aji_30,0.1482383530452046,0.1482383530452046,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,T_30,0.7624248398497901,0.7624248398497901,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,C_30,0.8684585818422796,0.8684585818422796,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,nh_30,0.8722083333333334,0.8722083333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,random_triplet,0.633,0.633,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,spearman,0.2872609539610267,0.2872609539610267,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,Pearson,0.16708331069374577,0.16708331069374577,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,k-nearest,0.5,0.5,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+IVIS,ivis,IVIS,centroid_distance,0.5284612559676827,0.5284612559676827,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_10,0.0455,0.0455,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_10,0.02456312349501204,0.02456312349501204,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_20,0.079625,0.079625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_20,0.04308446252912198,0.04308446252912198,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nkr_30,0.10995833333333334,0.10995833333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,aji_30,0.06029550483565991,0.06029550483565991,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,T_30,0.6295552242102938,0.6295552242102938,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,C_30,0.7125873094764745,0.7125873094764745,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,nh_30,0.513,0.513,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,random_triplet,0.58425,0.58425,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,spearman,0.23917347155473412,0.23917347155473412,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,Pearson,0.22615835672755305,0.22615835672755305,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,k-nearest,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PaCMAP,PaCMAP,PaCMAP,centroid_distance,0.5313991920675725,0.5313991920675725,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_10,0.07325,0.07325,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_10,0.041691281607109776,0.041691281607109776,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_20,0.12575,0.12575,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_20,0.0703641960870936,0.0703641960870936,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nkr_30,0.17020833333333332,0.17020833333333332,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,aji_30,0.09639709187509808,0.09639709187509808,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,T_30,0.7151636845593108,0.7151636845593108,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,C_30,0.8265773138944112,0.8265773138944112,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,nh_30,0.9312083333333334,0.9312083333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,random_triplet,0.57625,0.57625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,spearman,0.12502226905989275,0.12502226905989275,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,Pearson,0.05908401217477635,0.05908401217477635,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,k-nearest,0.375,0.375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PCA,PCA,PCA,centroid_distance,0.24201248622842456,0.24201248622842456,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_10,0.0135,0.0135,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_10,0.007357133642930856,0.007357133642930856,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_20,0.02875,0.02875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_20,0.016048675876462255,0.016048675876462255,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nkr_30,0.03966666666666667,0.03966666666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,aji_30,0.022709142606715926,0.022709142606715926,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,T_30,0.5602151535233046,0.5602151535233046,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,C_30,0.48632466313231715,0.48632466313231715,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,nh_30,0.15,0.15,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,random_triplet,0.50775,0.50775,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,spearman,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,Pearson,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,k-nearest,0.125,0.125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+pCMF,pCMF,pCMF,centroid_distance,0.5736320235034887,0.5736320235034887,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_10,0.129625,0.129625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_10,0.07812335916147836,0.07812335916147836,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_20,0.19925,0.19925,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_20,0.11980028950432942,0.11980028950432942,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nkr_30,0.24679166666666666,0.24679166666666666,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,aji_30,0.1515537987294393,0.1515537987294393,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,T_30,0.7740698034018113,0.7740698034018113,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,C_30,0.8545991274574773,0.8545991274574773,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,nh_30,0.88225,0.88225,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,random_triplet,0.63,0.63,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,spearman,0.5157223450575658,0.5157223450575658,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,Pearson,0.4569490861007186,0.4569490861007186,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,k-nearest,0.25,0.25,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+PHATE,PHATE,PHATE,centroid_distance,0.6456114579507896,0.6456114579507896,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_10,0.059875,0.059875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_10,0.03423388434321097,0.03423388434321097,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_20,0.098875,0.098875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_20,0.05604119308474551,0.05604119308474551,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nkr_30,0.12945833333333334,0.12945833333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,aji_30,0.07452081217985303,0.07452081217985303,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,T_30,0.6948672409984538,0.6948672409984538,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,C_30,0.7577740225314777,0.7577740225314777,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,nh_30,0.27308333333333334,0.27308333333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,random_triplet,0.68275,0.68275,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,spearman,0.5305998162875615,0.5305998162875615,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,Pearson,0.549673654728429,0.549673654728429,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,k-nearest,0.875,0.875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SAUCIE,SAUCIE,SAUCIE,centroid_distance,0.7851634226955564,0.7851634226955564,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_10,0.091875,0.091875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_10,0.052967686231037626,0.052967686231037626,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_20,0.141875,0.141875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_20,0.0818882732739245,0.0818882732739245,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nkr_30,0.18775,0.18775,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,aji_30,0.11151820967448929,0.11151820967448929,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,T_30,0.7234782416611443,0.7234782416611443,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,C_30,0.8207540313673515,0.8207540313673515,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,nh_30,0.6145416666666667,0.6145416666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,random_triplet,0.644,0.644,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,spearman,0.4212661713489739,0.4212661713489739,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,Pearson,0.3493432652878431,0.3493432652878431,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,k-nearest,0.125,0.125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scGBM,scGBM,scGBM,centroid_distance,0.6353286816011752,0.6353286816011752,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_10,0.159,0.159,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_10,0.09816359197647896,0.09816359197647896,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_20,0.2170625,0.2170625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_20,0.13099143738471233,0.13099143738471233,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nkr_30,0.2634166666666667,0.2634166666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,aji_30,0.1624642622000718,0.1624642622000718,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,T_30,0.7918512259774685,0.7918512259774685,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,C_30,0.8642852882703778,0.8642852882703778,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,nh_30,0.8642916666666668,0.8642916666666668,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,random_triplet,0.64625,0.64625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,spearman,0.35545982226651346,0.35545982226651346,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,Pearson,0.33628451704730017,0.33628451704730017,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,k-nearest,0.625,0.625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scScope,scScope,scScope,centroid_distance,0.6305545354388542,0.6305545354388542,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_10,0.15575,0.15575,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_10,0.09215451666496559,0.09215451666496559,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_20,0.215375,0.215375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_20,0.12892915524661624,0.12892915524661624,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nkr_30,0.2684166666666667,0.2684166666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,aji_30,0.167287137745395,0.167287137745395,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,T_30,0.7803179810028716,0.7803179810028716,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,C_30,0.8429731610337972,0.8429731610337972,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,nh_30,0.8468333333333333,0.8468333333333333,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,random_triplet,0.61375,0.61375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,spearman,0.22161694154200445,0.22161694154200445,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,Pearson,0.13828737495944424,0.13828737495944424,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,k-nearest,0.25,0.25,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+scvis,scvis,scvis,centroid_distance,0.48145427836944543,0.48145427836944543,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_10,0.156125,0.156125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_10,0.09548428523660721,0.09548428523660721,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_20,0.221125,0.221125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_20,0.13376334819820054,0.13376334819820054,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nkr_30,0.274375,0.274375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,aji_30,0.17166462947013378,0.17166462947013378,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,T_30,0.7904158935277226,0.7904158935277226,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,C_30,0.8743464214711729,0.8743464214711729,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,nh_30,0.89325,0.89325,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,random_triplet,0.67725,0.67725,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,spearman,0.5315062926119647,0.5315062926119647,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,Pearson,0.5619767486239308,0.5619767486239308,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,k-nearest,0.5,0.5,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SPDR,SPDR,SPDR,centroid_distance,0.7458685273595298,0.7458685273595298,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_10,0.149,0.149,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_10,0.08691991337695672,0.08691991337695672,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_20,0.220875,0.220875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_20,0.13197193594310638,0.13197193594310638,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nkr_30,0.27558333333333335,0.27558333333333335,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,aji_30,0.1701921619172078,0.1701921619172078,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,T_30,0.8178832007952286,0.8178832007952286,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,C_30,0.8233920918930859,0.8233920918930859,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,nh_30,0.6415416666666667,0.6415416666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,random_triplet,0.5985,0.5985,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,spearman,0.035369001311945515,0.035369001311945515,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,Pearson,-0.03097080028981125,-0.03097080028981125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,k-nearest,0.375,0.375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS,SQuaD_MDS,SQuaD-MDS,centroid_distance,0.5130370914432612,0.5130370914432612,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_10,0.108,0.108,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_10,0.06324018473786276,0.06324018473786276,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_20,0.164375,0.164375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_20,0.09718789839578612,0.09718789839578612,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nkr_30,0.21233333333333335,0.21233333333333335,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,aji_30,0.12835122073948593,0.12835122073948593,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,T_30,0.7395750497017892,0.7395750497017892,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,C_30,0.808440799646565,0.808440799646565,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,nh_30,0.7449166666666668,0.7449166666666668,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,random_triplet,0.61025,0.61025,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,spearman,0.1551201101300554,0.1551201101300554,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,Pearson,0.08372791751181524,0.08372791751181524,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,k-nearest,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SQuaD-MDS hybrid,SQuaD_MDS_hybrid,SQuaD-MDS,centroid_distance,0.5060594932060228,0.5060594932060228,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_10,0.07325,0.07325,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_10,0.041691281607109776,0.041691281607109776,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_20,0.1258125,0.1258125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_20,0.07039975796476075,0.07039975796476075,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nkr_30,0.17020833333333332,0.17020833333333332,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,aji_30,0.09639709187509808,0.09639709187509808,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,T_30,0.7151544068919815,0.7151544068919815,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,C_30,0.826576485531257,0.826576485531257,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,nh_30,0.9312083333333334,0.9312083333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,random_triplet,0.57625,0.57625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,spearman,0.12502094514568554,0.12502094514568554,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,Pearson,0.05908424102511346,0.05908424102511346,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,k-nearest,0.375,0.375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+SSNMDI,SSNMDI,SSNMDI,centroid_distance,0.24201248622842456,0.24201248622842456,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_10,0.08725,0.08725,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_10,0.049163195980146436,0.049163195980146436,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_20,0.144,0.144,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_20,0.08216899012623623,0.08216899012623623,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nkr_30,0.18945833333333334,0.18945833333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,aji_30,0.1105939820852776,0.1105939820852776,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,T_30,0.7140346255798542,0.7140346255798542,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,C_30,0.8411371769383698,0.8411371769383698,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,nh_30,0.61725,0.61725,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,random_triplet,0.64275,0.64275,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,spearman,0.32331816098041793,0.32331816098041793,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,Pearson,0.23907873299390053,0.23907873299390053,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,k-nearest,0.375,0.375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+tGPLVM,tGPLVM,tGPLVM,centroid_distance,0.6496511200881381,0.6496511200881381,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_10,0.1695,0.1695,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_10,0.10514092245903392,0.10514092245903392,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_20,0.2345,0.2345,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_20,0.14392319479126459,0.14392319479126459,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nkr_30,0.287125,0.287125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,aji_30,0.18185584678173988,0.18185584678173988,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,T_30,0.8095333554230174,0.8095333554230174,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,C_30,0.8791867130550033,0.8791867130550033,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,nh_30,0.8994166666666666,0.8994166666666666,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,random_triplet,0.68275,0.68275,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,spearman,0.5438613524795632,0.5438613524795632,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,Pearson,0.5507782699054166,0.5507782699054166,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,k-nearest,0.5,0.5,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+TriMap,TriMap,TriMap,centroid_distance,0.7693720161586486,0.7693720161586486,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_10,0.07325,0.07325,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_10,0.041691281607109776,0.041691281607109776,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_20,0.1256875,0.1256875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_20,0.07033045789546068,0.07033045789546068,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nkr_30,0.17020833333333332,0.17020833333333332,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,aji_30,0.09639709187509808,0.09639709187509808,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,T_30,0.7151509829909433,0.7151509829909433,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,C_30,0.826577810912304,0.826577810912304,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,nh_30,0.9311666666666667,0.9311666666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,random_triplet,0.576,0.576,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,spearman,0.12502322834443508,0.12502322834443508,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,Pearson,0.05908413810564533,0.05908413810564533,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,k-nearest,0.375,0.375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+t-SNE,TSNE,t-SNE,centroid_distance,0.24201248622842456,0.24201248622842456,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_10,0.097625,0.097625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_10,0.05722061918559596,0.05722061918559596,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_20,0.149375,0.149375,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_20,0.08848309187323965,0.08848309187323965,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nkr_30,0.19145833333333334,0.19145833333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,aji_30,0.11557730101302884,0.11557730101302884,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,T_30,0.7264828804948089,0.7264828804948089,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,C_30,0.8214111442456373,0.8214111442456373,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,nh_30,0.7329583333333334,0.7329583333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,random_triplet,0.61775,0.61775,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,spearman,0.38213110333365247,0.38213110333365247,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,Pearson,0.30799941713739104,0.30799941713739104,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,k-nearest,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+UMAP,UMAP,UMAP,centroid_distance,0.6136614028644877,0.6136614028644877,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_10,0.0135,0.0135,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_10,0.007357133642930856,0.007357133642930856,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_20,0.02875,0.02875,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_20,0.016048675876462255,0.016048675876462255,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nkr_30,0.03966666666666667,0.03966666666666667,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,aji_30,0.022709142606715926,0.022709142606715926,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,T_30,0.5602151535233046,0.5602151535233046,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,C_30,0.48632466313231715,0.48632466313231715,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,nh_30,0.15,0.15,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,random_triplet,0.50775,0.50775,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,spearman,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,Pearson,0.0,0.0,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,k-nearest,0.125,0.125,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+VASC,VASC,VASC,centroid_distance,0.49320602276900477,0.49320602276900477,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_10,0.12175,0.12175,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_10,0.07085400151963618,0.07085400151963618,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_20,0.1905625,0.1905625,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_20,0.11340513244423096,0.11340513244423096,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nkr_30,0.24795833333333334,0.24795833333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,aji_30,0.15231549574716838,0.15231549574716838,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,T_30,0.7686248619394742,0.7686248619394742,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,C_30,0.8791185663795008,0.8791185663795008,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,nh_30,0.7472083333333334,0.7472083333333334,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,random_triplet,0.677,0.677,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,spearman,0.48568400760658564,0.48568400760658564,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,Pearson,0.4484772642697427,0.4484772642697427,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,k-nearest,0.5,0.5,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500
+ZIFA,ZIFA,ZIFA,centroid_distance,0.7326478149100257,0.7326478149100257,DRA_large_real,Zheng-73 k,10x_73k,structure_metric_raw,large_real_embedding_metric,800,500

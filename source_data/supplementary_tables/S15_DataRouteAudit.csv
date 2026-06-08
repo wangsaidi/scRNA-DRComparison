@@ -1,0 +1,7 @@
+﻿data_or_output_class,access_route,location_in_package,risk_or_action
+Method catalogue and implementation metadata,within paper or supplement,Supplementary Table S1; source_tables/S1_method_catalog.csv,No action required.
+100-dataset benchmark metadata,within paper or supplement; reused public source metadata,Supplementary Tables S2-S4; source tables,Confirm final public repository/accession wording for reused datasets in Data Availability.
+Benchmark metric outputs and score matrices,within paper or supplement,Supplementary Tables S5-S10; source_tables and final supplementary figure package,Large raw per-dataset metrics are summarized in tables and retained as source data.
+Targeted sensitivity experiments,within paper or supplement,Supplementary Table S11; Figure 6 source data,"scVI is marked as targeted reference analysis, not part of the 26-method full benchmark."
+Code and figure/table reproduction scripts,within supplement/package; repository to be confirmed,code/ and package README,Confirm final code repository or archive DOI before submission.
+Source file manifest,within supplement/package,Supplementary Table S15; 281 source files indexed,No action required.
