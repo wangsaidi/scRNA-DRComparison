@@ -6,7 +6,7 @@ This repository extends the original `scRNA-DRComparison` project package into a
 
 ## Study Overview
 
-Dimensionality reduction is a central step in single-cell RNA-seq analysis, but method choice can affect visualization, clustering, structure preservation, robustness and computational efficiency. This benchmark evaluates representative methods across real and simulated single-cell settings and organizes the results into a unified evidence framework.
+Dimensionality reduction is a central step in single-cell RNA-seq analysis, but method choice can affect visualization, clustering, structure preservation, robustness and computational efficiency. This benchmark evaluates representative methods across real and simulated single-cell settings and organizes the results into a structured evidence framework.
 
 The benchmark has two analytical layers:
 

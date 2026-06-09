@@ -334,11 +334,11 @@ def write_markdown(caption_map: pd.DataFrame) -> Path:
         [
             "## Chinese Author Notes",
             "",
-            "- S1 明确 26 个 full-benchmark methods，同时把 scVI 标为 targeted reference analysis，避免读者误解 26-method benchmark scope。",
-            "- S2/S3/S4 共同支撑 100-dataset atlas，其中 S3 已经按 50 个真实数据集重新对齐。",
-            "- S5/S6 是 Figure 3 分数计算和最终 score matrix 的表格证据。",
-            "- S7/S8/S9/S10 对应结构保持、聚类一致性、模拟稳定性和计算效率，支撑正文 Figure 4/5/7/8。",
-            "- S11 服务 targeted sensitivity experiments 和 scVI reference analysis；S12/S13 说明 Supplementary Figure atlas 的 panel-level 与 evidence-layer coverage；S14/S15 服务 source data 和 Data Availability。",
+            "- S1 defines the 26 full-benchmark methods and separately marks scVI as a targeted reference analysis, preventing ambiguity about the 26-method benchmark scope.",
+            "- S2/S3/S4 jointly support the 100-dataset atlas, with S3 realigned to the 50 real datasets.",
+            "- S5/S6 provide the tabular evidence for Figure 3 score calculation and the final profile-score matrix.",
+            "- S7/S8/S9/S10 correspond to structure preservation, clustering concordance, simulated stability and computational efficiency, supporting main Figures 4/5/7/8.",
+            "- S11 supports the targeted sensitivity experiments and scVI reference analysis; S12/S13 document panel-level and evidence-layer coverage for the Supplementary Figure atlas; S14/S15 support source data and Data Availability.",
         ]
     )
     md.write_text("\n".join(lines), encoding="utf-8")
