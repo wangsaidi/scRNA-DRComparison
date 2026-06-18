@@ -1,0 +1,11 @@
+method_id,family,top3_components
+SQuaD-MDS,metric/structure-aware,1
+SAUCIE,deep generative/autoencoder,1
+PHATE,graph/diffusion,1
+scvis,deep generative/autoencoder,2
+scGBM,linear/probabilistic,2
+PCA,linear/probabilistic,3
+t-SNE,metric/structure-aware,6
+SIMLR,graph/diffusion,8
+SPDR,graph/diffusion,10
+TriMap,metric/structure-aware,14

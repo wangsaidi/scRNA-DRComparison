@@ -643,6 +643,84 @@ def draw_algorithm_top_frequency(
     return out
 
 
+def draw_algorithm_sensitivity(
+    ax: plt.Axes,
+    parent: pd.DataFrame,
+    family_map: dict[str, str],
+) -> pd.DataFrame:
+    ari = parent[parent["metric"].eq("ARI")].copy()
+    med = (
+        ari.groupby(["parent_method", "family", "clustering_algorithm"], as_index=False)["value"]
+        .median()
+        .pivot(index=["parent_method", "family"], columns="clustering_algorithm", values="value")
+        .reset_index()
+    )
+    for alg in ALG_ORDER:
+        if alg not in med.columns:
+            med[alg] = np.nan
+    med["algorithm_range"] = med[ALG_ORDER].max(axis=1, skipna=True) - med[ALG_ORDER].min(axis=1, skipna=True)
+    med["algorithm_sd"] = med[ALG_ORDER].std(axis=1, skipna=True)
+    med["n_algorithms"] = med[ALG_ORDER].notna().sum(axis=1)
+    plot = med.dropna(subset=["algorithm_range"]).sort_values("algorithm_range", ascending=True)
+    y = np.arange(len(plot))
+    colors = [FAMILY_COLORS.get(family_map.get(m, "unknown"), FAMILY_COLORS["unknown"]) for m in plot["parent_method"]]
+    ax.hlines(y, 0, plot["algorithm_range"], color=colors, lw=1.55, alpha=0.80)
+    ax.scatter(plot["algorithm_range"], y, s=14, color=colors, edgecolor="white", linewidth=0.35, zorder=3)
+    ax.set_yticks(y)
+    ax.set_yticklabels([display_method(m) for m in plot["parent_method"]])
+    ax.set_xlim(0, max(0.05, float(plot["algorithm_range"].max()) * 1.18))
+    ax.set_title("Algorithm sensitivity", loc="left", fontweight="bold", pad=3)
+    ax.set_xlabel("ARI range across clustering algorithms")
+    ax.grid(axis="x", color="#E5E5E5", lw=0.45)
+    ax.tick_params(axis="y", labelsize=4.1, length=0, pad=1.0)
+    ax.tick_params(axis="x", labelsize=4.8, length=2.0, pad=1.3)
+    add_panel_label(ax, "i", x=-0.055, y=1.04)
+    med["panel"] = "i"
+    return med
+
+
+def draw_ari_nmi_disagreement(
+    ax: plt.Axes,
+    parent: pd.DataFrame,
+    family_map: dict[str, str],
+) -> pd.DataFrame:
+    wide = parent[parent["metric"].isin(["ARI", "NMI"])].pivot_table(
+        index=["dataset_category", "dataset_id", "parent_method", "family", "clustering_algorithm"],
+        columns="metric",
+        values="value",
+        aggfunc="median",
+    ).reset_index()
+    wide = wide.dropna(subset=["ARI", "NMI"]).copy()
+    wide["absolute_ari_nmi_gap"] = (wide["ARI"] - wide["NMI"]).abs()
+    summary = (
+        wide.groupby(["parent_method", "family"], as_index=False)
+        .agg(
+            median_absolute_gap=("absolute_ari_nmi_gap", "median"),
+            q1_absolute_gap=("absolute_ari_nmi_gap", lambda x: float(np.quantile(x, 0.25))),
+            q3_absolute_gap=("absolute_ari_nmi_gap", lambda x: float(np.quantile(x, 0.75))),
+            task_count=("absolute_ari_nmi_gap", "size"),
+        )
+        .sort_values("median_absolute_gap", ascending=True)
+    )
+    plot = summary
+    y = np.arange(len(plot))
+    colors = [FAMILY_COLORS.get(family_map.get(m, "unknown"), FAMILY_COLORS["unknown"]) for m in plot["parent_method"]]
+    for yi, (_, row), color in zip(y, plot.iterrows(), colors):
+        ax.hlines(yi, row["q1_absolute_gap"], row["q3_absolute_gap"], color=color, lw=1.55, alpha=0.72)
+        ax.scatter(row["median_absolute_gap"], yi, s=14, color=color, edgecolor="white", linewidth=0.35, zorder=3)
+    ax.set_yticks(y)
+    ax.set_yticklabels([display_method(m) for m in plot["parent_method"]])
+    ax.set_xlim(0, max(0.05, float(plot["q3_absolute_gap"].max()) * 1.20))
+    ax.set_title("ARI-NMI disagreement", loc="left", fontweight="bold", pad=3)
+    ax.set_xlabel("median |ARI - NMI|")
+    ax.grid(axis="x", color="#E5E5E5", lw=0.45)
+    ax.tick_params(axis="y", labelsize=4.1, length=0, pad=1.0)
+    ax.tick_params(axis="x", labelsize=4.8, length=2.0, pad=1.3)
+    add_panel_label(ax, "j", x=-0.22, y=1.04)
+    summary["panel"] = "j"
+    return summary
+
+
 def save_outputs(fig: plt.Figure, basename: str) -> None:
     fig.savefig(PLOT_OUT / f"{basename}.svg", bbox_inches="tight")
     fig.savefig(PLOT_OUT / f"{basename}.pdf", bbox_inches="tight")
@@ -668,15 +746,15 @@ def build_figure() -> None:
         SOURCE_OUT / "Figure_5_annotation_clustering_real_only_missing_blocks.csv", index=False
     )
 
-    fig = plt.figure(figsize=(7.2, 9.35))
+    fig = plt.figure(figsize=(9.20, 10.95))
     gs = GridSpec(
-        4,
+        5,
         3,
         figure=fig,
-        width_ratios=[1.05, 1.0, 1.25],
-        height_ratios=[0.94, 0.82, 0.92, 0.78],
-        wspace=0.62,
-        hspace=0.36,
+        width_ratios=[1.10, 1.04, 1.18],
+        height_ratios=[0.90, 0.78, 0.86, 0.74, 1.00],
+        wspace=0.48,
+        hspace=0.38,
     )
 
     draw_embedding_panel(fig, gs[0, 0:2], example)
@@ -694,6 +772,10 @@ def build_figure() -> None:
     panel_g = draw_dataset_rank_stability(ax_g, parent, canonical_methods, family_map)
     ax_h = fig.add_subplot(gs[3, 2])
     panel_h = draw_algorithm_top_frequency(ax_h, parent, panel_f)
+    ax_i = fig.add_subplot(gs[4, 0:2])
+    panel_i = draw_algorithm_sensitivity(ax_i, parent, family_map)
+    ax_j = fig.add_subplot(gs[4, 2])
+    panel_j = draw_ari_nmi_disagreement(ax_j, parent, family_map)
 
     legend_handles = [
         plt.Line2D(
@@ -719,7 +801,7 @@ def build_figure() -> None:
         title="Method family",
         title_fontsize=5.8,
     )
-    fig.subplots_adjust(left=0.075, right=0.975, top=0.975, bottom=0.074)
+    fig.subplots_adjust(left=0.064, right=0.982, top=0.978, bottom=0.064)
 
     basename = "Figure_5_annotation_clustering_concordance_real_only"
     save_outputs(fig, basename)
@@ -733,12 +815,14 @@ def build_figure() -> None:
     panel_data.append(panel_f)
     panel_data.append(panel_g)
     panel_data.append(panel_h)
+    panel_data.append(panel_i)
+    panel_data.append(panel_j)
     pd.concat(panel_data, ignore_index=True, sort=False).to_csv(
         SOURCE_OUT / f"{basename}_panel_data.csv", index=False
     )
 
     qa = {
-        "panel_count": 8,
+        "panel_count": 10,
         "raw_rows": len(pd.read_csv(CLUSTER_SOURCE)),
         "real_raw_rows": len(real_raw),
         "real_parent_collapsed_rows": len(parent),
@@ -774,6 +858,14 @@ def build_figure() -> None:
         "top_three_slots": panel_f["n_top_three_slots"].iloc[0],
         "top_three_leader": panel_f.sort_values("appearances", ascending=False)["parent_method"].iloc[0],
         "algorithm_top_frequency_methods": panel_h["parent_method"].nunique(),
+        "max_algorithm_ari_range_method": panel_i.sort_values("algorithm_range", ascending=False)[
+            "parent_method"
+        ].iloc[0],
+        "max_algorithm_ari_range": float(panel_i["algorithm_range"].max()),
+        "max_median_ari_nmi_gap_method": panel_j.sort_values("median_absolute_gap", ascending=False)[
+            "parent_method"
+        ].iloc[0],
+        "max_median_ari_nmi_gap": float(panel_j["median_absolute_gap"].max()),
     }
     pd.DataFrame([qa]).to_csv(SOURCE_OUT / f"{basename}_qa_summary.csv", index=False)
 
@@ -809,6 +901,12 @@ independent ground-truth recovery.
 - h, Algorithm-specific top-three ARI frequency among repeatedly high-performing
   methods. This shows whether panel f is stable across K-means, spectral clustering,
   and Louvain.
+- i, Method-level ARI range across K-means, spectral clustering, and Louvain.
+  This directly quantifies clustering-algorithm sensitivity rather than assuming that
+  one clustering algorithm is representative.
+- j, Method-level median absolute difference between ARI and NMI across real-dataset
+  clustering tasks. This tests whether annotation-concordance conclusions are metric
+  specific.
 
 ## Data QA
 
@@ -831,6 +929,10 @@ independent ground-truth recovery.
 - ARI-NMI Pearson correlation: {qa['ari_nmi_pearson_r']:.3f}.
 - Top-three slots counted in panel f: {qa['top_three_slots']}.
 - Methods shown in panel h: {qa['algorithm_top_frequency_methods']}.
+- Largest median ARI algorithm range: {qa['max_algorithm_ari_range_method']}
+  ({qa['max_algorithm_ari_range']:.3f}).
+- Largest median ARI-NMI disagreement: {qa['max_median_ari_nmi_gap_method']}
+  ({qa['max_median_ari_nmi_gap']:.3f}).
 
 ## Manuscript Wording Guardrails
 

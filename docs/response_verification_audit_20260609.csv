@@ -1,0 +1,28 @@
+check,status,evidence
+All response IDs present in Markdown,PASS,121 IDs detected
+All response IDs present in Word,PASS,121 IDs detected
+No response placeholders,PASS,No placeholder tokens detected
+Manuscript title matches response,PASS,Title in clean LaTeX
+No missing citation keys,PASS,coverage_report.md
+Main figure references complete,PASS,coverage_report.md
+Supplementary figure references complete,PASS,coverage_report.md
+Supplementary table references complete,PASS,coverage_report.md
+Unified-framework claim removed from final title/abstract,PASS,clean LaTeX text
+Structured taxonomy language present,PASS,clean LaTeX text
+2D versus latent summarization controls present,PASS,Fig. 6 and Methods text
+scVI targeted-reference caveat present,PASS,Methods scVI paragraph
+Annotation-concordance caveat present,PASS,Fig. 5/Methods/Discussion text
+Score calculation auditable,PASS,Fig. 3/Methods text
+Local/global terminology corrected,PASS,Fig. 4/Methods text
+ZINB-WaVE and Bonsai cited as future extensions,PASS,Discussion
+Solomon/noa reference not in final reference list,PASS,clean .bbl/.blg
+Cooley and scikit-learn references present,PASS,clean .bbl
+Hardware core/thread detail present,PASS,Methods Implementation and reproducibility
+Scalability limit present,PASS,Results/Discussion
+Code availability package described,PASS,Code availability
+Supplementary Table S1 supports the 26-method catalogue and implementation-source claim,PASS,"S1 rows=30, full_benchmark=26, columns=['method_order', 'method_id', 'parent_method', 'benchmark_scope', 'method_family', 'implementation_principle', 'implementation_language', 'source_or_url', 'publication_year', 'reference', 'is_variant', 'variant_note']"
+Supplementary Table S2 supports 100-dataset claim,PASS,S2: 50 real + 50 simulated
+Supplementary Table S3 supports 50-real-dataset claim,PASS,S3: 50 rows
+Supplementary Table S11 supports targeted controls,PASS,"S11 terms checked=['latent-dimension sensitivity', 'visualization-workflow', 'input-gene', 'scvi', 'pca50', '500; 1000; 2000; 3000']"
+Release package key files present,PASS,README.md; CODE_AND_DATA_NOTES.md; REPRODUCIBILITY.md; source_commits.csv; S14_SourceFileManifest.csv; S15_DataRouteAudit.csv
+GitHub-ready package has no CJK comments/text in code docs,PASS,0 files with CJK text

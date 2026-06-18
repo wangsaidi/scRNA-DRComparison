@@ -23,7 +23,10 @@ QA_OUT = OUT / "qa"
 for path in (PLOT_OUT, SOURCE_OUT, QA_OUT):
     path.mkdir(parents=True, exist_ok=True)
 
-CANON = ROOT / "Publication/paper/revision_figures/canonical_source_tables"
+CANON = (
+    ROOT
+    / "Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/main_figures/canonical_source_tables"
+)
 LEGACY_FIG9 = (
     ROOT
     / "Publication/paper/revision_figures/redesigned_python_figure_package/source_data/Figure_9_practical_method_selection_source_data.csv"
@@ -730,72 +733,90 @@ def draw_stability(ax: plt.Axes, stability: pd.DataFrame, method_order: list[str
     return pivot[["method_id", "family_short", "dropout", "batch", "mean_score"]]
 
 
-def draw_revision_coverage(ax: plt.Axes, coverage: pd.DataFrame) -> None:
-    panel_header(ax, "i", "Targeted-control design", dx=-0.14, dy=1.032, title_dx=0.12)
-    observed = coverage[coverage["n_runs"].gt(0)].copy()
+def draw_control_layer_effects(ax: plt.Axes, sensitivity: pd.DataFrame) -> pd.DataFrame:
+    panel_header(ax, "i", "Control-layer ARI sensitivity", dx=-0.14, dy=1.032, title_dx=0.12)
+    plot = sensitivity.dropna(subset=["sensitivity"]).copy()
     layer_order = ["dimension", "workflow", "hvg", "scvi"]
-    axis_labels = {
+    layer_labels = {
         "dimension": "Latent\ndim.",
         "workflow": "Workflow",
         "hvg": "Input\ngenes",
-        "scvi": "scVI ref.",
+        "scvi": "scVI\nref.",
     }
-    observed["control_layer"] = pd.Categorical(observed["control_layer"].astype(str), categories=layer_order, ordered=True)
-    labels = (
-        observed.drop_duplicates("control_layer")
-        .set_index("control_layer")
-        .reindex(layer_order)["control_label"]
-        .fillna(pd.Series({"dimension": "Latent dim.", "workflow": "Workflow", "hvg": "Input genes", "scvi": "scVI ref."}))
-    )
+    plot["control_layer"] = pd.Categorical(plot["control_layer"].astype(str), categories=layer_order, ordered=True)
     summary = (
-        observed.groupby(["control_layer", "family_short"], observed=False)
-        .agg(methods=("method_id", "nunique"))
+        plot.groupby("control_layer", observed=False)
+        .agg(
+            median_sensitivity=("sensitivity", "median"),
+            q25=("sensitivity", lambda x: x.quantile(0.25)),
+            q75=("sensitivity", lambda x: x.quantile(0.75)),
+            max_sensitivity=("sensitivity", "max"),
+            n_methods=("method_id", "nunique"),
+        )
         .reset_index()
     )
-    dataset_summary = observed.groupby("control_layer", observed=False).agg(
-        methods=("method_id", "nunique"),
-        datasets=("n_datasets", "max"),
-        runs=("n_runs", "sum"),
+    summary["control_layer"] = pd.Categorical(summary["control_layer"].astype(str), categories=layer_order, ordered=True)
+    summary = summary.sort_values("control_layer")
+    y = np.arange(len(summary))
+    ax.hlines(
+        y,
+        summary["q25"],
+        summary["q75"],
+        color="#B8B8B8",
+        linewidth=1.2,
+        zorder=1,
     )
-
-    y_positions = np.arange(len(layer_order))
-    for yi, layer in enumerate(layer_order):
-        left = 0
-        for family in FAMILY_ORDER + ["control"]:
-            count = int(
-                summary[
-                    summary["control_layer"].astype(str).eq(layer)
-                    & summary["family_short"].astype(str).eq(family)
-                ]["methods"].sum()
-            )
-            if count == 0:
-                continue
-            color = FAMILY_COLORS.get(family, CONTROL_COLOR)
-            ax.barh(yi, count, left=left, height=0.56, color=color, edgecolor="white", linewidth=0.35)
-            left += count
-        if layer in dataset_summary.index:
-            row = dataset_summary.loc[layer]
-            ax.text(
-                left + 0.18,
-                yi,
-                f"{int(row['methods'])} m / {int(row['datasets'])} ds",
-                va="center",
-                ha="left",
-                fontsize=4.7,
-                color="#2B2B2B",
-            )
-
-    ax.set_yticks(y_positions)
-    ax.set_yticklabels([axis_labels.get(layer, labels.loc[layer]) for layer in layer_order], fontsize=4.45)
-    ax.tick_params(axis="y", pad=1.0)
+    ax.scatter(
+        summary["median_sensitivity"],
+        y,
+        s=30,
+        color="#3F9C9A",
+        edgecolor="white",
+        linewidth=0.35,
+        zorder=3,
+    )
+    ax.scatter(
+        summary["max_sensitivity"],
+        y,
+        s=18,
+        color="#C79B38",
+        edgecolor="white",
+        linewidth=0.35,
+        zorder=2,
+    )
+    for yi, (_, row) in enumerate(summary.iterrows()):
+        ax.text(
+            row["max_sensitivity"] + 0.018,
+            yi,
+            f"n={int(row['n_methods'])}",
+            ha="left",
+            va="center",
+            fontsize=4.15,
+            color="#4A4A4A",
+        )
+    ax.set_yticks(y)
+    ax.set_yticklabels([layer_labels.get(str(layer), str(layer)) for layer in summary["control_layer"]], fontsize=4.45)
     for tick_label in ax.get_yticklabels():
         tick_label.set_linespacing(0.82)
     ax.invert_yaxis()
-    ax.set_xlim(0, 8.1)
-    ax.set_xlabel("covered methods")
+    ax.set_xlim(0, max(0.55, summary["max_sensitivity"].max() * 1.23))
+    ax.set_xlabel("absolute ARI sensitivity")
     ax.xaxis.grid(True, color="#E8E8E8", linewidth=0.45)
     ax.set_axisbelow(True)
+    ax.legend(
+        handles=[
+            Line2D([0], [0], color="#B8B8B8", lw=1.2, label="IQR"),
+            Line2D([0], [0], marker="o", color="none", markerfacecolor="#3F9C9A", markeredgecolor="white", markersize=4.0, label="median"),
+            Line2D([0], [0], marker="o", color="none", markerfacecolor="#C79B38", markeredgecolor="white", markersize=3.6, label="max"),
+        ],
+        loc="lower right",
+        fontsize=3.6,
+        handlelength=1.0,
+        borderaxespad=0.2,
+        columnspacing=0.5,
+    )
     clean_axis(ax)
+    return summary
 
 
 def draw_revision_sensitivity(ax: plt.Axes, sensitivity: pd.DataFrame) -> None:
@@ -925,16 +946,15 @@ def write_outputs(
         "tradeoff_methods_plotted": int(panel_tables["d"]["method_id"].nunique()),
         "panel_g_50k_completed_methods": int(panel_tables["g"]["method_id"].nunique()),
         "panel_h_methods": int(panel_tables["h"]["method_id"].nunique()),
-        "revision_control_methods": int(panel_tables["i"]["method_id"].nunique()),
-        "revision_control_layers": int(panel_tables["i"]["control_layer"].nunique()),
+        "control_effect_layers": int(panel_tables["i"]["control_layer"].nunique()),
+        "max_control_layer_sensitivity": float(panel_tables["i"]["max_sensitivity"].max()),
         "revision_sensitivity_methods": int(panel_tables["j"]["method_id"].nunique()),
         "revision_sensitivity_layers": int(panel_tables["j"]["control_layer"].nunique()),
         "hvg_control_includes_scvi": bool(
             "scVI"
             in set(
-                panel_tables["i"][
-                    panel_tables["i"]["control_layer"].astype(str).isin(["hvg", "scvi"])
-                    & panel_tables["i"]["n_runs"].gt(0)
+                panel_tables["j"][
+                    panel_tables["j"]["control_layer"].astype(str).isin(["hvg", "scvi"])
                 ]["method_id"].astype(str)
             )
         ),
@@ -964,7 +984,7 @@ Generated by: `Publication/paper/revision_figures/figure9_polish/make_figure9_pr
 - All recommended methods are within the formal 26-method benchmark: {qa['all_recommendations_in_full_26']}.
 - Contains SQuaD-MDS hybrid variant in recommendations: {qa['contains_squad_hybrid_variant']}.
 - Panel b recommended methods shown: {qa['panel_b_methods']}; panel c score-matrix methods: {qa['panel_c_methods']}; trade-off panels plot methods: {qa['tradeoff_methods_plotted']}; panel h stability methods: {qa['panel_h_methods']}.
-- Panel g 50k completed methods: {qa['panel_g_50k_completed_methods']}; targeted-control methods: {qa['revision_control_methods']}; targeted-control layers: {qa['revision_control_layers']}; sensitivity layers: {qa['revision_sensitivity_layers']}.
+- Panel g 50k completed methods: {qa['panel_g_50k_completed_methods']}; control-effect layers: {qa['control_effect_layers']}; maximum control-layer sensitivity: {qa['max_control_layer_sensitivity']:.3f}; sensitivity methods: {qa['revision_sensitivity_methods']}; sensitivity layers: {qa['revision_sensitivity_layers']}.
 - Targeted controls include scVI where appropriate: {qa['hvg_control_includes_scvi']}.
 - PNG dimensions: {qa['png_width_px']} x {qa['png_height_px']} px; nonblank: {qa['nonblank_png']}.
 
@@ -978,7 +998,7 @@ Generated by: `Publication/paper/revision_figures/figure9_polish/make_figure9_pr
 - f, clustering score versus stability for all 26 methods.
 - g, 50k-cell runtime-memory footprint for methods with valid 50k-cell records.
 - h, dropout and batch stability score matrix for all 26 formal methods.
-- i, targeted-control design strips summarizing observed method and dataset coverage without plotting unobserved method-control combinations.
+- i, control-layer ARI sensitivity summary showing median, interquartile range, maximum and method count for each targeted-control layer.
 - j, observed sensitivity landscape for all targeted-control layers; scVI is a control only.
 """
     (QA_OUT / "Figure_9_polished_visual_qa_checklist.md").write_text(checklist, encoding="utf-8")
@@ -995,17 +1015,17 @@ def main() -> None:
     stability_selected = build_stability_all(stability, family_map, method_order)
     revision_coverage, revision_sensitivity = build_revision_control_matrices(family_map)
 
-    fig = plt.figure(figsize=(7.48, 9.62))
+    fig = plt.figure(figsize=(9.68, 12.45))
     gs = fig.add_gridspec(
-        7,
+        4,
         8,
-        height_ratios=[2.50, 0.43, 1.82, 0.69, 1.38, 0.79, 1.62],
-        hspace=0.0,
-        wspace=1.26,
-        left=0.072,
-        right=0.972,
-        bottom=0.078,
-        top=0.982,
+        height_ratios=[3.30, 2.10, 1.92, 2.10],
+        hspace=0.42,
+        wspace=0.92,
+        left=0.064,
+        right=0.982,
+        bottom=0.074,
+        top=0.976,
     )
 
     panel_tables: dict[str, pd.DataFrame] = {}
@@ -1013,15 +1033,15 @@ def main() -> None:
     draw_decision_table(ax_a, decision)
     panel_tables["a"] = decision
 
-    ax_b = fig.add_subplot(gs[2, 0:2])
+    ax_b = fig.add_subplot(gs[1, 0:2])
     draw_counts(ax_b, counts)
     panel_tables["b"] = counts
 
-    ax_c = fig.add_subplot(gs[2, 2:5])
+    ax_c = fig.add_subplot(gs[1, 2:5])
     draw_score_heatmap(ax_c, heat)
     panel_tables["c"] = heat
 
-    ax_d = fig.add_subplot(gs[2, 5:8])
+    ax_d = fig.add_subplot(gs[1, 5:8])
     scatter_all_methods(
         ax_d,
         scores,
@@ -1036,7 +1056,7 @@ def main() -> None:
     )
     panel_tables["d"] = scores[["method_id", "family_short", "runtime_score", "local", "overall_mean"]]
 
-    ax_e = fig.add_subplot(gs[4, 0:2])
+    ax_e = fig.add_subplot(gs[2, 0:2])
     scatter_all_methods(
         ax_e,
         scores,
@@ -1051,7 +1071,7 @@ def main() -> None:
     )
     panel_tables["e"] = scores[["method_id", "family_short", "memory_score", "global", "overall_mean"]]
 
-    ax_f = fig.add_subplot(gs[4, 2:5])
+    ax_f = fig.add_subplot(gs[2, 2:5])
     scatter_all_methods(
         ax_f,
         scores,
@@ -1066,18 +1086,17 @@ def main() -> None:
     )
     panel_tables["f"] = scores[["method_id", "family_short", "stability_median", "kmeans", "overall_mean"]]
 
-    ax_g = fig.add_subplot(gs[4, 5:8])
+    ax_g = fig.add_subplot(gs[2, 5:8])
     draw_50k_footprint(ax_g, footprint)
     panel_tables["g"] = footprint
 
-    ax_h = fig.add_subplot(gs[6, 0:3])
+    ax_h = fig.add_subplot(gs[3, 0:3])
     panel_tables["h"] = draw_stability(ax_h, stability_selected, method_order)
 
-    ax_i = fig.add_subplot(gs[6, 3:5])
-    draw_revision_coverage(ax_i, revision_coverage)
-    panel_tables["i"] = revision_coverage
+    ax_i = fig.add_subplot(gs[3, 3:5])
+    panel_tables["i"] = draw_control_layer_effects(ax_i, revision_sensitivity)
 
-    ax_j = fig.add_subplot(gs[6, 5:8])
+    ax_j = fig.add_subplot(gs[3, 5:8])
     draw_revision_sensitivity(ax_j, revision_sensitivity)
     panel_tables["j"] = revision_sensitivity
 

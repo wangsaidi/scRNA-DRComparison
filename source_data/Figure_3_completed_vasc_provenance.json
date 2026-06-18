@@ -1,0 +1,78 @@
+{
+  "figure": "Figure 3 trial with completed VASC stability",
+  "seed": 20260604,
+  "vasc_axes_completed": [
+    {
+      "perturbation_axis": "cell_number",
+      "score": 0.2236982651178752
+    },
+    {
+      "perturbation_axis": "gene_number",
+      "score": 0.25569608156061274
+    },
+    {
+      "perturbation_axis": "celltype_number",
+      "score": 0.37511999142285457
+    },
+    {
+      "perturbation_axis": "dropout",
+      "score": 0.19772589837738774
+    },
+    {
+      "perturbation_axis": "batch_number",
+      "score": 0.24094011462369572
+    },
+    {
+      "perturbation_axis": "batch_strength",
+      "score": 0.46031295296881647
+    },
+    {
+      "perturbation_axis": "de_prob",
+      "score": 0.2392720919935177
+    },
+    {
+      "perturbation_axis": "de_strength",
+      "score": 0.22780276960947132
+    },
+    {
+      "perturbation_axis": "out",
+      "score": 0.23078435309374043
+    }
+  ],
+  "raw_metric_rows": 1359,
+  "methods_in_plot": [
+    "PCA",
+    "GLMPCA",
+    "pCMF",
+    "ZIFA",
+    "scGBM",
+    "SSNMDI",
+    "tGPLVM",
+    "VAE",
+    "scvis",
+    "VASC",
+    "SAUCIE",
+    "scScope",
+    "SCDRHA",
+    "scGAE",
+    "DREAM",
+    "DRA",
+    "UMAP",
+    "SIMLR",
+    "PHATE",
+    "EDGE",
+    "SPDR",
+    "IVIS",
+    "PaCMAP",
+    "t-SNE",
+    "TriMap",
+    "SQuaD-MDS"
+  ],
+  "notes": [
+    "Original metric tables were not overwritten.",
+    "VASC raw stability metrics were computed from local synthetic count matrices and VASC_2.csv embeddings.",
+    "High-dimensional neighborhood, trustworthiness, continuity and triplet metrics use a fixed sample of up to 800 cells; distance Spearman uses up to 500 cells; low-dimensional KNN and k-means use the available embedding rows; SVM uses up to 1500 embedding rows.",
+    "If k-means returns fewer than two distinct clusters, silhouette is undefined and is encoded as 0 for the score table.",
+    "Scores are min-max scaled per perturbation axis using the combined existing rows plus the newly computed VASC row."
+  ]
+}

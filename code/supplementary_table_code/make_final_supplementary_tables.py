@@ -13,7 +13,14 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 
-ROOT = Path(__file__).resolve().parents[4]
+def find_project_root(start: Path) -> Path:
+    for parent in [start.resolve(), *start.resolve().parents]:
+        if (parent / "Publication" / "paper").exists() and (parent / "metadata").exists():
+            return parent
+    raise RuntimeError(f"Could not locate project root from {start}")
+
+
+ROOT = find_project_root(Path(__file__))
 OUT = ROOT / "Publication/paper/revision_tables/final_supplementary_tables_package_20260606"
 TABLE_OUT = OUT / "tables"
 CSV_OUT = OUT / "source_tables"

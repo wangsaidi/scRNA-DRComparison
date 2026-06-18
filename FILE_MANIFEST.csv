@@ -1,445 +1,587 @@
-﻿"relative_path","bytes","megabytes","extension"
-".gitignore","495","0",".gitignore"
-"code\main_figure_scripts\build_figure7_parameter_source.py","20607","0.02",".py"
-"code\main_figure_scripts\make_figure3_vasc_completed_trial.py","53230","0.051",".py"
-"code\main_figure_scripts\make_figure4_structure_preservation_top_tier.py","18319","0.017",".py"
-"code\main_figure_scripts\make_figure5_annotation_concordance_real_only.py","33230","0.032",".py"
-"code\main_figure_scripts\make_figure6_targeted_sensitivity_controls.py","32957","0.031",".py"
-"code\main_figure_scripts\make_figure7_simulated_robustness_top_tier.py","25537","0.024",".py"
-"code\main_figure_scripts\make_figure8_scalability_reproducibility_top_tier.py","28922","0.028",".py"
-"code\main_figure_scripts\make_figure9_practical_selection_top_tier.py","44920","0.043",".py"
-"code\README.md","1164","0.001",".md"
-"code\supplementary_figure_code\dependency_make_supplementary_figures_top_tier.py","57504","0.055",".py"
-"code\supplementary_figure_code\make_supplementary_atlas_top_tier.py","59419","0.057",".py"
-"code\supplementary_figure_code\requirements_minimal.txt","39","0",".txt"
-"code\supplementary_table_code\make_final_supplementary_tables.py","39220","0.037",".py"
-"code\supplementary_table_code\make_supplementary_table_review.py","21556","0.021",".py"
-"code\supplementary_table_code\requirements_minimal.txt","38","0",".txt"
-"code\targeted_sensitivity_scripts\build_canonical_source_tables.py","19929","0.019",".py"
-"code\targeted_sensitivity_scripts\check_environment.py","718","0.001",".py"
-"code\targeted_sensitivity_scripts\clone_method_sources.sh","1829","0.002",".sh"
-"code\targeted_sensitivity_scripts\compile_wp2_scvi_dimension_sensitivity.py","2821","0.003",".py"
-"code\targeted_sensitivity_scripts\make_redesigned_figures.py","67264","0.064",".py"
-"code\targeted_sensitivity_scripts\make_revision_figures.py","97986","0.093",".py"
-"code\targeted_sensitivity_scripts\report_source_commits.sh","362","0",".sh"
-"code\targeted_sensitivity_scripts\run_glmpca_embedding.R","1432","0.001",".r"
-"code\targeted_sensitivity_scripts\run_pcmf_embedding.R","1575","0.002",".r"
-"code\targeted_sensitivity_scripts\run_scgbm_embedding.R","3022","0.003",".r"
-"code\targeted_sensitivity_scripts\run_scvi_embedding.py","6907","0.007",".py"
-"code\targeted_sensitivity_scripts\run_wp1_scvi_local.py","5695","0.005",".py"
-"code\targeted_sensitivity_scripts\run_wp2_glmpca_dimension_sensitivity.py","8933","0.009",".py"
-"code\targeted_sensitivity_scripts\run_wp2_pca_dimension_sensitivity.py","8066","0.008",".py"
-"code\targeted_sensitivity_scripts\run_wp2_pcmf_dimension_sensitivity.py","9440","0.009",".py"
-"code\targeted_sensitivity_scripts\run_wp2_saucie_dimension_sensitivity.py","9068","0.009",".py"
-"code\targeted_sensitivity_scripts\run_wp2_scgbm_dimension_sensitivity.py","8924","0.009",".py"
-"code\targeted_sensitivity_scripts\run_wp2_zifa_dimension_sensitivity.py","8385","0.008",".py"
-"code\targeted_sensitivity_scripts\run_wp3_visualization_workflow_controls.py","10323","0.01",".py"
-"code\targeted_sensitivity_scripts\run_wp4_input_gene_sensitivity.py","15306","0.015",".py"
-"CODE_AND_DATA_NOTES.md","3354","0.003",".md"
-"config\benchmark_environments\methods_install_manifest.csv","5237","0.005",".csv"
-"config\benchmark_environments\octave-env-export.yml","5996","0.006",".yml"
-"config\benchmark_environments\py36-tgplvm-env-export.yml","2685","0.003",".yml"
-"config\benchmark_environments\py36-tgplvm-freeze.txt","853","0.001",".txt"
-"config\benchmark_environments\py-legacy-check.txt","161","0",".txt"
-"config\benchmark_environments\py-legacy-env-export.yml","7557","0.007",".yml"
-"config\benchmark_environments\py-legacy-freeze.txt","5321","0.005",".txt"
-"config\benchmark_environments\py-modern-check.json","559","0.001",".json"
-"config\benchmark_environments\py-modern-env-export.yml","3310","0.003",".yml"
-"config\benchmark_environments\py-modern-freeze.txt","1731","0.002",".txt"
-"config\benchmark_environments\py-scdh-env-export.yml","7152","0.007",".yml"
-"config\benchmark_environments\py-scdh-freeze.txt","3172","0.003",".txt"
-"config\benchmark_environments\py-tf1-env-export.yml","6255","0.006",".yml"
-"config\benchmark_environments\py-tf1-freeze.txt","2500","0.002",".txt"
-"config\benchmark_environments\r-check.txt","319","0",".txt"
-"config\benchmark_environments\r-env-export.yml","15129","0.014",".yml"
-"config\benchmark_environments\source_commits.csv","854","0.001",".csv"
-"config\README.md","753","0.001",".md"
-"docs\REPRODUCIBILITY.md","2307","0.002",".md"
-"docs\Supplementary_Figures_Detailed_Descriptions_20260608.docx","4278444","4.08",".docx"
-"docs\Supplementary_Table_Captions_final_20260606.docx","37416","0.036",".docx"
-"docs\Supplementary_Table_Captions_final_20260606.md","7500","0.007",".md"
-"figures\main\pdf\Figure_1_conceptual_overview.pdf","86137","0.082",".pdf"
-"figures\main\pdf\Figure_2_workflow.pdf","154278","0.147",".pdf"
-"figures\main\pdf\Figure_3_profile_score_audit.pdf","170351","0.162",".pdf"
-"figures\main\pdf\Figure_4_structure_preservation.pdf","167736","0.16",".pdf"
-"figures\main\pdf\Figure_5_clustering_concordance.pdf","117983","0.113",".pdf"
-"figures\main\pdf\Figure_6_targeted_sensitivity_controls.pdf","93209","0.089",".pdf"
-"figures\main\pdf\Figure_7_simulated_robustness.pdf","104874","0.1",".pdf"
-"figures\main\pdf\Figure_8_scalability_reproducibility.pdf","87056","0.083",".pdf"
-"figures\main\pdf\Figure_9_practical_selection.pdf","89852","0.086",".pdf"
-"figures\main\png\Figure_1_conceptual_overview.png","2886108","2.752",".png"
-"figures\main\png\Figure_2_workflow.png","1323290","1.262",".png"
-"figures\main\png\Figure_3_profile_score_audit.png","1660678","1.584",".png"
-"figures\main\png\Figure_4_structure_preservation.png","1190099","1.135",".png"
-"figures\main\png\Figure_5_clustering_concordance.png","1291686","1.232",".png"
-"figures\main\png\Figure_6_targeted_sensitivity_controls.png","847050","0.808",".png"
-"figures\main\png\Figure_7_simulated_robustness.png","1327640","1.266",".png"
-"figures\main\png\Figure_8_scalability_reproducibility.png","1457081","1.39",".png"
-"figures\main\png\Figure_9_practical_selection.png","1473527","1.405",".png"
-"figures\main\svg\Figure_1_conceptual_overview.svg","692290","0.66",".svg"
-"figures\main\svg\Figure_2_workflow.svg","569899","0.543",".svg"
-"figures\main\svg\Figure_3_profile_score_audit.svg","504935","0.482",".svg"
-"figures\main\svg\Figure_4_structure_preservation.svg","636481","0.607",".svg"
-"figures\main\svg\Figure_5_clustering_concordance.svg","259326","0.247",".svg"
-"figures\main\svg\Figure_6_targeted_sensitivity_controls.svg","151151","0.144",".svg"
-"figures\main\svg\Figure_7_simulated_robustness.svg","287844","0.275",".svg"
-"figures\main\svg\Figure_8_scalability_reproducibility.svg","283793","0.271",".svg"
-"figures\main\svg\Figure_9_practical_selection.svg","359889","0.343",".svg"
-"figures\supplementary\pdf\Supplementary_Figure_S1_method_catalog_atlas.pdf","61750","0.059",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S10_simulated_robustness_atlas.pdf","111024","0.106",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S11_scVI_reference_atlas.pdf","93742","0.089",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S12_latent_dimension_atlas.pdf","83660","0.08",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S13_workflow_atlas.pdf","71404","0.068",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S14_input_gene_atlas.pdf","76835","0.073",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S15_reproducibility_coverage_atlas.pdf","58782","0.056",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S2_full_dataset_atlas.pdf","75055","0.072",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S3_real_dataset_landscape_atlas.pdf","70767","0.067",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S4_simulated_parameter_landscape_atlas.pdf","75257","0.072",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S5_full_score_atlas.pdf","81927","0.078",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S6_local_structure_atlas.pdf","89176","0.085",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S7_label_local_atlas.pdf","104091","0.099",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S8_global_geometry_atlas.pdf","106461","0.102",".pdf"
-"figures\supplementary\pdf\Supplementary_Figure_S9_clustering_atlas.pdf","296361","0.283",".pdf"
-"figures\supplementary\png\Supplementary_Figure_S1_method_catalog_atlas.png","252994","0.241",".png"
-"figures\supplementary\png\Supplementary_Figure_S10_simulated_robustness_atlas.png","522734","0.499",".png"
-"figures\supplementary\png\Supplementary_Figure_S11_scVI_reference_atlas.png","278316","0.265",".png"
-"figures\supplementary\png\Supplementary_Figure_S12_latent_dimension_atlas.png","192821","0.184",".png"
-"figures\supplementary\png\Supplementary_Figure_S13_workflow_atlas.png","183203","0.175",".png"
-"figures\supplementary\png\Supplementary_Figure_S14_input_gene_atlas.png","229318","0.219",".png"
-"figures\supplementary\png\Supplementary_Figure_S15_reproducibility_coverage_atlas.png","265859","0.254",".png"
-"figures\supplementary\png\Supplementary_Figure_S2_full_dataset_atlas.png","344188","0.328",".png"
-"figures\supplementary\png\Supplementary_Figure_S3_real_dataset_landscape_atlas.png","370957","0.354",".png"
-"figures\supplementary\png\Supplementary_Figure_S4_simulated_parameter_landscape_atlas.png","288092","0.275",".png"
-"figures\supplementary\png\Supplementary_Figure_S5_full_score_atlas.png","450254","0.429",".png"
-"figures\supplementary\png\Supplementary_Figure_S6_local_structure_atlas.png","250618","0.239",".png"
-"figures\supplementary\png\Supplementary_Figure_S7_label_local_atlas.png","265885","0.254",".png"
-"figures\supplementary\png\Supplementary_Figure_S8_global_geometry_atlas.png","353137","0.337",".png"
-"figures\supplementary\png\Supplementary_Figure_S9_clustering_atlas.png","562434","0.536",".png"
-"figures\supplementary\svg\Supplementary_Figure_S1_method_catalog_atlas.svg","137552","0.131",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S10_simulated_robustness_atlas.svg","487598","0.465",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S11_scVI_reference_atlas.svg","329740","0.314",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S12_latent_dimension_atlas.svg","244107","0.233",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S13_workflow_atlas.svg","169665","0.162",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S14_input_gene_atlas.svg","290004","0.277",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S15_reproducibility_coverage_atlas.svg","101103","0.096",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S2_full_dataset_atlas.svg","213328","0.203",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S3_real_dataset_landscape_atlas.svg","161987","0.154",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S4_simulated_parameter_landscape_atlas.svg","229397","0.219",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S5_full_score_atlas.svg","251373","0.24",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S6_local_structure_atlas.svg","375805","0.358",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S7_label_local_atlas.svg","495358","0.472",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S8_global_geometry_atlas.svg","471747","0.45",".svg"
-"figures\supplementary\svg\Supplementary_Figure_S9_clustering_atlas.svg","3277614","3.126",".svg"
-"FILE_MANIFEST.csv","0","0",".csv"
-"README.md","10399","0.01",".md"
-"requirements.txt","72","0",".txt"
-"source_data\main_figures\canonical_source_tables\canonical_method_manifest.csv","10837","0.01",".csv"
-"source_data\main_figures\canonical_source_tables\canonical_real_dataset_atlas_from_supplementary_table_s2.csv","9926","0.009",".csv"
-"source_data\main_figures\canonical_source_tables\canonical_simulated_dataset_atlas_from_excel.csv","4671","0.004",".csv"
-"source_data\main_figures\canonical_source_tables\canonical_source_table_checks.csv","273","0",".csv"
-"source_data\main_figures\canonical_source_tables\canonical_source_table_manifest.csv","2223","0.002",".csv"
-"source_data\main_figures\canonical_source_tables\excel_real_dataset_detail_rows.csv","5246","0.005",".csv"
-"source_data\main_figures\canonical_source_tables\original_clustering_raw_long.csv","4664701","4.449",".csv"
-"source_data\main_figures\canonical_source_tables\original_efficiency_scaling_long.csv","17503","0.017",".csv"
-"source_data\main_figures\canonical_source_tables\original_score_long.csv","18479","0.018",".csv"
-"source_data\main_figures\canonical_source_tables\original_score_matrix.csv","5153","0.005",".csv"
-"source_data\main_figures\canonical_source_tables\original_stability_score_long.csv","22712","0.022",".csv"
-"source_data\main_figures\canonical_source_tables\original_topology_raw_long.csv","8640430","8.24",".csv"
-"source_data\main_figures\canonical_source_tables\repository_dataset_availability.csv","19740","0.019",".csv"
-"source_data\main_figures\canonical_source_tables\revision_control_dataset_manifest.csv","16955","0.016",".csv"
-"source_data\main_figures\canonical_source_tables\revision_dimension_sensitivity.csv","393994","0.376",".csv"
-"source_data\main_figures\canonical_source_tables\revision_input_gene_sensitivity.csv","361889","0.345",".csv"
-"source_data\main_figures\canonical_source_tables\revision_scvi_control.csv","110128","0.105",".csv"
-"source_data\main_figures\canonical_source_tables\revision_visualization_workflow.csv","111346","0.106",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_compact_visual_qa_summary.csv","173","0",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_raw_variability_summary.csv","3156","0.003",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_score_matrix.csv","9915","0.009",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_batch_number.csv","1204","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_batch_strength.csv","1256","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_cell_number.csv","1174","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_celltype_number.csv","1291","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_de_prob.csv","1056","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_de_strength.csv","1171","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_dropout.csv","1054","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_gene_number.csv","1171","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_out.csv","941","0.001",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_raw_metrics.csv","257578","0.246",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_stability_scores_long.csv","10062","0.01",".csv"
-"source_data\main_figures\figure3\Figure_3_completed_vasc_provenance.json","2076","0.002",".json"
-"source_data\main_figures\figure3\Figure_3_completed_visual_qa_summary.csv","114","0",".csv"
-"source_data\main_figures\figure3\Figure_3_component_top3_frequency.csv","344","0",".csv"
-"source_data\main_figures\figure3\Figure_3_family_domain_profile.csv","383","0",".csv"
-"source_data\main_figures\figure3\Figure_3_score_construction_demo_values.csv","1588","0.002",".csv"
-"source_data\main_figures\figure3\Figure_3_weighted_domain_contributions.csv","2564","0.002",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.2_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.2_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.2_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.4_VASC_dr1.csv","215","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.4_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.4_VASC_kmeans.csv","61","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.6_VASC_dr1.csv","214","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.6_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.6_VASC_kmeans.csv","61","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.8_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.8_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_0.8_VASC_kmeans.csv","61","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_1.0_VASC_dr1.csv","214","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_1.0_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_1.0_VASC_kmeans.csv","61","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_10_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_10_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_10_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_2_VASC_dr1.csv","209","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_2_VASC_dr2.csv","106","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_2_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_4_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_4_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_4_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_6_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_6_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_6_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_8_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_8_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\batch_8_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_100_VASC_dr1.csv","210","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_100_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_100_VASC_kmeans.csv","61","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_1k_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_1k_VASC_dr2.csv","105","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_1k_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_1w_VASC_dr1.csv","206","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_1w_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_1w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_2w_VASC_dr1.csv","207","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_2w_VASC_dr2.csv","105","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_2w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_3w_VASC_dr1.csv","208","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_3w_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_3w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_500_VASC_dr1.csv","211","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_500_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_500_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_5k_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_5k_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\cell_5k_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_11_VASC_dr1.csv","211","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_11_VASC_dr2.csv","106","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_11_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_13_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_13_VASC_dr2.csv","106","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_13_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_15_VASC_dr1.csv","211","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_15_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_15_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_7_VASC_dr1.csv","216","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_7_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_7_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_9_VASC_dr1.csv","215","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_9_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\celltype_9_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.2_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.2_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.2_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.4_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.4_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.4_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.6_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.6_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.6_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.8_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.8_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_0.8_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_1.0_VASC_dr1.csv","210","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_1.0_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_1.0_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.05_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.05_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.05_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.15_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.15_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.15_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.2_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.2_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.2_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.25_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.25_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.25_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.3_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.3_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\de_prob_0.3_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_0_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_0_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_0_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_1_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_-1_VASC_dr1.csv","210","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_1_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_-1_VASC_dr2.csv","106","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_1_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_-1_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_2_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_2_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_2_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_3_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_3_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\dropout_3_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_2w_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_2w_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_2w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_3w_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_3w_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_3w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_4w_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_4w_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_4w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_5k_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_5k_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_5k_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_5w_VASC_dr1.csv","208","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_5w_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\gene_5w_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.1_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.1_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.1_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.2_VASC_dr1.csv","215","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.2_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.2_VASC_kmeans.csv","61","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.3_VASC_dr1.csv","212","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.3_VASC_dr2.csv","106","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.3_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.4_VASC_dr1.csv","213","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.4_VASC_dr2.csv","108","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.4_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.5_VASC_dr1.csv","210","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.5_VASC_dr2.csv","107","0",".csv"
-"source_data\main_figures\figure3\vasc_stability_raw_metrics\out_0.5_VASC_kmeans.csv","56","0",".csv"
-"source_data\main_figures\figure4\Figure_4_DRA_large_dataset_completion_matrix.csv","5452","0.005",".csv"
-"source_data\main_figures\figure4\Figure_4_DRA_large_dataset_structure_metrics.csv","139065","0.133",".csv"
-"source_data\main_figures\figure4\Figure_4_real_dataset_structure_preservation_panel_data.csv","1721189","1.641",".csv"
-"source_data\main_figures\figure4\Figure_4_real_dataset_structure_preservation_selected_panel_data.csv","3917406","3.736",".csv"
-"source_data\main_figures\figure4\Figure_4_real_dataset_structure_preservation_selected_source_data.csv","10323611","9.845",".csv"
-"source_data\main_figures\figure4\Figure_4_real_dataset_structure_preservation_with_completion_panel_data.csv","2122216","2.024",".csv"
-"source_data\main_figures\figure4\Figure_4_real_dataset_structure_preservation_with_large_DRA_source_data.csv","10323611","9.845",".csv"
-"source_data\main_figures\figure4\Figure_4_structure_preservation_top_tier_panel_data.csv","3345635","3.191",".csv"
-"source_data\main_figures\figure5\Figure_5_annotation_clustering_concordance_real_only_panel_data.csv","520400","0.496",".csv"
-"source_data\main_figures\figure5\Figure_5_annotation_clustering_concordance_real_only_qa_summary.csv","636","0.001",".csv"
-"source_data\main_figures\figure5\Figure_5_annotation_clustering_real_only_missing_blocks.csv","979","0.001",".csv"
-"source_data\main_figures\figure5\Figure_5_annotation_clustering_real_only_source_data.csv","1238651","1.181",".csv"
-"source_data\main_figures\figure5\Figure_5_Zhengmix4eq_embedding_example_source_data.csv","418983","0.4",".csv"
-"source_data\main_figures\figure6\Figure_6_scVI_reference_plotted_records.csv","64900","0.062",".csv"
-"source_data\main_figures\figure6\Figure_6_targeted_sensitivity_controls_full_source_data.csv","582209","0.555",".csv"
-"source_data\main_figures\figure6\Figure_6_targeted_sensitivity_controls_polished_panel_data.csv","158881","0.152",".csv"
-"source_data\main_figures\figure6\Figure_6_targeted_sensitivity_controls_polished_qa_summary.csv","856","0.001",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_a_plotted_values.csv","193","0",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_b_plotted_values.csv","23085","0.022",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_c_plotted_values.csv","825","0.001",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_d_plotted_values.csv","218","0",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_e_plotted_values.csv","1944","0.002",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_f_plotted_values.csv","63298","0.06",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_g_plotted_values.csv","3578","0.003",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_h_plotted_values.csv","2173","0.002",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_i_plotted_values.csv","1829","0.002",".csv"
-"source_data\main_figures\figure7\Figure_7_panel_j_plotted_values.csv","2027","0.002",".csv"
-"source_data\main_figures\figure7\Figure_7_parameter_level_availability_summary.csv","1871","0.002",".csv"
-"source_data\main_figures\figure7\Figure_7_parameter_level_metric_components.csv","2429110","2.317",".csv"
-"source_data\main_figures\figure7\Figure_7_parameter_level_stability_source_data.csv","313697","0.299",".csv"
-"source_data\main_figures\figure7\Figure_7_parameter_source_qa_summary.csv","407","0",".csv"
-"source_data\main_figures\figure7\Figure_7_recomputed_axis_stability_source_data.csv","21153","0.02",".csv"
-"source_data\main_figures\figure7\Figure_7_recomputed_vs_published_axis_score_check.csv","21797","0.021",".csv"
-"source_data\main_figures\figure7\Figure_7_required_file_availability_long.csv","34820","0.033",".csv"
-"source_data\main_figures\figure8\Figure_8_completion_missingness_audit_source_data.csv","1715","0.002",".csv"
-"source_data\main_figures\figure8\Figure_8_efficiency_scaling_full26_source_data.csv","16749","0.016",".csv"
-"source_data\main_figures\figure8\Figure_8_install_manifest_full26_source_data.csv","5095","0.005",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_a_plotted_values.csv","6585","0.006",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_b_plotted_values.csv","6058","0.006",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_c_plotted_values.csv","1286","0.001",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_d_plotted_values.csv","958","0.001",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_e_plotted_values.csv","2115","0.002",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_f_plotted_values.csv","111","0",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_g_plotted_values.csv","715","0.001",".csv"
-"source_data\main_figures\figure8\Figure_8_panel_h_plotted_values.csv","656","0.001",".csv"
-"source_data\main_figures\figure8\Figure_8_source_commit_records.csv","1374","0.001",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_a_plotted_values.csv","7196","0.007",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_b_plotted_values.csv","511","0",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_c_plotted_values.csv","3875","0.004",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_d_plotted_values.csv","1875","0.002",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_e_plotted_values.csv","1869","0.002",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_f_plotted_values.csv","1875","0.002",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_g_plotted_values.csv","775","0.001",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_h_plotted_values.csv","1876","0.002",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_i_plotted_values.csv","1504","0.001",".csv"
-"source_data\main_figures\figure9\Figure_9_panel_j_plotted_values.csv","2138","0.002",".csv"
-"source_data\supplementary_figures\canonical_source_tables\canonical_method_manifest.csv","10837","0.01",".csv"
-"source_data\supplementary_figures\canonical_source_tables\canonical_real_dataset_atlas_from_supplementary_table_s2.csv","9926","0.009",".csv"
-"source_data\supplementary_figures\canonical_source_tables\canonical_simulated_dataset_atlas_from_excel.csv","4671","0.004",".csv"
-"source_data\supplementary_figures\canonical_source_tables\canonical_source_table_checks.csv","273","0",".csv"
-"source_data\supplementary_figures\canonical_source_tables\canonical_source_table_manifest.csv","2223","0.002",".csv"
-"source_data\supplementary_figures\canonical_source_tables\excel_real_dataset_detail_rows.csv","5246","0.005",".csv"
-"source_data\supplementary_figures\canonical_source_tables\original_clustering_raw_long.csv","4664701","4.449",".csv"
-"source_data\supplementary_figures\canonical_source_tables\original_efficiency_scaling_long.csv","17503","0.017",".csv"
-"source_data\supplementary_figures\canonical_source_tables\original_score_long.csv","18479","0.018",".csv"
-"source_data\supplementary_figures\canonical_source_tables\original_score_matrix.csv","5153","0.005",".csv"
-"source_data\supplementary_figures\canonical_source_tables\original_stability_score_long.csv","22712","0.022",".csv"
-"source_data\supplementary_figures\canonical_source_tables\original_topology_raw_long.csv","8640430","8.24",".csv"
-"source_data\supplementary_figures\canonical_source_tables\repository_dataset_availability.csv","19740","0.019",".csv"
-"source_data\supplementary_figures\canonical_source_tables\revision_control_dataset_manifest.csv","16955","0.016",".csv"
-"source_data\supplementary_figures\canonical_source_tables\revision_dimension_sensitivity.csv","393994","0.376",".csv"
-"source_data\supplementary_figures\canonical_source_tables\revision_input_gene_sensitivity.csv","361889","0.345",".csv"
-"source_data\supplementary_figures\canonical_source_tables\revision_scvi_control.csv","110128","0.105",".csv"
-"source_data\supplementary_figures\canonical_source_tables\revision_visualization_workflow.csv","111346","0.106",".csv"
-"source_data\supplementary_figures\figure3_completed_stability\Figure_3_completed_stability_scores_long.csv","10062","0.01",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_1_method_taxonomy_source_data.csv","11421","0.011",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_2_full_dataset_landscape_source_data.csv","42219","0.04",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_3_full_benchmark_score_landscape_source_data.csv","21416","0.02",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_4_structure_preservation_source_data.csv","10185159","9.713",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_5_clustering_concordance_source_data.csv","2260117","2.155",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_6_sensitivity_controls_source_data.csv","572135","0.546",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_7_simulated_robustness_source_data.csv","18692","0.018",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_8_scalability_reproducibility_source_data.csv","21102","0.02",".csv"
-"source_data\supplementary_figures\input_source_data\Figure_9_practical_method_selection_source_data.csv","2565","0.002",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S1_method_catalog_source_data.csv","10590","0.01",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S10_stability_source_data.csv","13096","0.012",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S11_scVI_reference_source_data.csv","58774","0.056",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S12_dimension_source_data.csv","225840","0.215",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S13_workflow_comparison_source_data.csv","59528","0.057",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S14_input_gene_source_data.csv","187095","0.178",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S15_reproducibility_audit_source_data.csv","17854","0.017",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S2_full_dataset_atlas_source_data.csv","17008","0.016",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S3_real_dataset_landscape_source_data.csv","5246","0.005",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S4_simulated_parameter_landscape_source_data.csv","4671","0.004",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S5_full_score_matrix_source_data.csv","11276","0.011",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S6_local_neighborhood_source_data.csv","5807","0.006",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S7_global_geometry_source_data.csv","1815","0.002",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S8_clustering_metrics_source_data.csv","2260117","2.155",".csv"
-"source_data\supplementary_figures\input_source_data\Supplementary_Figure_S9_efficiency_scaling_source_data.csv","9522","0.009",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S1_method_catalog_atlas_source_data.csv","10590","0.01",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S10_simulated_robustness_atlas_source_data.csv","6478954","6.179",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S11_scVI_reference_atlas_source_data.csv","58774","0.056",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S12_latent_dimension_atlas_source_data.csv","186927","0.178",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S13_workflow_atlas_source_data.csv","60117","0.057",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S14_input_gene_atlas_source_data.csv","156695","0.149",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S15_reproducibility_coverage_atlas_source_data.csv","27730","0.026",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S2_full_dataset_atlas_source_data.csv","42219","0.04",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S3_real_dataset_landscape_atlas_source_data.csv","5246","0.005",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S4_simulated_parameter_landscape_atlas_source_data.csv","4671","0.004",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S5_full_score_atlas_source_data.csv","16486","0.016",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S6_local_structure_atlas_source_data.csv","924675","0.882",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S7_label_local_atlas_source_data.csv","1256461","1.198",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S8_global_geometry_atlas_source_data.csv","1009595","0.963",".csv"
-"source_data\supplementary_figures\panel_data\Supplementary_Figure_S9_clustering_atlas_source_data.csv","1485952","1.417",".csv"
-"source_data\supplementary_tables\S1_MethodCatalog.csv","9815","0.009",".csv"
-"source_data\supplementary_tables\S10_ScalabilityAudit.csv","7208","0.007",".csv"
-"source_data\supplementary_tables\S11_TargetedSensitivity.csv","6734","0.006",".csv"
-"source_data\supplementary_tables\S12_SuppFigurePanelMap.csv","7984","0.008",".csv"
-"source_data\supplementary_tables\S13_SuppEvidenceCoverage.csv","1089","0.001",".csv"
-"source_data\supplementary_tables\S14_SourceFileManifest.csv","60928","0.058",".csv"
-"source_data\supplementary_tables\S15_DataRouteAudit.csv","1191","0.001",".csv"
-"source_data\supplementary_tables\S2_Dataset100Atlas.csv","17011","0.016",".csv"
-"source_data\supplementary_tables\S3_RealDatasetDetail.csv","12158","0.012",".csv"
-"source_data\supplementary_tables\S4_SimulatedAtlas.csv","4674","0.004",".csv"
-"source_data\supplementary_tables\S5_MetricInventory.csv","9366","0.009",".csv"
-"source_data\supplementary_tables\S6_ProfileScoreMatrix.csv","9907","0.009",".csv"
-"source_data\supplementary_tables\S7_StructureCoverage.csv","14459","0.014",".csv"
-"source_data\supplementary_tables\S8_ClusteringCoverage.csv","6324","0.006",".csv"
-"source_data\supplementary_tables\S9_RobustnessStability.csv","5902","0.006",".csv"
-"tables\All_Supplementary_Tables_with_Introduction_20260608.xlsx","89293","0.085",".xlsx"
-"tables\Supplementary_Tables_final_20260606.xlsx","88554","0.084",".xlsx"
+path,bytes,mtime
+.gitignore,495,2026-06-08 10:59:17
+code/main_figure_scripts/build_figure7_parameter_source.py,20607,2026-06-05 09:10:23
+code/main_figure_scripts/make_figure3_vasc_completed_trial.py,60480,2026-06-16 10:00:52
+code/main_figure_scripts/make_figure4_structure_preservation_top_tier.py,22954,2026-06-15 23:54:28
+code/main_figure_scripts/make_figure5_annotation_concordance_real_only.py,38368,2026-06-16 00:15:37
+code/main_figure_scripts/make_figure6_targeted_sensitivity_controls.py,39335,2026-06-16 00:36:41
+code/main_figure_scripts/make_figure7_simulated_robustness_top_tier.py,27817,2026-06-16 00:56:16
+code/main_figure_scripts/make_figure8_scalability_reproducibility_top_tier.py,48310,2026-06-16 01:35:22
+code/main_figure_scripts/make_figure9_practical_selection_top_tier.py,45370,2026-06-16 10:01:53
+code/manuscript_code/add_word_citation_hyperlinks_20260617.py,10633,2026-06-17 23:22:41
+code/manuscript_code/format_word_manuscripts_20260617.py,13583,2026-06-18 19:08:15
+code/manuscript_code/make_commsbio_policy_compliance_audit_20260618.py,12195,2026-06-18 08:04:38
+code/manuscript_code/make_true_redline_20260617.py,14960,2026-06-18 09:04:31
+code/manuscript_code/rebuild_submission_after_policy_updates_20260618.py,4359,2026-06-18 00:21:00
+code/manuscript_code/update_manuscript_from_current_tex_20260616.py,10170,2026-06-16 11:10:39
+code/manuscript_code/update_manuscript_from_current_tex_20260617.py,16077,2026-06-17 21:32:15
+code/README.md,1164,2026-06-08 11:01:21
+code/supplementary_figure_code/dependency_make_supplementary_figures_top_tier.py,57504,2026-06-05 22:34:04
+code/supplementary_figure_code/make_supplementary_atlas_top_tier.py,59736,2026-06-16 10:55:01
+code/supplementary_figure_code/requirements_minimal.txt,39,2026-06-06 09:01:13
+code/supplementary_table_code/make_final_supplementary_tables.py,39514,2026-06-16 10:30:52
+code/supplementary_table_code/make_supplementary_table_review.py,21946,2026-06-16 10:33:58
+code/supplementary_table_code/requirements_minimal.txt,38,2026-06-16 10:32:47
+code/targeted_sensitivity_scripts/__pycache__/make_redesigned_figures.cpython-314.pyc,107856,2026-06-03 21:54:56
+code/targeted_sensitivity_scripts/__pycache__/make_revision_figures.cpython-314.pyc,143766,2026-06-03 09:33:21
+code/targeted_sensitivity_scripts/build_canonical_source_tables.py,19929,2026-06-03 10:49:56
+code/targeted_sensitivity_scripts/check_environment.py,718,2026-05-30 15:03:50
+code/targeted_sensitivity_scripts/clone_method_sources.sh,1829,2026-05-30 15:23:30
+code/targeted_sensitivity_scripts/compile_wp2_scvi_dimension_sensitivity.py,2821,2026-05-31 22:38:54
+code/targeted_sensitivity_scripts/make_redesigned_figures.py,67264,2026-06-03 21:53:52
+code/targeted_sensitivity_scripts/make_revision_figures.py,97986,2026-06-03 08:58:18
+code/targeted_sensitivity_scripts/report_source_commits.sh,362,2026-05-30 15:10:06
+code/targeted_sensitivity_scripts/run_glmpca_embedding.R,1432,2026-05-31 22:39:16
+code/targeted_sensitivity_scripts/run_pcmf_embedding.R,1575,2026-05-31 23:27:00
+code/targeted_sensitivity_scripts/run_scgbm_embedding.R,3022,2026-06-01 13:27:30
+code/targeted_sensitivity_scripts/run_scvi_embedding.py,6907,2026-05-31 12:46:58
+code/targeted_sensitivity_scripts/run_wp1_scvi_local.py,5695,2026-05-31 12:46:28
+code/targeted_sensitivity_scripts/run_wp2_glmpca_dimension_sensitivity.py,8933,2026-05-31 22:47:36
+code/targeted_sensitivity_scripts/run_wp2_pca_dimension_sensitivity.py,8066,2026-05-31 12:56:30
+code/targeted_sensitivity_scripts/run_wp2_pcmf_dimension_sensitivity.py,9440,2026-05-31 23:28:24
+code/targeted_sensitivity_scripts/run_wp2_saucie_dimension_sensitivity.py,9068,2026-06-01 13:36:44
+code/targeted_sensitivity_scripts/run_wp2_scgbm_dimension_sensitivity.py,8924,2026-06-01 13:24:02
+code/targeted_sensitivity_scripts/run_wp2_zifa_dimension_sensitivity.py,8385,2026-05-31 22:27:12
+code/targeted_sensitivity_scripts/run_wp3_visualization_workflow_controls.py,10323,2026-06-01 13:39:58
+code/targeted_sensitivity_scripts/run_wp4_input_gene_sensitivity.py,15306,2026-06-02 06:31:02
+CODE_AND_DATA_NOTES.md,596,2026-06-16 10:38:25
+config/benchmark_environments/methods_install_manifest.csv,5237,2026-05-31 12:03:04
+config/benchmark_environments/octave-env-export.yml,5996,2026-05-31 04:14:44
+config/benchmark_environments/py-legacy-check.txt,161,2026-05-31 06:34:30
+config/benchmark_environments/py-legacy-env-export.yml,7557,2026-05-31 06:26:00
+config/benchmark_environments/py-legacy-freeze.txt,5321,2026-05-31 06:25:40
+config/benchmark_environments/py-modern-check.json,559,2026-05-31 03:47:28
+config/benchmark_environments/py-modern-env-export.yml,3310,2026-05-31 04:25:10
+config/benchmark_environments/py-modern-freeze.txt,1731,2026-05-31 02:56:26
+config/benchmark_environments/py-scdh-env-export.yml,7152,2026-05-31 12:07:30
+config/benchmark_environments/py-scdh-freeze.txt,3172,2026-05-31 12:07:32
+config/benchmark_environments/py-tf1-env-export.yml,6255,2026-05-31 12:16:38
+config/benchmark_environments/py-tf1-freeze.txt,2500,2026-05-31 12:16:38
+config/benchmark_environments/py36-tgplvm-env-export.yml,2685,2026-05-31 12:04:12
+config/benchmark_environments/py36-tgplvm-freeze.txt,853,2026-05-31 12:05:44
+config/benchmark_environments/r-check.txt,319,2026-05-31 06:34:34
+config/benchmark_environments/r-env-export.yml,15129,2026-05-31 06:25:42
+config/benchmark_environments/source_commits.csv,854,2026-05-31 06:25:40
+config/README.md,753,2026-06-08 11:01:34
+config/revision_benchmark_config/methods_install_manifest.csv,5237,2026-05-31 12:03:04
+config/revision_benchmark_config/octave-env-export.yml,5996,2026-05-31 04:14:44
+config/revision_benchmark_config/py-legacy-check.txt,161,2026-05-31 06:34:30
+config/revision_benchmark_config/py-legacy-env-export.yml,7557,2026-05-31 06:26:00
+config/revision_benchmark_config/py-legacy-freeze.txt,5321,2026-05-31 06:25:40
+config/revision_benchmark_config/py-modern-check.json,559,2026-05-31 03:47:28
+config/revision_benchmark_config/py-modern-env-export.yml,3310,2026-05-31 04:25:10
+config/revision_benchmark_config/py-modern-freeze.txt,1731,2026-05-31 02:56:26
+config/revision_benchmark_config/py-scdh-env-export.yml,7152,2026-05-31 12:07:30
+config/revision_benchmark_config/py-scdh-freeze.txt,3172,2026-05-31 12:07:32
+config/revision_benchmark_config/py-tf1-env-export.yml,6255,2026-05-31 12:16:38
+config/revision_benchmark_config/py-tf1-freeze.txt,2500,2026-05-31 12:16:38
+config/revision_benchmark_config/py36-tgplvm-env-export.yml,2685,2026-05-31 12:04:12
+config/revision_benchmark_config/py36-tgplvm-freeze.txt,853,2026-05-31 12:05:44
+config/revision_benchmark_config/r-check.txt,319,2026-05-31 06:34:34
+config/revision_benchmark_config/r-env-export.yml,15129,2026-05-31 06:25:42
+config/revision_benchmark_config/source_commits.csv,854,2026-05-31 06:25:40
+docs/citation_audit_20260617/citation_existence_audit_20260617.csv,27391,2026-06-17 21:04:06
+docs/citation_audit_20260617/citation_existence_audit_20260617.json,49740,2026-06-17 21:04:06
+docs/citation_audit_20260617/citation_existence_audit_20260617.md,9027,2026-06-17 21:04:06
+docs/communications_biology_policy_compliance_audit_20260618.csv,5249,2026-06-18 18:39:10
+docs/communications_biology_policy_compliance_audit_20260618.md,7552,2026-06-18 18:39:10
+docs/figure_position_audit_20260617/figure_caption_pages_contact_sheet.png,1019524,2026-06-17 21:29:41
+docs/figure_position_audit_20260617/figure_position_audit.json,3246,2026-06-17 21:29:41
+docs/figure_position_audit_20260617/figure_position_audit.md,597,2026-06-17 21:29:41
+docs/figure_position_audit_20260617/page_006_caption_figs_1.png,299982,2026-06-17 20:46:59
+docs/figure_position_audit_20260617/page_009_caption_figs_2.png,282466,2026-06-17 20:46:59
+docs/figure_position_audit_20260617/page_012_caption_figs_3.png,301038,2026-06-17 20:47:01
+docs/figure_position_audit_20260617/page_013_caption_figs_3.png,304549,2026-06-17 20:38:10
+docs/figure_position_audit_20260617/page_015_caption_figs_4.png,280601,2026-06-17 20:47:03
+docs/figure_position_audit_20260617/page_016_caption_figs_4.png,280674,2026-06-17 20:38:11
+docs/figure_position_audit_20260617/page_018_caption_figs_5.png,289332,2026-06-17 20:47:03
+docs/figure_position_audit_20260617/page_019_caption_figs_5.png,289301,2026-06-17 20:38:12
+docs/figure_position_audit_20260617/page_021_caption_figs_6.png,266087,2026-06-17 20:47:04
+docs/figure_position_audit_20260617/page_022_caption_figs_6.png,266304,2026-06-17 20:38:13
+docs/figure_position_audit_20260617/page_023_caption_figs_7.png,294630,2026-06-17 20:47:06
+docs/figure_position_audit_20260617/page_024_caption_figs_7.png,294462,2026-06-17 20:38:15
+docs/figure_position_audit_20260617/page_025_caption_figs_8.png,289190,2026-06-17 20:47:07
+docs/figure_position_audit_20260617/page_026_caption_figs_8.png,289259,2026-06-17 20:38:16
+docs/figure_position_audit_20260617/page_028_caption_figs_9.png,228750,2026-06-17 20:47:09
+docs/figure_position_audit_20260617/page_029_caption_figs_9.png,228708,2026-06-17 20:38:18
+docs/latest_figures_tables_sync_audit_20260615.json,62508,2026-06-17 21:35:57
+docs/latest_figures_tables_sync_audit_20260615.md,52397,2026-06-17 21:35:57
+docs/manuscript_coverage_report_20260616.md,2423,2026-06-16 11:12:46
+docs/manuscript_coverage_report_20260617.md,2423,2026-06-17 21:34:30
+docs/numbered_nature_citation_style_audit_20260618.md,2271,2026-06-18 18:08:05
+docs/REPRODUCIBILITY.md,2307,2026-06-08 11:01:06
+docs/response_current_submission_audit_20260615.json,16469,2026-06-17 21:35:57
+docs/response_current_submission_audit_20260615.md,11542,2026-06-17 21:35:57
+docs/response_verification_audit_20260609.csv,2323,2026-06-16 11:28:21
+docs/response_verification_audit_20260609.json,11293,2026-06-17 21:36:05
+docs/response_verification_audit_20260609.md,8323,2026-06-17 21:36:05
+docs/Supplementary_Figures_Detailed_Descriptions_20260608.docx,4278444,2026-06-16 10:38:24
+docs/Supplementary_Table_Captions_final_20260606.docx,37416,2026-06-16 10:33:58
+docs/Supplementary_Table_Captions_final_20260606.md,7589,2026-06-16 10:33:58
+docs/word_citation_hyperlink_audit_20260617.md,689,2026-06-17 23:23:13
+docs/word_formatting_audit_20260617.md,1090,2026-06-18 19:08:15
+docs/word_formatting_final_check_20260617.md,3635,2026-06-17 23:56:23
+figures/main/Figure_3_profile_score_audit.pdf,182302,2026-06-16 10:02:33
+figures/main/Figure_3_profile_score_audit.png,2405051,2026-06-16 10:02:30
+figures/main/Figure_3_profile_score_audit.svg,562645,2026-06-16 10:02:34
+figures/main/Figure_3_profile_score_audit.tiff,171703502,2026-06-16 10:02:36
+figures/main/Figure_9_practical_selection.pdf,92034,2026-06-16 10:02:28
+figures/main/Figure_9_practical_selection.png,1586370,2026-06-16 10:02:31
+figures/main/Figure_9_practical_selection.svg,368030,2026-06-16 10:02:26
+figures/main/Figure_9_practical_selection.tiff,171931814,2026-06-16 10:02:33
+figures/main/pdf/Figure_1_conceptual_overview.pdf,4285549,2026-06-15 21:20:28
+figures/main/pdf/Figure_2_workflow.pdf,154278,2026-06-04 08:41:39
+figures/main/pdf/Figure_3_profile_score_audit.pdf,182302,2026-06-16 10:02:33
+figures/main/pdf/Figure_4_structure_preservation.pdf,171202,2026-06-15 23:55:02
+figures/main/pdf/Figure_5_clustering_concordance.pdf,122887,2026-06-16 00:16:12
+figures/main/pdf/Figure_6_targeted_sensitivity_controls.pdf,102153,2026-06-16 00:37:01
+figures/main/pdf/Figure_7_simulated_robustness.pdf,113610,2026-06-16 00:56:39
+figures/main/pdf/Figure_8_scalability_reproducibility.pdf,96570,2026-06-16 01:35:50
+figures/main/pdf/Figure_9_practical_selection.pdf,92034,2026-06-16 10:02:28
+figures/main/png/Figure_1_conceptual_overview.png,2958722,2026-06-15 21:20:28
+figures/main/png/Figure_2_workflow.png,1323290,2026-06-04 08:41:36
+figures/main/png/Figure_3_profile_score_audit.png,2405051,2026-06-16 10:02:30
+figures/main/png/Figure_4_structure_preservation.png,1521106,2026-06-15 23:55:05
+figures/main/png/Figure_5_clustering_concordance.png,1489544,2026-06-16 00:16:14
+figures/main/png/Figure_6_targeted_sensitivity_controls.png,1113881,2026-06-16 00:37:03
+figures/main/png/Figure_7_simulated_robustness.png,1562879,2026-06-16 00:56:42
+figures/main/png/Figure_8_scalability_reproducibility.png,1722996,2026-06-16 01:35:53
+figures/main/png/Figure_9_practical_selection.png,1586370,2026-06-16 10:02:31
+figures/main/svg/Figure_1_conceptual_overview.svg,3945134,2026-06-15 21:20:28
+figures/main/svg/Figure_2_workflow.svg,569899,2026-06-04 08:43:03
+figures/main/svg/Figure_3_profile_score_audit.svg,562645,2026-06-16 10:02:34
+figures/main/svg/Figure_4_structure_preservation.svg,694733,2026-06-15 23:54:59
+figures/main/svg/Figure_5_clustering_concordance.svg,305107,2026-06-16 00:16:10
+figures/main/svg/Figure_6_targeted_sensitivity_controls.svg,189385,2026-06-16 00:36:59
+figures/main/svg/Figure_7_simulated_robustness.svg,342662,2026-06-16 00:56:37
+figures/main/svg/Figure_8_scalability_reproducibility.svg,321767,2026-06-16 01:35:48
+figures/main/svg/Figure_9_practical_selection.svg,368030,2026-06-16 10:02:26
+figures/supplementary/pdf/Supplementary_Figure_S10_simulated_robustness_atlas.pdf,110645,2026-06-16 10:56:47
+figures/supplementary/pdf/Supplementary_Figure_S11_scVI_reference_atlas.pdf,93742,2026-06-06 08:57:05
+figures/supplementary/pdf/Supplementary_Figure_S12_latent_dimension_atlas.pdf,83660,2026-06-06 08:57:11
+figures/supplementary/pdf/Supplementary_Figure_S13_workflow_atlas.pdf,71404,2026-06-06 08:57:18
+figures/supplementary/pdf/Supplementary_Figure_S14_input_gene_atlas.pdf,76835,2026-06-06 08:57:23
+figures/supplementary/pdf/Supplementary_Figure_S15_reproducibility_coverage_atlas.pdf,58782,2026-06-06 08:57:28
+figures/supplementary/pdf/Supplementary_Figure_S1_method_catalog_atlas.pdf,61750,2026-06-06 08:55:27
+figures/supplementary/pdf/Supplementary_Figure_S2_full_dataset_atlas.pdf,75055,2026-06-06 08:55:33
+figures/supplementary/pdf/Supplementary_Figure_S3_real_dataset_landscape_atlas.pdf,70767,2026-06-06 08:55:40
+figures/supplementary/pdf/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.pdf,75257,2026-06-06 08:55:47
+figures/supplementary/pdf/Supplementary_Figure_S5_full_score_atlas.pdf,81927,2026-06-06 08:55:53
+figures/supplementary/pdf/Supplementary_Figure_S6_local_structure_atlas.pdf,89176,2026-06-06 08:56:03
+figures/supplementary/pdf/Supplementary_Figure_S7_label_local_atlas.pdf,104091,2026-06-06 08:56:17
+figures/supplementary/pdf/Supplementary_Figure_S8_global_geometry_atlas.pdf,106461,2026-06-06 08:56:31
+figures/supplementary/pdf/Supplementary_Figure_S9_clustering_atlas.pdf,296361,2026-06-06 08:56:44
+figures/supplementary/png/Supplementary_Figure_S10_simulated_robustness_atlas.png,492754,2026-06-16 10:56:49
+figures/supplementary/png/Supplementary_Figure_S11_scVI_reference_atlas.png,278316,2026-06-06 08:57:06
+figures/supplementary/png/Supplementary_Figure_S12_latent_dimension_atlas.png,192821,2026-06-06 08:57:12
+figures/supplementary/png/Supplementary_Figure_S13_workflow_atlas.png,183203,2026-06-06 08:57:19
+figures/supplementary/png/Supplementary_Figure_S14_input_gene_atlas.png,229318,2026-06-06 08:57:24
+figures/supplementary/png/Supplementary_Figure_S15_reproducibility_coverage_atlas.png,265859,2026-06-06 08:57:29
+figures/supplementary/png/Supplementary_Figure_S1_method_catalog_atlas.png,252994,2026-06-06 08:55:28
+figures/supplementary/png/Supplementary_Figure_S2_full_dataset_atlas.png,344188,2026-06-06 08:55:34
+figures/supplementary/png/Supplementary_Figure_S3_real_dataset_landscape_atlas.png,370957,2026-06-06 08:55:41
+figures/supplementary/png/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.png,288092,2026-06-06 08:55:49
+figures/supplementary/png/Supplementary_Figure_S5_full_score_atlas.png,450254,2026-06-06 08:55:54
+figures/supplementary/png/Supplementary_Figure_S6_local_structure_atlas.png,250618,2026-06-06 08:56:04
+figures/supplementary/png/Supplementary_Figure_S7_label_local_atlas.png,265885,2026-06-06 08:56:18
+figures/supplementary/png/Supplementary_Figure_S8_global_geometry_atlas.png,353137,2026-06-06 08:56:32
+figures/supplementary/png/Supplementary_Figure_S9_clustering_atlas.png,562434,2026-06-06 08:56:46
+figures/supplementary/svg/Supplementary_Figure_S10_simulated_robustness_atlas.svg,477890,2026-06-16 10:56:45
+figures/supplementary/svg/Supplementary_Figure_S11_scVI_reference_atlas.svg,329740,2026-06-06 08:57:03
+figures/supplementary/svg/Supplementary_Figure_S12_latent_dimension_atlas.svg,244107,2026-06-06 08:57:10
+figures/supplementary/svg/Supplementary_Figure_S13_workflow_atlas.svg,169665,2026-06-06 08:57:17
+figures/supplementary/svg/Supplementary_Figure_S14_input_gene_atlas.svg,290004,2026-06-06 08:57:22
+figures/supplementary/svg/Supplementary_Figure_S15_reproducibility_coverage_atlas.svg,101103,2026-06-06 08:57:27
+figures/supplementary/svg/Supplementary_Figure_S1_method_catalog_atlas.svg,137552,2026-06-06 08:55:26
+figures/supplementary/svg/Supplementary_Figure_S2_full_dataset_atlas.svg,213328,2026-06-06 08:55:31
+figures/supplementary/svg/Supplementary_Figure_S3_real_dataset_landscape_atlas.svg,161987,2026-06-06 08:55:38
+figures/supplementary/svg/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.svg,229397,2026-06-06 08:55:45
+figures/supplementary/svg/Supplementary_Figure_S5_full_score_atlas.svg,251373,2026-06-06 08:55:52
+figures/supplementary/svg/Supplementary_Figure_S6_local_structure_atlas.svg,375805,2026-06-06 08:56:01
+figures/supplementary/svg/Supplementary_Figure_S7_label_local_atlas.svg,495358,2026-06-06 08:56:15
+figures/supplementary/svg/Supplementary_Figure_S8_global_geometry_atlas.svg,471747,2026-06-06 08:56:29
+figures/supplementary/svg/Supplementary_Figure_S9_clustering_atlas.svg,3277614,2026-06-06 08:56:42
+FILE_MANIFEST.csv,59062,2026-06-18 19:02:37
+MANIFEST.csv,62501,2026-06-18 09:11:29
+README.md,1266,2026-06-16 10:38:25
+requirements.txt,72,2026-06-08 10:59:27
+source_data/Figure_3_completed_compact_visual_qa_summary.csv,246,2026-06-15 23:26:23
+source_data/Figure_3_completed_raw_variability_summary.csv,3156,2026-06-15 23:26:23
+source_data/Figure_3_completed_score_matrix.csv,9915,2026-06-15 23:26:22
+source_data/Figure_3_completed_stability_batch_number.csv,1204,2026-06-15 23:26:21
+source_data/Figure_3_completed_stability_batch_strength.csv,1256,2026-06-15 23:26:22
+source_data/Figure_3_completed_stability_cell_number.csv,1174,2026-06-15 23:26:21
+source_data/Figure_3_completed_stability_celltype_number.csv,1291,2026-06-15 23:26:21
+source_data/Figure_3_completed_stability_de_prob.csv,1056,2026-06-15 23:26:22
+source_data/Figure_3_completed_stability_de_strength.csv,1171,2026-06-15 23:26:22
+source_data/Figure_3_completed_stability_dropout.csv,1054,2026-06-15 23:26:21
+source_data/Figure_3_completed_stability_gene_number.csv,1171,2026-06-15 23:26:21
+source_data/Figure_3_completed_stability_out.csv,941,2026-06-15 23:26:22
+source_data/Figure_3_completed_stability_raw_metrics.csv,257578,2026-06-15 23:26:22
+source_data/Figure_3_completed_stability_scores_long.csv,10062,2026-06-15 23:26:22
+source_data/Figure_3_completed_vasc_provenance.json,2076,2026-06-15 23:26:22
+source_data/Figure_3_completed_visual_qa_summary.csv,246,2026-06-15 23:26:23
+source_data/Figure_3_component_correlation_matrix.csv,10200,2026-06-15 23:26:23
+source_data/Figure_3_component_top3_frequency.csv,344,2026-06-15 23:26:23
+source_data/Figure_3_family_domain_profile.csv,383,2026-06-15 23:26:23
+source_data/Figure_3_score_construction_demo_values.csv,1588,2026-06-15 23:26:23
+source_data/Figure_3_weight_sensitivity_long.csv,12141,2026-06-15 23:26:23
+source_data/Figure_3_weight_sensitivity_summary.csv,1509,2026-06-15 23:26:23
+source_data/Figure_3_weighted_domain_contributions.csv,5071,2026-06-15 23:26:23
+source_data/main_figures/canonical_source_tables/canonical_method_manifest.csv,10837,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/canonical_real_dataset_atlas_from_supplementary_table_s2.csv,9926,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/canonical_simulated_dataset_atlas_from_excel.csv,4671,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/canonical_source_table_checks.csv,273,2026-06-03 10:55:42
+source_data/main_figures/canonical_source_tables/canonical_source_table_manifest.csv,2223,2026-06-03 10:55:42
+source_data/main_figures/canonical_source_tables/excel_real_dataset_detail_rows.csv,5246,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/original_clustering_raw_long.csv,4664701,2026-06-03 10:55:40
+source_data/main_figures/canonical_source_tables/original_efficiency_scaling_long.csv,17503,2026-06-03 10:55:40
+source_data/main_figures/canonical_source_tables/original_score_long.csv,18479,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/original_score_matrix.csv,5153,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/original_stability_score_long.csv,22712,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/original_topology_raw_long.csv,8640430,2026-06-03 10:55:40
+source_data/main_figures/canonical_source_tables/repository_dataset_availability.csv,19740,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/revision_control_dataset_manifest.csv,16955,2026-06-03 10:55:37
+source_data/main_figures/canonical_source_tables/revision_dimension_sensitivity.csv,393994,2026-06-03 10:55:40
+source_data/main_figures/canonical_source_tables/revision_input_gene_sensitivity.csv,361889,2026-06-03 10:55:40
+source_data/main_figures/canonical_source_tables/revision_scvi_control.csv,110128,2026-06-03 10:55:40
+source_data/main_figures/canonical_source_tables/revision_visualization_workflow.csv,111346,2026-06-03 10:55:40
+source_data/main_figures/figure3/Figure_3_completed_compact_visual_qa_summary.csv,245,2026-06-15 22:22:17
+source_data/main_figures/figure3/Figure_3_completed_raw_variability_summary.csv,3156,2026-06-15 22:22:17
+source_data/main_figures/figure3/Figure_3_completed_score_matrix.csv,9915,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_batch_number.csv,1204,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_batch_strength.csv,1256,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_cell_number.csv,1174,2026-06-15 22:22:14
+source_data/main_figures/figure3/Figure_3_completed_stability_celltype_number.csv,1291,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_de_prob.csv,1056,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_de_strength.csv,1171,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_dropout.csv,1054,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_gene_number.csv,1171,2026-06-15 22:22:14
+source_data/main_figures/figure3/Figure_3_completed_stability_out.csv,941,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_raw_metrics.csv,257578,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_stability_scores_long.csv,10062,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_vasc_provenance.json,2076,2026-06-15 22:22:15
+source_data/main_figures/figure3/Figure_3_completed_visual_qa_summary.csv,245,2026-06-15 22:22:17
+source_data/main_figures/figure3/Figure_3_component_correlation_matrix.csv,10200,2026-06-15 22:22:17
+source_data/main_figures/figure3/Figure_3_component_top3_frequency.csv,344,2026-06-15 22:22:16
+source_data/main_figures/figure3/Figure_3_family_domain_profile.csv,383,2026-06-15 22:22:16
+source_data/main_figures/figure3/Figure_3_score_construction_demo_values.csv,1588,2026-06-15 22:22:16
+source_data/main_figures/figure3/Figure_3_weight_sensitivity_long.csv,12141,2026-06-15 22:22:17
+source_data/main_figures/figure3/Figure_3_weight_sensitivity_summary.csv,1509,2026-06-15 22:22:17
+source_data/main_figures/figure3/Figure_3_weighted_domain_contributions.csv,5071,2026-06-15 22:22:16
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.2_VASC_dr1.csv,212,2026-06-04 09:55:28
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.2_VASC_dr2.csv,107,2026-06-04 09:55:28
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.2_VASC_kmeans.csv,56,2026-06-04 09:55:28
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.4_VASC_dr1.csv,215,2026-06-04 09:55:43
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.4_VASC_dr2.csv,108,2026-06-04 09:55:43
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.4_VASC_kmeans.csv,61,2026-06-04 09:55:43
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.6_VASC_dr1.csv,214,2026-06-04 09:55:57
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.6_VASC_dr2.csv,108,2026-06-04 09:55:57
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.6_VASC_kmeans.csv,61,2026-06-04 09:55:57
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.8_VASC_dr1.csv,212,2026-06-04 09:56:11
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.8_VASC_dr2.csv,107,2026-06-04 09:56:11
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_0.8_VASC_kmeans.csv,61,2026-06-04 09:56:11
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_1.0_VASC_dr1.csv,214,2026-06-04 09:56:24
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_1.0_VASC_dr2.csv,108,2026-06-04 09:56:24
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_1.0_VASC_kmeans.csv,61,2026-06-04 09:56:24
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_10_VASC_dr1.csv,213,2026-06-04 09:55:15
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_10_VASC_dr2.csv,108,2026-06-04 09:55:15
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_10_VASC_kmeans.csv,56,2026-06-04 09:55:15
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_2_VASC_dr1.csv,209,2026-06-04 09:47:46
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_2_VASC_dr2.csv,106,2026-06-04 09:47:46
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_2_VASC_kmeans.csv,56,2026-06-04 09:47:46
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_4_VASC_dr1.csv,213,2026-06-04 09:54:36
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_4_VASC_dr2.csv,107,2026-06-04 09:54:36
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_4_VASC_kmeans.csv,56,2026-06-04 09:54:36
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_6_VASC_dr1.csv,213,2026-06-04 09:54:49
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_6_VASC_dr2.csv,107,2026-06-04 09:54:49
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_6_VASC_kmeans.csv,56,2026-06-04 09:54:49
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_8_VASC_dr1.csv,213,2026-06-04 09:55:02
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_8_VASC_dr2.csv,108,2026-06-04 09:55:02
+source_data/main_figures/figure3/vasc_stability_raw_metrics/batch_8_VASC_kmeans.csv,56,2026-06-04 09:55:02
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_100_VASC_dr1.csv,210,2026-06-04 09:47:36
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_100_VASC_dr2.csv,108,2026-06-04 09:47:36
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_100_VASC_kmeans.csv,61,2026-06-04 09:47:36
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_1k_VASC_dr1.csv,212,2026-06-04 09:48:23
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_1k_VASC_dr2.csv,105,2026-06-04 09:48:23
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_1k_VASC_kmeans.csv,56,2026-06-04 09:48:23
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_1w_VASC_dr1.csv,206,2026-06-04 09:49:24
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_1w_VASC_dr2.csv,108,2026-06-04 09:49:24
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_1w_VASC_kmeans.csv,56,2026-06-04 09:49:24
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_2w_VASC_dr1.csv,207,2026-06-04 09:50:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_2w_VASC_dr2.csv,105,2026-06-04 09:50:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_2w_VASC_kmeans.csv,56,2026-06-04 09:50:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_3w_VASC_dr1.csv,208,2026-06-04 09:50:56
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_3w_VASC_dr2.csv,108,2026-06-04 09:50:56
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_3w_VASC_kmeans.csv,56,2026-06-04 09:50:56
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_500_VASC_dr1.csv,211,2026-06-04 09:47:59
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_500_VASC_dr2.csv,108,2026-06-04 09:47:59
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_500_VASC_kmeans.csv,56,2026-06-04 09:47:59
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_5k_VASC_dr1.csv,212,2026-06-04 09:48:50
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_5k_VASC_dr2.csv,108,2026-06-04 09:48:50
+source_data/main_figures/figure3/vasc_stability_raw_metrics/cell_5k_VASC_kmeans.csv,56,2026-06-04 09:48:50
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_11_VASC_dr1.csv,211,2026-06-04 09:52:49
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_11_VASC_dr2.csv,106,2026-06-04 09:52:49
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_11_VASC_kmeans.csv,56,2026-06-04 09:52:49
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_13_VASC_dr1.csv,212,2026-06-04 09:53:02
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_13_VASC_dr2.csv,106,2026-06-04 09:53:02
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_13_VASC_kmeans.csv,56,2026-06-04 09:53:02
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_15_VASC_dr1.csv,211,2026-06-04 09:53:16
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_15_VASC_dr2.csv,108,2026-06-04 09:53:16
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_15_VASC_kmeans.csv,56,2026-06-04 09:53:16
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_7_VASC_dr1.csv,216,2026-06-04 09:52:21
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_7_VASC_dr2.csv,107,2026-06-04 09:52:21
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_7_VASC_kmeans.csv,56,2026-06-04 09:52:21
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_9_VASC_dr1.csv,215,2026-06-04 09:52:35
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_9_VASC_dr2.csv,108,2026-06-04 09:52:35
+source_data/main_figures/figure3/vasc_stability_raw_metrics/celltype_9_VASC_kmeans.csv,56,2026-06-04 09:52:35
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.2_VASC_dr1.csv,213,2026-06-04 09:57:44
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.2_VASC_dr2.csv,107,2026-06-04 09:57:44
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.2_VASC_kmeans.csv,56,2026-06-04 09:57:44
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.4_VASC_dr1.csv,213,2026-06-04 09:57:57
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.4_VASC_dr2.csv,108,2026-06-04 09:57:57
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.4_VASC_kmeans.csv,56,2026-06-04 09:57:57
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.6_VASC_dr1.csv,212,2026-06-04 09:58:09
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.6_VASC_dr2.csv,107,2026-06-04 09:58:09
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.6_VASC_kmeans.csv,56,2026-06-04 09:58:09
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.8_VASC_dr1.csv,213,2026-06-04 09:58:23
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.8_VASC_dr2.csv,107,2026-06-04 09:58:23
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_0.8_VASC_kmeans.csv,56,2026-06-04 09:58:23
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_1.0_VASC_dr1.csv,210,2026-06-04 09:58:37
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_1.0_VASC_dr2.csv,108,2026-06-04 09:58:37
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_1.0_VASC_kmeans.csv,56,2026-06-04 09:58:37
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.05_VASC_dr1.csv,212,2026-06-04 09:56:37
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.05_VASC_dr2.csv,108,2026-06-04 09:56:37
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.05_VASC_kmeans.csv,56,2026-06-04 09:56:37
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.15_VASC_dr1.csv,213,2026-06-04 09:56:50
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.15_VASC_dr2.csv,107,2026-06-04 09:56:50
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.15_VASC_kmeans.csv,56,2026-06-04 09:56:50
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.25_VASC_dr1.csv,213,2026-06-04 09:57:17
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.25_VASC_dr2.csv,107,2026-06-04 09:57:17
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.25_VASC_kmeans.csv,56,2026-06-04 09:57:17
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.2_VASC_dr1.csv,213,2026-06-04 09:57:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.2_VASC_dr2.csv,108,2026-06-04 09:57:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.2_VASC_kmeans.csv,56,2026-06-04 09:57:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.3_VASC_dr1.csv,212,2026-06-04 09:57:31
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.3_VASC_dr2.csv,108,2026-06-04 09:57:31
+source_data/main_figures/figure3/vasc_stability_raw_metrics/de_prob_0.3_VASC_kmeans.csv,56,2026-06-04 09:57:31
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_-1_VASC_dr1.csv,210,2026-06-04 09:53:29
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_-1_VASC_dr2.csv,106,2026-06-04 09:53:29
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_-1_VASC_kmeans.csv,56,2026-06-04 09:53:29
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_0_VASC_dr1.csv,212,2026-06-04 09:53:42
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_0_VASC_dr2.csv,107,2026-06-04 09:53:42
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_0_VASC_kmeans.csv,56,2026-06-04 09:53:42
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_1_VASC_dr1.csv,212,2026-06-04 09:53:55
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_1_VASC_dr2.csv,108,2026-06-04 09:53:55
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_1_VASC_kmeans.csv,56,2026-06-04 09:53:55
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_2_VASC_dr1.csv,213,2026-06-04 09:54:09
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_2_VASC_dr2.csv,108,2026-06-04 09:54:09
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_2_VASC_kmeans.csv,56,2026-06-04 09:54:09
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_3_VASC_dr1.csv,213,2026-06-04 09:54:22
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_3_VASC_dr2.csv,108,2026-06-04 09:54:22
+source_data/main_figures/figure3/vasc_stability_raw_metrics/dropout_3_VASC_kmeans.csv,56,2026-06-04 09:54:22
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_2w_VASC_dr1.csv,213,2026-06-04 09:51:25
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_2w_VASC_dr2.csv,107,2026-06-04 09:51:25
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_2w_VASC_kmeans.csv,56,2026-06-04 09:51:25
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_3w_VASC_dr1.csv,212,2026-06-04 09:51:40
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_3w_VASC_dr2.csv,108,2026-06-04 09:51:40
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_3w_VASC_kmeans.csv,56,2026-06-04 09:51:40
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_4w_VASC_dr1.csv,213,2026-06-04 09:51:54
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_4w_VASC_dr2.csv,108,2026-06-04 09:51:54
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_4w_VASC_kmeans.csv,56,2026-06-04 09:51:54
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_5k_VASC_dr1.csv,212,2026-06-04 09:51:10
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_5k_VASC_dr2.csv,108,2026-06-04 09:51:10
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_5k_VASC_kmeans.csv,56,2026-06-04 09:51:10
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_5w_VASC_dr1.csv,208,2026-06-04 09:52:07
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_5w_VASC_dr2.csv,108,2026-06-04 09:52:07
+source_data/main_figures/figure3/vasc_stability_raw_metrics/gene_5w_VASC_kmeans.csv,56,2026-06-04 09:52:07
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.1_VASC_dr1.csv,213,2026-06-04 09:58:51
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.1_VASC_dr2.csv,107,2026-06-04 09:58:51
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.1_VASC_kmeans.csv,56,2026-06-04 09:58:51
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.2_VASC_dr1.csv,215,2026-06-04 09:59:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.2_VASC_dr2.csv,108,2026-06-04 09:59:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.2_VASC_kmeans.csv,61,2026-06-04 09:59:04
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.3_VASC_dr1.csv,212,2026-06-04 09:59:17
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.3_VASC_dr2.csv,106,2026-06-04 09:59:17
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.3_VASC_kmeans.csv,56,2026-06-04 09:59:17
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.4_VASC_dr1.csv,213,2026-06-04 09:59:30
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.4_VASC_dr2.csv,108,2026-06-04 09:59:30
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.4_VASC_kmeans.csv,56,2026-06-04 09:59:30
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.5_VASC_dr1.csv,210,2026-06-04 09:59:43
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.5_VASC_dr2.csv,107,2026-06-04 09:59:43
+source_data/main_figures/figure3/vasc_stability_raw_metrics/out_0.5_VASC_kmeans.csv,56,2026-06-04 09:59:43
+source_data/main_figures/figure4/Figure_4_DRA_large_dataset_completion_matrix.csv,5452,2026-06-04 22:07:49
+source_data/main_figures/figure4/Figure_4_DRA_large_dataset_structure_metrics.csv,139065,2026-06-04 22:06:19
+source_data/main_figures/figure4/Figure_4_real_dataset_structure_preservation_panel_data.csv,1721189,2026-06-04 18:14:11
+source_data/main_figures/figure4/Figure_4_real_dataset_structure_preservation_selected_panel_data.csv,3917406,2026-06-04 22:33:47
+source_data/main_figures/figure4/Figure_4_real_dataset_structure_preservation_selected_source_data.csv,10323611,2026-06-04 22:33:47
+source_data/main_figures/figure4/Figure_4_real_dataset_structure_preservation_with_completion_panel_data.csv,2122216,2026-06-04 22:07:51
+source_data/main_figures/figure4/Figure_4_real_dataset_structure_preservation_with_large_DRA_source_data.csv,10323611,2026-06-04 22:07:50
+source_data/main_figures/figure4/Figure_4_structure_preservation_top_tier_panel_data.csv,3476207,2026-06-15 23:54:57
+source_data/main_figures/figure5/Figure_5_annotation_clustering_concordance_real_only_panel_data.csv,601153,2026-06-16 00:16:16
+source_data/main_figures/figure5/Figure_5_annotation_clustering_concordance_real_only_qa_summary.csv,797,2026-06-16 00:16:16
+source_data/main_figures/figure5/Figure_5_annotation_clustering_real_only_missing_blocks.csv,979,2026-06-16 00:16:09
+source_data/main_figures/figure5/Figure_5_annotation_clustering_real_only_source_data.csv,1238651,2026-06-16 00:16:09
+source_data/main_figures/figure5/Figure_5_Zhengmix4eq_embedding_example_source_data.csv,418983,2026-06-16 00:16:09
+source_data/main_figures/figure6/Figure_6_scVI_reference_plotted_records.csv,64900,2026-06-16 00:36:57
+source_data/main_figures/figure6/Figure_6_targeted_sensitivity_controls_full_source_data.csv,582209,2026-06-16 00:36:57
+source_data/main_figures/figure6/Figure_6_targeted_sensitivity_controls_polished_panel_data.csv,954345,2026-06-16 00:37:05
+source_data/main_figures/figure6/Figure_6_targeted_sensitivity_controls_polished_qa_summary.csv,1011,2026-06-16 00:37:05
+source_data/main_figures/figure7/Figure_7_panel_a_plotted_values.csv,17116,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_b_plotted_values.csv,23085,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_c_plotted_values.csv,825,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_d_plotted_values.csv,218,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_e_plotted_values.csv,1944,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_f_plotted_values.csv,63298,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_g_plotted_values.csv,3578,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_h_plotted_values.csv,2173,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_i_plotted_values.csv,1829,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_panel_j_plotted_values.csv,2027,2026-06-16 00:56:45
+source_data/main_figures/figure7/Figure_7_parameter_level_availability_summary.csv,1871,2026-06-05 09:10:47
+source_data/main_figures/figure7/Figure_7_parameter_level_metric_components.csv,2429110,2026-06-05 09:10:47
+source_data/main_figures/figure7/Figure_7_parameter_level_stability_source_data.csv,313697,2026-06-05 09:10:47
+source_data/main_figures/figure7/Figure_7_parameter_source_qa_summary.csv,407,2026-06-05 09:10:47
+source_data/main_figures/figure7/Figure_7_recomputed_axis_stability_source_data.csv,21153,2026-06-05 09:10:47
+source_data/main_figures/figure7/Figure_7_recomputed_vs_published_axis_score_check.csv,21797,2026-06-05 09:10:47
+source_data/main_figures/figure7/Figure_7_required_file_availability_long.csv,34820,2026-06-05 09:10:47
+source_data/main_figures/figure8/Figure_8_completion_missingness_audit_source_data.csv,1715,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_efficiency_scaling_full26_source_data.csv,16749,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_install_manifest_full26_source_data.csv,5095,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_a_plotted_values.csv,6585,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_b_plotted_values.csv,6058,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_c_plotted_values.csv,1286,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_d_plotted_values.csv,958,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_e_plotted_values.csv,2115,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_f_plotted_values.csv,2058,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_g_plotted_values.csv,715,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_h_plotted_values.csv,656,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_i_plotted_values.csv,758,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_panel_j_plotted_values.csv,917,2026-06-15 12:07:08
+source_data/main_figures/figure8/Figure_8_source_commit_records.csv,1374,2026-06-15 12:07:08
+source_data/main_figures/figure9/Figure_9_panel_a_plotted_values.csv,7196,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_b_plotted_values.csv,511,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_c_plotted_values.csv,3875,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_d_plotted_values.csv,1875,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_e_plotted_values.csv,1869,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_f_plotted_values.csv,1875,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_g_plotted_values.csv,775,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_h_plotted_values.csv,1876,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_i_plotted_values.csv,1504,2026-06-05 21:11:19
+source_data/main_figures/figure9/Figure_9_panel_j_plotted_values.csv,2138,2026-06-05 21:11:19
+source_data/main_figures/Figure_3_completed_compact_visual_qa_summary.csv,246,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_completed_raw_variability_summary.csv,3156,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_completed_score_matrix.csv,9915,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_stability_batch_number.csv,1204,2026-06-15 23:26:21
+source_data/main_figures/Figure_3_completed_stability_batch_strength.csv,1256,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_stability_cell_number.csv,1174,2026-06-15 23:26:21
+source_data/main_figures/Figure_3_completed_stability_celltype_number.csv,1291,2026-06-15 23:26:21
+source_data/main_figures/Figure_3_completed_stability_de_prob.csv,1056,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_stability_de_strength.csv,1171,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_stability_dropout.csv,1054,2026-06-15 23:26:21
+source_data/main_figures/Figure_3_completed_stability_gene_number.csv,1171,2026-06-15 23:26:21
+source_data/main_figures/Figure_3_completed_stability_out.csv,941,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_stability_raw_metrics.csv,257578,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_stability_scores_long.csv,10062,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_vasc_provenance.json,2076,2026-06-15 23:26:22
+source_data/main_figures/Figure_3_completed_visual_qa_summary.csv,246,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_component_correlation_matrix.csv,10200,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_component_top3_frequency.csv,344,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_family_domain_profile.csv,383,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_score_construction_demo_values.csv,1588,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_weight_sensitivity_long.csv,12141,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_weight_sensitivity_summary.csv,1509,2026-06-15 23:26:23
+source_data/main_figures/Figure_3_weighted_domain_contributions.csv,5071,2026-06-15 23:26:23
+source_data/Supplementary_Data_1_Source_Data.xlsx,59744773,2026-06-18 00:10:59
+source_data/Supplementary_Data_1_Source_Data_manifest.csv,66695,2026-06-18 00:09:23
+source_data/supplementary_figures/canonical_source_tables/canonical_method_manifest.csv,10837,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/canonical_real_dataset_atlas_from_supplementary_table_s2.csv,9926,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/canonical_simulated_dataset_atlas_from_excel.csv,4671,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/canonical_source_table_checks.csv,273,2026-06-03 10:55:42
+source_data/supplementary_figures/canonical_source_tables/canonical_source_table_manifest.csv,2223,2026-06-03 10:55:42
+source_data/supplementary_figures/canonical_source_tables/excel_real_dataset_detail_rows.csv,5246,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/original_clustering_raw_long.csv,4664701,2026-06-03 10:55:40
+source_data/supplementary_figures/canonical_source_tables/original_efficiency_scaling_long.csv,17503,2026-06-03 10:55:40
+source_data/supplementary_figures/canonical_source_tables/original_score_long.csv,18479,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/original_score_matrix.csv,5153,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/original_stability_score_long.csv,22712,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/original_topology_raw_long.csv,8640430,2026-06-03 10:55:40
+source_data/supplementary_figures/canonical_source_tables/repository_dataset_availability.csv,19740,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/revision_control_dataset_manifest.csv,16955,2026-06-03 10:55:37
+source_data/supplementary_figures/canonical_source_tables/revision_dimension_sensitivity.csv,393994,2026-06-03 10:55:40
+source_data/supplementary_figures/canonical_source_tables/revision_input_gene_sensitivity.csv,361889,2026-06-03 10:55:40
+source_data/supplementary_figures/canonical_source_tables/revision_scvi_control.csv,110128,2026-06-03 10:55:40
+source_data/supplementary_figures/canonical_source_tables/revision_visualization_workflow.csv,111346,2026-06-03 10:55:40
+source_data/supplementary_figures/figure3_completed_stability/Figure_3_completed_stability_scores_long.csv,10062,2026-06-05 19:58:59
+source_data/supplementary_figures/input_source_data/Figure_1_method_taxonomy_source_data.csv,11421,2026-06-03 21:56:43
+source_data/supplementary_figures/input_source_data/Figure_2_full_dataset_landscape_source_data.csv,42219,2026-06-03 21:56:50
+source_data/supplementary_figures/input_source_data/Figure_3_full_benchmark_score_landscape_source_data.csv,21416,2026-06-03 21:56:59
+source_data/supplementary_figures/input_source_data/Figure_4_structure_preservation_source_data.csv,10185159,2026-06-03 21:57:28
+source_data/supplementary_figures/input_source_data/Figure_5_clustering_concordance_source_data.csv,2260117,2026-06-03 21:57:50
+source_data/supplementary_figures/input_source_data/Figure_6_sensitivity_controls_source_data.csv,572135,2026-06-03 21:58:07
+source_data/supplementary_figures/input_source_data/Figure_7_simulated_robustness_source_data.csv,18692,2026-06-03 21:58:22
+source_data/supplementary_figures/input_source_data/Figure_8_scalability_reproducibility_source_data.csv,21102,2026-06-03 21:58:32
+source_data/supplementary_figures/input_source_data/Figure_9_practical_method_selection_source_data.csv,2565,2026-06-03 21:58:45
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S10_stability_source_data.csv,13096,2026-06-03 22:00:45
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S11_scVI_reference_source_data.csv,58774,2026-06-03 22:01:00
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S12_dimension_source_data.csv,225840,2026-06-03 22:01:07
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S13_workflow_comparison_source_data.csv,59528,2026-06-03 22:01:14
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S14_input_gene_source_data.csv,187095,2026-06-03 22:01:22
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S15_reproducibility_audit_source_data.csv,17854,2026-06-03 22:01:28
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S1_method_catalog_source_data.csv,10590,2026-06-03 21:58:54
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S2_full_dataset_atlas_source_data.csv,17008,2026-06-03 21:59:08
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S3_real_dataset_landscape_source_data.csv,5246,2026-06-03 21:59:13
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S4_simulated_parameter_landscape_source_data.csv,4671,2026-06-03 21:59:21
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S5_full_score_matrix_source_data.csv,11276,2026-06-03 21:59:28
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S6_local_neighborhood_source_data.csv,5807,2026-06-03 21:59:42
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S7_global_geometry_source_data.csv,1815,2026-06-03 21:59:56
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S8_clustering_metrics_source_data.csv,2260117,2026-06-03 22:00:17
+source_data/supplementary_figures/input_source_data/Supplementary_Figure_S9_efficiency_scaling_source_data.csv,9522,2026-06-03 22:00:33
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S10_simulated_robustness_atlas_source_data.csv,6478954,2026-06-06 08:56:52
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S11_scVI_reference_atlas_source_data.csv,58774,2026-06-06 08:57:01
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S12_latent_dimension_atlas_source_data.csv,186927,2026-06-06 08:57:09
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S13_workflow_atlas_source_data.csv,60117,2026-06-06 08:57:16
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S14_input_gene_atlas_source_data.csv,156695,2026-06-06 08:57:21
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S15_reproducibility_coverage_atlas_source_data.csv,27730,2026-06-06 08:57:25
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S1_method_catalog_atlas_source_data.csv,10590,2026-06-06 08:55:25
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S2_full_dataset_atlas_source_data.csv,42219,2026-06-06 08:55:29
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S3_real_dataset_landscape_atlas_source_data.csv,5246,2026-06-06 08:55:37
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S4_simulated_parameter_landscape_atlas_source_data.csv,4671,2026-06-06 08:55:44
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S5_full_score_atlas_source_data.csv,16486,2026-06-06 08:55:51
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S6_local_structure_atlas_source_data.csv,924675,2026-06-06 08:56:00
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S7_label_local_atlas_source_data.csv,1256461,2026-06-06 08:56:13
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S8_global_geometry_atlas_source_data.csv,1009595,2026-06-06 08:56:27
+source_data/supplementary_figures/panel_data/Supplementary_Figure_S9_clustering_atlas_source_data.csv,1485952,2026-06-06 08:56:40
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S10_simulated_robustness_atlas_source_data.csv,6478954,2026-06-16 10:56:44
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S11_scVI_reference_atlas_source_data.csv,58774,2026-06-16 10:19:12
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S12_latent_dimension_atlas_source_data.csv,186927,2026-06-16 10:19:19
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S13_workflow_atlas_source_data.csv,60117,2026-06-16 10:19:24
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S14_input_gene_atlas_source_data.csv,156695,2026-06-16 10:19:29
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S15_reproducibility_coverage_atlas_source_data.csv,27730,2026-06-16 10:19:32
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S1_method_catalog_atlas_source_data.csv,10590,2026-06-16 10:17:39
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S2_full_dataset_atlas_source_data.csv,42219,2026-06-16 10:17:43
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S3_real_dataset_landscape_atlas_source_data.csv,5246,2026-06-16 10:17:50
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S4_simulated_parameter_landscape_atlas_source_data.csv,4671,2026-06-16 10:17:57
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S5_full_score_atlas_source_data.csv,16486,2026-06-16 10:18:04
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S6_local_structure_atlas_source_data.csv,924675,2026-06-16 10:18:13
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S7_label_local_atlas_source_data.csv,1256461,2026-06-16 10:18:26
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S8_global_geometry_atlas_source_data.csv,1009595,2026-06-16 10:18:40
+source_data/supplementary_figures/panel_source_data/Supplementary_Figure_S9_clustering_atlas_source_data.csv,1485952,2026-06-16 10:18:52
+source_data/supplementary_tables/S10_ScalabilityAudit.csv,7208,2026-06-16 10:32:45
+source_data/supplementary_tables/S11_TargetedSensitivity.csv,7428,2026-06-16 10:32:45
+source_data/supplementary_tables/S12_SuppFigurePanelMap.csv,7984,2026-06-16 10:32:45
+source_data/supplementary_tables/S13_SuppEvidenceCoverage.csv,1089,2026-06-16 10:32:45
+source_data/supplementary_tables/S14_SourceFileManifest.csv,66207,2026-06-16 10:32:45
+source_data/supplementary_tables/S15_DataRouteAudit.csv,1191,2026-06-16 10:32:45
+source_data/supplementary_tables/S1_MethodCatalog.csv,9815,2026-06-16 10:32:45
+source_data/supplementary_tables/S2_Dataset100Atlas.csv,17011,2026-06-16 10:32:45
+source_data/supplementary_tables/S3_RealDatasetDetail.csv,12158,2026-06-16 10:32:45
+source_data/supplementary_tables/S4_SimulatedAtlas.csv,4674,2026-06-16 10:32:45
+source_data/supplementary_tables/S5_MetricInventory.csv,9366,2026-06-16 10:32:45
+source_data/supplementary_tables/S6_ProfileScoreMatrix.csv,9907,2026-06-16 10:32:45
+source_data/supplementary_tables/S7_StructureCoverage.csv,14459,2026-06-16 10:32:45
+source_data/supplementary_tables/S8_ClusteringCoverage.csv,6324,2026-06-16 10:32:45
+source_data/supplementary_tables/S9_RobustnessStability.csv,5902,2026-06-16 10:32:45
+tables/All_Supplementary_Tables_with_Introduction_20260608.xlsx,90807,2026-06-16 10:38:25
+tables/Supplementary_Data_1_Source_Data.xlsx,59744773,2026-06-18 00:10:59
+tables/Supplementary_Data_1_Source_Data_manifest.csv,66695,2026-06-18 00:09:23
+tables/Supplementary_Tables_final_20260606.xlsx,90070,2026-06-16 10:32:46

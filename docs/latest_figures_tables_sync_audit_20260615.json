@@ -1,0 +1,788 @@
+{
+  "generated": "2026-06-17T21:35:57",
+  "status_counts": {
+    "PASS": 156
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "check": "Submission main figures contain Figure 1-9 as PNG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission main figures contain Figure 1-9 as PDF",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission main figures contain Figure 1-9 as SVG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission main figures contain Figure 1-9 as TIFF",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release main figures contain Figure 1-9 as PNG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release main figures contain Figure 1-9 as PDF",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release main figures contain Figure 1-9 as SVG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 1 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_1_conceptual_overview.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_1_conceptual_overview.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 2 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_2_workflow.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_2_workflow.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 3 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_3_profile_score_audit.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_3_profile_score_audit.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 4 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_4_structure_preservation.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_4_structure_preservation.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 5 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_5_clustering_concordance.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_5_clustering_concordance.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 6 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_6_targeted_sensitivity_controls.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_6_targeted_sensitivity_controls.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 7 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_7_simulated_robustness.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_7_simulated_robustness.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 8 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_8_scalability_reproducibility.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_8_scalability_reproducibility.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 9 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_9_practical_selection.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/png/Figure_9_practical_selection.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 1 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_1_conceptual_overview.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_1_conceptual_overview.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 2 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_2_workflow.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_2_workflow.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 3 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_3_profile_score_audit.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_3_profile_score_audit.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 4 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_4_structure_preservation.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_4_structure_preservation.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 5 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_5_clustering_concordance.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_5_clustering_concordance.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 6 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_6_targeted_sensitivity_controls.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_6_targeted_sensitivity_controls.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 7 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_7_simulated_robustness.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_7_simulated_robustness.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 8 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_8_scalability_reproducibility.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_8_scalability_reproducibility.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 9 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/pdf/pdf/Figure_9_practical_selection.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/pdf/Figure_9_practical_selection.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 1 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_1_conceptual_overview.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_1_conceptual_overview.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 2 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_2_workflow.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_2_workflow.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 3 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_3_profile_score_audit.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_3_profile_score_audit.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 4 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_4_structure_preservation.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_4_structure_preservation.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 5 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_5_clustering_concordance.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_5_clustering_concordance.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 6 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_6_targeted_sensitivity_controls.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_6_targeted_sensitivity_controls.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 7 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_7_simulated_robustness.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_7_simulated_robustness.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 8 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_8_scalability_reproducibility.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_8_scalability_reproducibility.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figure 9 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/svg/svg/Figure_9_practical_selection.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/main/svg/Figure_9_practical_selection.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 1 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_1_conceptual_overview.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_1_conceptual_overview.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 1 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_1_conceptual_overview.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_1_conceptual_overview.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 2 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_2_workflow.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_2_workflow.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 2 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_2_workflow.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_2_workflow.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 3 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_3_profile_score_audit.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_3_profile_score_audit.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 3 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_3_profile_score_audit.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_3_profile_score_audit.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 4 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_4_structure_preservation.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_4_structure_preservation.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 4 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_4_structure_preservation.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_4_structure_preservation.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 5 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_5_clustering_concordance.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_5_clustering_concordance.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 5 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_5_clustering_concordance.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_5_clustering_concordance.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 6 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_6_targeted_sensitivity_controls.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_6_targeted_sensitivity_controls.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 6 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_6_targeted_sensitivity_controls.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_6_targeted_sensitivity_controls.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 7 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_7_simulated_robustness.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_7_simulated_robustness.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 7 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_7_simulated_robustness.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_7_simulated_robustness.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 8 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_8_scalability_reproducibility.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_8_scalability_reproducibility.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 8 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_8_scalability_reproducibility.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_8_scalability_reproducibility.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX clean uses latest Figure 9 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_9_practical_selection.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/figures/Figure_9_practical_selection.png"
+    },
+    {
+      "status": "PASS",
+      "check": "LaTeX red uses latest Figure 9 PNG",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/04_main_figures/png/png/Figure_9_practical_selection.png; right=Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/figures/Figure_9_practical_selection.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 3 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure3_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 4 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure4_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 5 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure5_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 6 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure6_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 7 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure7_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 8 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure8_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 9 has 10 source-data-backed panel manifest entries",
+      "evidence": "rows=10; file=source_data/SourceData_Figure9_manifest.tsv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 3 QA summary records 10 panels",
+      "evidence": "panel_count=10; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/main_figures/figure3/Figure_3_completed_compact_visual_qa_summary.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 5 QA summary records 10 panels",
+      "evidence": "panel_count=10; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/main_figures/figure5/Figure_5_annotation_clustering_concordance_real_only_qa_summary.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Figure 6 QA summary records 10 panels",
+      "evidence": "panel_count=10; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/main_figures/figure6/Figure_6_targeted_sensitivity_controls_polished_qa_summary.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Legacy Figure 3 QA filename is no longer stale",
+      "evidence": "panel_count=10; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/main_figures/figure3/Figure_3_completed_visual_qa_summary.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission supplementary figures contain S1-S15 as PNG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission supplementary figures contain S1-S15 as PDF",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission supplementary figures contain S1-S15 as SVG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission supplementary figures contain S1-S15 as TIFF",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release supplementary figures contain S1-S15 as PNG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release supplementary figures contain S1-S15 as PDF",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release supplementary figures contain S1-S15 as SVG",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S1 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S1_method_catalog_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S1_method_catalog_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S2 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S2_full_dataset_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S2_full_dataset_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S3 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S3_real_dataset_landscape_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S3_real_dataset_landscape_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S4 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S5 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S5_full_score_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S5_full_score_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S6 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S6_local_structure_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S6_local_structure_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S7 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S7_label_local_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S7_label_local_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S8 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S8_global_geometry_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S8_global_geometry_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S9 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S9_clustering_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S9_clustering_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S10 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S10_simulated_robustness_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S10_simulated_robustness_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S11 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S11_scVI_reference_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S11_scVI_reference_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S12 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S12_latent_dimension_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S12_latent_dimension_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S13 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S13_workflow_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S13_workflow_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S14 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S14_input_gene_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S14_input_gene_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S15 PNG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/png/png/Supplementary_Figure_S15_reproducibility_coverage_atlas.png; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/png/Supplementary_Figure_S15_reproducibility_coverage_atlas.png"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S1 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S1_method_catalog_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S1_method_catalog_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S2 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S2_full_dataset_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S2_full_dataset_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S3 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S3_real_dataset_landscape_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S3_real_dataset_landscape_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S4 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S5 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S5_full_score_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S5_full_score_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S6 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S6_local_structure_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S6_local_structure_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S7 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S7_label_local_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S7_label_local_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S8 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S8_global_geometry_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S8_global_geometry_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S9 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S9_clustering_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S9_clustering_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S10 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S10_simulated_robustness_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S10_simulated_robustness_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S11 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S11_scVI_reference_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S11_scVI_reference_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S12 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S12_latent_dimension_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S12_latent_dimension_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S13 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S13_workflow_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S13_workflow_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S14 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S14_input_gene_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S14_input_gene_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S15 PDF hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/pdf/pdf/Supplementary_Figure_S15_reproducibility_coverage_atlas.pdf; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/pdf/Supplementary_Figure_S15_reproducibility_coverage_atlas.pdf"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S1 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S1_method_catalog_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S1_method_catalog_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S2 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S2_full_dataset_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S2_full_dataset_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S3 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S3_real_dataset_landscape_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S3_real_dataset_landscape_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S4 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S4_simulated_parameter_landscape_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S5 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S5_full_score_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S5_full_score_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S6 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S6_local_structure_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S6_local_structure_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S7 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S7_label_local_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S7_label_local_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S8 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S8_global_geometry_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S8_global_geometry_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S9 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S9_clustering_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S9_clustering_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S10 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S10_simulated_robustness_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S10_simulated_robustness_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S11 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S11_scVI_reference_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S11_scVI_reference_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S12 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S12_latent_dimension_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S12_latent_dimension_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S13 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S13_workflow_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S13_workflow_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S14 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S14_input_gene_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S14_input_gene_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figure S15 SVG hash matches submission and GitHub release",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/svg/svg/Supplementary_Figure_S15_reproducibility_coverage_atlas.svg; right=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/figures/supplementary/svg/Supplementary_Figure_S15_reproducibility_coverage_atlas.svg"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary figure panel source data exist for S1-S15",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "Latest supplementary-figure detailed Word document exists in submission package",
+      "evidence": "file=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/docx/Supplementary_Figures_Detailed_Descriptions_20260608.docx"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission supplementary-figure Word document exists",
+      "evidence": "file=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/docx/Supplementary_Figures_S1_to_S15_submission.docx"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary-figure submission Word matches latest detailed Word",
+      "evidence": "file=Publication/paper/submission_package_communications_biology_20260609/05_supplementary_information/docx/Supplementary_Figures_S1_to_S15_submission.docx"
+    },
+    {
+      "status": "PASS",
+      "check": "Latest supplementary-figure detailed Word document exists in GitHub release docs",
+      "evidence": "file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/docs/Supplementary_Figures_Detailed_Descriptions_20260608.docx"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSVs contain S1-S15 in Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables",
+      "evidence": "detected=['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9', 'S10', 'S11', 'S12', 'S13', 'S14', 'S15']"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSVs contain S1-S15 in Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables",
+      "evidence": "detected=['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9', 'S10', 'S11', 'S12', 'S13', 'S14', 'S15']"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S10_ScalabilityAudit.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S10_ScalabilityAudit.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S10_ScalabilityAudit.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S11_TargetedSensitivity.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S11_TargetedSensitivity.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S11_TargetedSensitivity.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S12_SuppFigurePanelMap.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S12_SuppFigurePanelMap.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S12_SuppFigurePanelMap.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S13_SuppEvidenceCoverage.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S13_SuppEvidenceCoverage.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S13_SuppEvidenceCoverage.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S14_SourceFileManifest.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S14_SourceFileManifest.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S14_SourceFileManifest.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S15_DataRouteAudit.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S15_DataRouteAudit.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S15_DataRouteAudit.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S1_MethodCatalog.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S1_MethodCatalog.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S1_MethodCatalog.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S2_Dataset100Atlas.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S2_Dataset100Atlas.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S2_Dataset100Atlas.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S3_RealDatasetDetail.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S3_RealDatasetDetail.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S3_RealDatasetDetail.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S4_SimulatedAtlas.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S4_SimulatedAtlas.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S4_SimulatedAtlas.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S5_MetricInventory.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S5_MetricInventory.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S5_MetricInventory.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S6_ProfileScoreMatrix.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S6_ProfileScoreMatrix.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S6_ProfileScoreMatrix.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S7_StructureCoverage.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S7_StructureCoverage.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S7_StructureCoverage.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S8_ClusteringCoverage.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S8_ClusteringCoverage.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S8_ClusteringCoverage.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table CSV mirror matches GitHub source: S9_RobustnessStability.csv",
+      "evidence": "left=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S9_RobustnessStability.csv; right=Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/source_csv/supplementary_tables/S9_RobustnessStability.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S11 targeted-sensitivity table records current Figure 6 panel_count=10",
+      "evidence": "panel_count_values=['10']"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook contains S1-S15 sheets: Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/workbook/All_Supplementary_Tables_with_Introduction_20260608.xlsx",
+      "evidence": "missing_prefixes=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook S11 records current Figure 6 panel_count=10: Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/workbook/All_Supplementary_Tables_with_Introduction_20260608.xlsx",
+      "evidence": "panel_count=10"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook contains S1-S15 sheets: Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/workbook/Supplementary_Tables_final_20260606.xlsx",
+      "evidence": "missing_prefixes=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook S11 records current Figure 6 panel_count=10: Publication/paper/submission_package_communications_biology_20260609/06_supplementary_tables/workbook/Supplementary_Tables_final_20260606.xlsx",
+      "evidence": "panel_count=10"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook contains S1-S15 sheets: Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/tables/All_Supplementary_Tables_with_Introduction_20260608.xlsx",
+      "evidence": "missing_prefixes=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook S11 records current Figure 6 panel_count=10: Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/tables/All_Supplementary_Tables_with_Introduction_20260608.xlsx",
+      "evidence": "panel_count=10"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook contains S1-S15 sheets: Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/tables/Supplementary_Tables_final_20260606.xlsx",
+      "evidence": "missing_prefixes=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Workbook S11 records current Figure 6 panel_count=10: Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/tables/Supplementary_Tables_final_20260606.xlsx",
+      "evidence": "panel_count=10"
+    },
+    {
+      "status": "PASS",
+      "check": "File manifest exists and is populated: Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/FILE_MANIFEST.csv",
+      "evidence": "rows=531"
+    },
+    {
+      "status": "PASS",
+      "check": "Manifest no longer records stale S11 size: Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/FILE_MANIFEST.csv",
+      "evidence": "stale_entries=0"
+    },
+    {
+      "status": "PASS",
+      "check": "File manifest exists and is populated: Publication/paper/submission_package_communications_biology_20260609/00_README/SUBMISSION_FILE_MANIFEST.csv",
+      "evidence": "rows=777"
+    },
+    {
+      "status": "PASS",
+      "check": "Manifest no longer records stale S11 size: Publication/paper/submission_package_communications_biology_20260609/00_README/SUBMISSION_FILE_MANIFEST.csv",
+      "evidence": "stale_entries=0"
+    },
+    {
+      "status": "PASS",
+      "check": "clean manuscript references main Figures 1-9",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "clean manuscript references Supplementary Figs. S1-S15",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "clean manuscript references Supplementary Tables S1-S15",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "red manuscript references main Figures 1-9",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "red manuscript references Supplementary Figs. S1-S15",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "red manuscript references Supplementary Tables S1-S15",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "executables": {
+    "R": null,
+    "conda": "/home/saidi/anaconda3/bin/conda",
+    "matlab": null,
+    "octave": null,
+    "python": "/home/saidi/anaconda3/bin/python"
+  },
+  "python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:45:40) [GCC 14.3.0]",
+  "python_modules": {
+    "anndata": true,
+    "community": true,
+    "networkx": true,
+    "numpy": true,
+    "pacmap": true,
+    "pandas": true,
+    "phate": true,
+    "scanpy": true,
+    "scipy": true,
+    "scvi": true,
+    "sklearn": true,
+    "trimap": true,
+    "umap": true
+  }
+}

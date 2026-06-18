@@ -52,7 +52,7 @@ FAMILY_RENAME = {
 CONTROL_LABELS = {
     "scvi": "scVI ref.",
     "dimension": "latent dim.",
-    "workflow": "workflow",
+    "workflow": "PCA50-to-2D",
     "hvg": "input genes",
 }
 WORKFLOW_LABELS = {"Direct 2D": "direct 2D", "PCA50 to 2D": "PCA50 to 2D"}
@@ -395,7 +395,7 @@ def draw_workflow_effect(
     vmin = float(np.nanmin(arr))
     norm = TwoSlopeNorm(vmin=min(vmin, -0.15), vcenter=0, vmax=max(vmax, 0.75))
     im = ax.imshow(arr, aspect="auto", cmap=DELTA_CMAP, norm=norm)
-    ax.set_title("Visualization workflow effect", loc="left", pad=2.5, fontweight="bold")
+    ax.set_title("PCA50-to-2D workflow effect", loc="left", pad=2.5, fontweight="bold")
     add_panel_label(ax, "d")
     ax.set_xticks(np.arange(plot.shape[1]))
     ax.set_xticklabels([str(c) for c in plot.columns], rotation=35, ha="right")
@@ -641,6 +641,128 @@ def draw_method_sensitivity_profile(ax: plt.Axes, sensitivity: pd.DataFrame) -> 
     return med
 
 
+def draw_memory_cost(ax: plt.Axes, runtime: pd.DataFrame) -> pd.DataFrame:
+    order = ["scvi", "dimension", "workflow", "hvg"]
+    plot = runtime[runtime["source"].isin(order)].dropna(subset=["max_rss_mb"]).copy()
+    plot["memory_gb"] = plot["max_rss_mb"] / 1024.0
+    plot["control_layer"] = pd.Categorical(plot["source"], categories=order, ordered=True)
+    colors = ["#3F9C9A", "#3D6FB6", "#C79B38", "#BF6F6B"]
+    rng = np.random.default_rng(20260606)
+    for i, src in enumerate(order):
+        vals = plot[plot["control_layer"].eq(src)]["memory_gb"].dropna().values
+        if len(vals) == 0:
+            continue
+        draw_vals = vals
+        if len(draw_vals) > 260:
+            draw_vals = rng.choice(draw_vals, size=260, replace=False)
+        ax.scatter(
+            np.full(len(draw_vals), i) + rng.normal(0, 0.062, size=len(draw_vals)),
+            draw_vals,
+            s=4.4,
+            color="#5F6D78",
+            alpha=0.22,
+            linewidths=0,
+            rasterized=True,
+        )
+        q25, med, q75 = np.quantile(vals, [0.25, 0.5, 0.75])
+        ax.vlines(i, q25, q75, color=colors[i], linewidth=5.2, alpha=0.34, zorder=3)
+        ax.hlines(med, i - 0.24, i + 0.24, color=colors[i], linewidth=1.55, zorder=4)
+        ax.scatter(i, med, s=15, facecolor=colors[i], edgecolor="white", linewidth=0.45, zorder=5)
+    ax.set_yscale("log")
+    ax.set_title("Memory cost of targeted controls", loc="left", pad=2.5, fontweight="bold")
+    add_panel_label(ax, "i")
+    ax.set_xticks(np.arange(len(order)))
+    ax.set_xticklabels([CONTROL_LABELS[o] for o in order], rotation=18, ha="right")
+    ax.set_ylabel("peak RSS (GB)")
+    ax.grid(axis="y", color="#E9E9E9", linewidth=0.45, which="major")
+    ax.set_xlim(-0.5, len(order) - 0.5)
+    setup_axis(ax)
+    summary = (
+        plot.groupby("source", observed=False)
+        .agg(records=("memory_gb", "size"), median_memory_gb=("memory_gb", "median"), q1_memory_gb=("memory_gb", lambda x: float(np.quantile(x, 0.25))), q3_memory_gb=("memory_gb", lambda x: float(np.quantile(x, 0.75))))
+        .reset_index()
+    )
+    return plot.assign(panel="i").merge(summary, on="source", how="left")
+
+
+def draw_performance_cost_tradeoff(
+    ax: plt.Axes,
+    runtime: pd.DataFrame,
+    family_map: dict[str, str],
+) -> pd.DataFrame:
+    plot = runtime[runtime["source"].isin(["scvi", "dimension", "workflow", "hvg"])].dropna(
+        subset=["ari", "runtime_seconds", "method"]
+    ).copy()
+    summary = (
+        plot.groupby(["method", "source"], observed=False)
+        .agg(
+            median_ari=("ari", "median"),
+            median_runtime_seconds=("runtime_seconds", "median"),
+            task_count=("ari", "size"),
+        )
+        .reset_index()
+    )
+    summary["family"] = summary["method"].map(family_map).fillna("unknown")
+    source_markers = {"scvi": "o", "dimension": "s", "workflow": "^", "hvg": "D"}
+    for src, marker in source_markers.items():
+        sub = summary[summary["source"].eq(src)]
+        if sub.empty:
+            continue
+        colors = [FAMILY_COLORS.get(f, FAMILY_COLORS["unknown"]) for f in sub["family"]]
+        ax.scatter(
+            sub["median_runtime_seconds"],
+            sub["median_ari"],
+            s=30,
+            marker=marker,
+            c=colors,
+            edgecolor="white",
+            linewidth=0.45,
+            alpha=0.90,
+            label=CONTROL_LABELS[src],
+            zorder=3,
+        )
+    label_methods = ["PCA", "scVI", "UMAP", "PHATE"]
+    label_rows = (
+        summary[summary["method"].isin(label_methods)]
+        .sort_values(["method", "median_ari", "median_runtime_seconds"], ascending=[True, False, True])
+        .drop_duplicates("method")
+    )
+    label_offsets = {
+        "PCA": (6, 7),
+        "scVI": (6, -8),
+        "UMAP": (-22, -9),
+        "PHATE": (-24, 7),
+    }
+    label_align = {"UMAP": "right", "PHATE": "right"}
+    for _, row in label_rows.iterrows():
+        dx, dy = label_offsets.get(row["method"], (6, 6))
+        ax.annotate(
+            display_method(row["method"]),
+            (row["median_runtime_seconds"], row["median_ari"]),
+            xytext=(dx, dy),
+            textcoords="offset points",
+            fontsize=4.7,
+            va="center",
+            ha=label_align.get(row["method"], "left"),
+            color="#333333",
+            arrowprops=dict(arrowstyle="-", color="#C4C4C4", lw=0.32, shrinkA=1.5, shrinkB=1.5),
+        )
+    ax.set_xscale("log")
+    xmin = float(summary["median_runtime_seconds"].min())
+    xmax = float(summary["median_runtime_seconds"].max())
+    ax.set_xlim(max(0.45, xmin / 1.45), xmax * 1.70)
+    ax.set_title("Targeted-control ARI-runtime trade-off", loc="left", pad=2.5, fontweight="bold")
+    add_panel_label(ax, "j")
+    ax.set_xlabel("median runtime (s)")
+    ax.set_ylabel("median ARI")
+    ax.set_ylim(-0.05, 1.08)
+    ax.grid(axis="both", color="#E9E9E9", linewidth=0.45)
+    setup_axis(ax)
+    ax.legend(loc="lower right", fontsize=4.7, handletextpad=0.25, borderaxespad=0.15, labelspacing=0.25)
+    summary["panel"] = "j"
+    return summary
+
+
 def save_outputs(fig: plt.Figure, basename: str) -> None:
     fig.savefig(PLOT_OUT / f"{basename}.svg", bbox_inches="tight")
     fig.savefig(PLOT_OUT / f"{basename}.pdf", bbox_inches="tight")
@@ -675,10 +797,10 @@ def build() -> None:
     gene_heat = hvg_matrix(hvg)
 
     fig, axes = plt.subplots(
-        4,
+        5,
         2,
-        figsize=(7.2, 9.55),
-        gridspec_kw={"height_ratios": [0.88, 1.00, 1.00, 0.82], "wspace": 0.42, "hspace": 0.50},
+        figsize=(9.20, 10.95),
+        gridspec_kw={"height_ratios": [0.88, 0.98, 0.98, 0.80, 0.94], "wspace": 0.36, "hspace": 0.48},
     )
 
     panel_a = draw_scvi_reference(axes[0, 0], scvi_plot)
@@ -703,6 +825,8 @@ def build() -> None:
     panel_f = draw_runtime(axes[2, 1], runtime)
     panel_g = draw_control_sensitivity_distribution(axes[3, 0], sensitivity)
     panel_h = draw_method_sensitivity_profile(axes[3, 1], sensitivity)
+    panel_i = draw_memory_cost(axes[4, 0], runtime)
+    panel_j = draw_performance_cost_tradeoff(axes[4, 1], runtime, family_map)
 
     legend_handles = [
         plt.Line2D(
@@ -728,7 +852,7 @@ def build() -> None:
         title="Method family",
         title_fontsize=5.75,
     )
-    fig.subplots_adjust(left=0.08, right=0.972, top=0.975, bottom=0.078)
+    fig.subplots_adjust(left=0.064, right=0.982, top=0.978, bottom=0.064)
 
     basename = "Figure_6_targeted_sensitivity_controls_polished"
     save_outputs(fig, basename)
@@ -761,6 +885,8 @@ def build() -> None:
             ],
             panel_g,
             panel_h,
+            panel_i,
+            panel_j,
         ],
         ignore_index=True,
         sort=False,
@@ -768,7 +894,7 @@ def build() -> None:
     panel_data.to_csv(SOURCE_OUT / f"{basename}_panel_data.csv", index=False)
 
     qa = {
-        "panel_count": 8,
+        "panel_count": 10,
         "input_rows": len(df),
         "scvi_reference_rows_all": len(scvi_all),
         "scvi_reference_rows_plotted_max_epochs_20": len(scvi_plot),
@@ -801,6 +927,16 @@ def build() -> None:
             panel_h.sort_values("median_sensitivity", ascending=False)["method"].iloc[0]
         ),
         "max_median_control_response": float(panel_h["median_sensitivity"].max()),
+        "max_median_memory_control_layer": str(
+            panel_i.sort_values("median_memory_gb", ascending=False)["source"].iloc[0]
+        ),
+        "max_median_memory_gb": float(panel_i["median_memory_gb"].max()),
+        "top_ari_runtime_tradeoff_method": str(
+            panel_j.sort_values(["median_ari", "median_runtime_seconds"], ascending=[False, True])["method"].iloc[0]
+        ),
+        "top_ari_runtime_tradeoff_source": str(
+            panel_j.sort_values(["median_ari", "median_runtime_seconds"], ascending=[False, True])["source"].iloc[0]
+        ),
     }
     pd.DataFrame([qa]).to_csv(SOURCE_OUT / f"{basename}_qa_summary.csv", index=False)
 
@@ -812,7 +948,7 @@ Generated by: `Publication/paper/revision_figures/figure6_polish/make_figure6_ta
 
 Figure 6 is a new revision figure, not a replacement for the original scalability
 figure. It summarizes targeted sensitivity controls for scVI, latent dimensionality,
-visualization workflow, and requested input genes. These analyses do not change the
+the PCA50-to-2D visualization workflow, and requested input genes. These analyses do not change the
 26-method full-benchmark count.
 
 ## Panel Logic
@@ -831,6 +967,10 @@ visualization workflow, and requested input genes. These analyses do not change 
   controls use within-task ARI ranges; workflow uses absolute PCA50-minus-direct ARI.
 - h, Method-level median control response across observed targeted-control layers,
   avoiding blank missing-data heatmap cells.
+- i, Memory-cost distributions for the same targeted-control layers, using peak RSS
+  converted to GB.
+- j, Median ARI versus median runtime for method-control-layer combinations. This
+  shows whether apparent accuracy gains also carry an execution-cost penalty.
 
 ## Data QA
 
@@ -840,20 +980,24 @@ visualization workflow, and requested input genes. These analyses do not change 
 - scVI reference configurations plotted: {qa['scvi_reference_configurations_plotted']}.
 - Latent-dimension control: {qa['dimension_methods']} methods, {qa['dimension_datasets']}
   datasets, dimensions {qa['scvi_reference_dimensions']}.
-- Workflow control: {qa['workflow_methods']} methods, {qa['workflow_datasets']} datasets.
+- PCA50-to-2D workflow control: {qa['workflow_methods']} methods, {qa['workflow_datasets']} datasets.
 - Input-gene control: {qa['hvg_methods']} methods, {qa['hvg_datasets']} datasets,
   requested HVGs {qa['hvg_requested_values']}.
 - Runtime rows plotted: {qa['runtime_rows_plotted']}.
 - Control-sensitivity rows: {qa['control_sensitivity_rows']} across
   {qa['control_sensitivity_layers']} control layers and
   {qa['control_sensitivity_methods']} methods.
+- Highest median memory-control layer: {qa['max_median_memory_control_layer']}
+  ({qa['max_median_memory_gb']:.3f} GB).
+- Highest ARI-runtime point: {qa['top_ari_runtime_tradeoff_method']} in
+  {qa['top_ari_runtime_tradeoff_source']}.
 
 ## Manuscript Wording Guardrails
 
 - Use "targeted sensitivity analyses" or "targeted controls", not "full rerun".
 - State that scVI is a targeted reference analysis and is not counted as a 27th
   full-benchmark method.
-- State that latent-dimension, workflow, and input-gene controls were run on selected
+- State that latent-dimension, PCA50-to-2D workflow, and input-gene controls were run on selected
   methods and datasets chosen to answer reviewer concerns.
 - Do not imply that these targeted controls replace the 26-method, 100-dataset
   benchmark landscape in Figures 1-3.

@@ -1,0 +1,413 @@
+{
+  "generated": "2026-06-17T21:35:57",
+  "status_counts": {
+    "PASS": 63
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "check": "Response ID set covers every extracted editor/reviewer point",
+      "evidence": "detected=121; expected=121; missing=none; extra=none; duplicate=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Every point has a Response paragraph",
+      "evidence": "missing=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Every point has a Changes made paragraph",
+      "evidence": "missing=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Every response opens politely",
+      "evidence": "missing polite opening=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Every response is information-rich",
+      "evidence": "responses below 75 words=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Every Changes made entry is detailed",
+      "evidence": "entries below 35 words=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Response contains no unresolved placeholders",
+      "evidence": "placeholder sections=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Response avoids hard-to-verify invented line-number anchors",
+      "evidence": "matches=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/03_response_to_reviewers/response_to_reviewers_point_by_point_20260609.md",
+      "evidence": "size=160856"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/03_response_to_reviewers/response_to_reviewers_point_by_point_20260609.docx",
+      "evidence": "size=41541"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/03_response_to_reviewers/response_to_reviewers_point_by_point_20260609.tex",
+      "evidence": "size=167497"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/03_response_to_reviewers/response_to_reviewers_point_by_point_20260609.pdf",
+      "evidence": "size=208786"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/manuscript_final_clean.tex",
+      "evidence": "size=89578"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/manuscript_final_red.tex",
+      "evidence": "size=89731"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/references.bib",
+      "evidence": "size=115097"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_clean/manuscript_final_clean.pdf",
+      "evidence": "size=14908279"
+    },
+    {
+      "status": "PASS",
+      "check": "Required current submission file exists: Publication/paper/submission_package_communications_biology_20260609/02_manuscript/latex_red/manuscript_final_red_checked.pdf",
+      "evidence": "size=14909485"
+    },
+    {
+      "status": "PASS",
+      "check": "Word response contains all response IDs",
+      "evidence": "missing=none"
+    },
+    {
+      "status": "PASS",
+      "check": "structured taxonomy replaces overstrong unified-framework claim",
+      "evidence": "phrases=['structured taxonomy', 'not treated as mutually exclusive mathematical definitions']"
+    },
+    {
+      "status": "PASS",
+      "check": "2D versus latent-dimensionality control is addressed",
+      "evidence": "phrases=['2, 5, 10, 20 and 50', 'PCA50-to-two-dimensional', 'input-gene', 'scVI']"
+    },
+    {
+      "status": "PASS",
+      "check": "real labels are framed as annotation concordance",
+      "evidence": "phrases=['annotation-concordance', 'rather than independent ground truth']"
+    },
+    {
+      "status": "PASS",
+      "check": "score aggregation is transparent",
+      "evidence": "phrases=['16 displayed score components', '1/16', 'min-max']"
+    },
+    {
+      "status": "PASS",
+      "check": "VASC and stability completion are represented in score audit context",
+      "evidence": "phrases=['VASC', 'stability-score completion audit']"
+    },
+    {
+      "status": "PASS",
+      "check": "structure terminology avoids unsupported topology claims",
+      "evidence": "phrases=['Local neighborhood preservation', 'global geometry preservation']"
+    },
+    {
+      "status": "PASS",
+      "check": "batch correction is scoped as outside dedicated integration benchmark",
+      "evidence": "phrases=['batch correction was not evaluated as a dedicated integration task']"
+    },
+    {
+      "status": "PASS",
+      "check": "scalability boundary is explicit",
+      "evidence": "phrases=['73,233 cells', 'larger atlas-scale datasets']"
+    },
+    {
+      "status": "PASS",
+      "check": "hardware core/thread details are present",
+      "evidence": "phrases=['Intel Xeon W-2225 4-core/8-thread CPU']"
+    },
+    {
+      "status": "PASS",
+      "check": "method-native preprocessing limitation is acknowledged",
+      "evidence": "phrases=['method-native preprocessing']"
+    },
+    {
+      "status": "PASS",
+      "check": "data and code availability are present",
+      "evidence": "phrases=['https://github.com/wangsaidi/scRNA-DRComparison', 'https://doi.org/10.6084/m9.figshare.32064900']"
+    },
+    {
+      "status": "PASS",
+      "check": "ORCID/platform item is treated as submission-system action",
+      "evidence": "verified in response letter"
+    },
+    {
+      "status": "PASS",
+      "check": "Main Figures 1-9 are referenced in current manuscript",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Figs. S1-S15 are referenced",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary Tables S1-S15 are referenced",
+      "evidence": "detected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+    },
+    {
+      "status": "PASS",
+      "check": "New Figure 3/4/5/6/8 panel i-j captions are in current manuscript",
+      "evidence": "missing=none"
+    },
+    {
+      "status": "PASS",
+      "check": "New Figure 3/4/5/6/8 panel i-j captions are in red manuscript",
+      "evidence": "missing=none"
+    },
+    {
+      "status": "PASS",
+      "check": "Submission package contains main figures in PNG/PDF/SVG",
+      "evidence": "{'png': 9, 'pdf': 9, 'svg': 9}"
+    },
+    {
+      "status": "PASS",
+      "check": "GitHub release contains main figures in PNG/PDF/SVG",
+      "evidence": "{'png': 9, 'pdf': 9, 'svg': 9}"
+    },
+    {
+      "status": "PASS",
+      "check": "Source-data manifests support 10-panel evidence architecture for Figures 3-9",
+      "evidence": "{'SourceData_Figure3_manifest': 10, 'SourceData_Figure4_manifest': 10, 'SourceData_Figure5_manifest': 10, 'SourceData_Figure6_manifest': 10, 'SourceData_Figure7_manifest': 10, 'SourceData_Figure8_manifest': 10, 'SourceData_Figure9_manifest': 10}"
+    },
+    {
+      "status": "PASS",
+      "check": "Current clean BLG has no undefined citation warnings",
+      "evidence": "checked manuscript_final_clean.blg"
+    },
+    {
+      "status": "PASS",
+      "check": "Current clean BBL does not contain unresolved undefined markers",
+      "evidence": "checked manuscript_final_clean.bbl"
+    },
+    {
+      "status": "PASS",
+      "check": "Supplementary table source CSVs exist",
+      "evidence": "csv_count=15"
+    },
+    {
+      "status": "PASS",
+      "check": "S1 records 26 full-benchmark methods with implementation/source metadata",
+      "evidence": "rows=30; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S1_MethodCatalog.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S2 records 50 real and 50 simulated datasets",
+      "evidence": "rows=100; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S2_Dataset100Atlas.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S3 records 50 real datasets",
+      "evidence": "rows=50; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S3_RealDatasetDetail.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S4 records 50 simulated settings",
+      "evidence": "rows=50; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S4_SimulatedAtlas.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S5 records 16 profile-score components",
+      "evidence": "rows=65; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S5_MetricInventory.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S6 records 26-method profile-score matrix",
+      "evidence": "rows=26; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S6_ProfileScoreMatrix.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S8 records clustering metrics",
+      "evidence": "rows=90; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S8_ClusteringCoverage.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S10 records 26-method scalability/completion audit",
+      "evidence": "rows=26; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S10_ScalabilityAudit.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S11 records targeted controls including scVI and PCA50 workflow",
+      "evidence": "rows=37; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S11_TargetedSensitivity.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S14 records source-data files",
+      "evidence": "rows=308; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S14_SourceFileManifest.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "S15 records availability routes",
+      "evidence": "rows=6; file=Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/supplementary_tables/S15_DataRouteAudit.csv"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Unified mathematical framework overclaim",
+      "evidence": "ids=E.1, R1.1, R2.1, R3.1; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: 2D versus latent dimensionality",
+      "evidence": "ids=E.2, R1.2, R2.2, R3.3; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: scVI exclusion/inclusion",
+      "evidence": "ids=R1.3; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Real-label circularity",
+      "evidence": "ids=E.3, R2.4, R3.11; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Score aggregation and variability",
+      "evidence": "ids=R2.18, R2.19, R3.27, R3.40; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Supplementary and source-data availability",
+      "evidence": "ids=E.5, E.7, R1.8, R2.8, R3.66, R3.67, R3.69, R3.70; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Batch correction scope",
+      "evidence": "ids=R2.3, R2.28; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Scalability and large-atlas limits",
+      "evidence": "ids=R2.26, R3.9, R3.59; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Simulation generator and perturbation caveats",
+      "evidence": "ids=R3.10, R3.42, R3.43, R3.51; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: Citation/reference completeness",
+      "evidence": "ids=R3.18, R3.19, R3.21, R3.50, R3.54, R3.55, R3.58, R3.61, R3.62, R3.64; ids_present=yes; evidence_present=yes"
+    },
+    {
+      "status": "PASS",
+      "check": "Theme coverage: ORCID/platform-policy reminders",
+      "evidence": "ids=R4.1; ids_present=yes; evidence_present=yes"
+    }
+  ],
+  "reviewer_theme_matrix": [
+    {
+      "source": "E/R1/R3",
+      "theme": "Unified mathematical framework overclaim",
+      "response_ids": "E.1, R1.1, R2.1, R3.1",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R1/R2/R3",
+      "theme": "2D versus latent dimensionality",
+      "response_ids": "E.2, R1.2, R2.2, R3.3",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R1",
+      "theme": "scVI exclusion/inclusion",
+      "response_ids": "R1.3",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R2/R3",
+      "theme": "Real-label circularity",
+      "response_ids": "E.3, R2.4, R3.11",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R2/R3",
+      "theme": "Score aggregation and variability",
+      "response_ids": "R2.18, R2.19, R3.27, R3.40",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R2/R3",
+      "theme": "Supplementary and source-data availability",
+      "response_ids": "E.5, E.7, R1.8, R2.8, R3.66, R3.67, R3.69, R3.70",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R2/R3",
+      "theme": "Batch correction scope",
+      "response_ids": "R2.3, R2.28",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R2/R3",
+      "theme": "Scalability and large-atlas limits",
+      "response_ids": "R2.26, R3.9, R3.59",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R3",
+      "theme": "Simulation generator and perturbation caveats",
+      "response_ids": "R3.10, R3.42, R3.43, R3.51",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R3",
+      "theme": "Citation/reference completeness",
+      "response_ids": "R3.18, R3.19, R3.21, R3.50, R3.54, R3.55, R3.58, R3.61, R3.62, R3.64",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    },
+    {
+      "source": "R4",
+      "theme": "ORCID/platform-policy reminders",
+      "response_ids": "R4.1",
+      "ids_present": "yes",
+      "evidence_present": "yes",
+      "status": "PASS"
+    }
+  ]
+}

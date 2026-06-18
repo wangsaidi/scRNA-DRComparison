@@ -1,0 +1,272 @@
+{
+  "generated": "2026-06-17T21:36:05",
+  "status_counts": {
+    "PASS": 50
+  },
+  "checks": [
+    {
+      "name": "Required file exists: Publication/paper/revision_response/point_by_point_response_20260609/response_to_reviewers_point_by_point_20260609.md",
+      "status": "PASS",
+      "evidence": "size=160856"
+    },
+    {
+      "name": "Required file exists: Publication/paper/revision_response/point_by_point_response_20260609/response_to_reviewers_point_by_point_20260609.tex",
+      "status": "PASS",
+      "evidence": "size=167497"
+    },
+    {
+      "name": "Required file exists: Publication/paper/revision_response/point_by_point_response_20260609/response_to_reviewers_point_by_point_20260609.docx",
+      "status": "PASS",
+      "evidence": "size=41541"
+    },
+    {
+      "name": "Required file exists: Publication/paper/revision_response/point_by_point_response_20260609/response_to_reviewers_point_by_point_20260609.pdf",
+      "status": "PASS",
+      "evidence": "size=208786"
+    },
+    {
+      "name": "Required file exists: Publication/paper/manuscript_revision_final_20260609_large_figures_caption_flow/latex_clean/manuscript_final_clean.tex",
+      "status": "PASS",
+      "evidence": "size=89578"
+    },
+    {
+      "name": "Required file exists: Publication/paper/manuscript_revision_final_20260609_large_figures_caption_flow/latex_clean/manuscript_final_clean.bbl",
+      "status": "PASS",
+      "evidence": "size=49100"
+    },
+    {
+      "name": "Required file exists: Publication/paper/manuscript_revision_final_20260609_large_figures_caption_flow/qa/coverage_report.md",
+      "status": "PASS",
+      "evidence": "size=2423"
+    },
+    {
+      "name": "Response ID set is complete",
+      "status": "PASS",
+      "evidence": "detected=121; missing=none; extra=none"
+    },
+    {
+      "name": "Reviewer/comment paragraphs are removed for uniform format",
+      "status": "PASS",
+      "evidence": "remaining=none"
+    },
+    {
+      "name": "Every response opens with a polite thank-you",
+      "status": "PASS",
+      "evidence": "missing thank-you=none"
+    },
+    {
+      "name": "No response opens with terse Added/Corrected wording after thank-you",
+      "status": "PASS",
+      "evidence": "terse openings=none"
+    },
+    {
+      "name": "Every point has a Changes made anchor",
+      "status": "PASS",
+      "evidence": "missing=none"
+    },
+    {
+      "name": "Every point has an information-rich response paragraph",
+      "status": "PASS",
+      "evidence": "responses below 75 words=none"
+    },
+    {
+      "name": "Every Changes made entry is detailed",
+      "status": "PASS",
+      "evidence": "entries below 35 words=none"
+    },
+    {
+      "name": "Word response contains all response IDs",
+      "status": "PASS",
+      "evidence": "docx unique IDs=121"
+    },
+    {
+      "name": "Response has no unresolved placeholders",
+      "status": "PASS",
+      "evidence": "found=none"
+    },
+    {
+      "name": "Response avoids invented line-number anchors",
+      "status": "PASS",
+      "evidence": "matches=none"
+    },
+    {
+      "name": "Response manuscript title matches final clean manuscript",
+      "status": "PASS",
+      "evidence": "response='A systematic benchmark and structured taxonomy of dimensionality-reduction methods for single-cell RNA-seq'; manuscript='A systematic benchmark and structured taxonomy of dimensionality-reduction methods for single-cell RNA-seq'"
+    },
+    {
+      "name": "Manuscript QA covers all main/supplementary figures and tables",
+      "status": "PASS",
+      "evidence": "Publication/paper/manuscript_revision_final_20260609_large_figures_caption_flow/qa/coverage_report.md"
+    },
+    {
+      "name": "Release package contains main figures 1-9 in PNG/PDF/SVG",
+      "status": "PASS",
+      "evidence": "{'png': 9, 'pdf': 9, 'svg': 9}"
+    },
+    {
+      "name": "Release package contains Supplementary Figs. S1-S15 in PNG/PDF/SVG",
+      "status": "PASS",
+      "evidence": "{'png': 15, 'pdf': 15, 'svg': 15}"
+    },
+    {
+      "name": "Release package contains main-figure source data",
+      "status": "PASS",
+      "evidence": "csv files=261"
+    },
+    {
+      "name": "Release package contains supplementary-figure source data",
+      "status": "PASS",
+      "evidence": "csv files=73"
+    },
+    {
+      "name": "Public GitHub/release package includes documentation, code, config and table workbooks",
+      "status": "PASS",
+      "evidence": "missing=none"
+    },
+    {
+      "name": "Public GitHub and Figshare links confirmed accessible",
+      "status": "PASS",
+      "evidence": "GitHub repository https://github.com/wangsaidi/scRNA-DRComparison returned HTTP 200 OK; DOI https://doi.org/10.6084/m9.figshare.32064900 redirected to https://figshare.com/articles/dataset/scRNA-DRComparison/32064900 and returned an accessible HTTP response on 2026-06-09."
+    },
+    {
+      "name": "Release and supplementary-table packages contain no CJK artifact text in text/code/source files",
+      "status": "PASS",
+      "evidence": "hits=none"
+    },
+    {
+      "name": "Final manuscript no longer uses exact 'unified mathematical framework' claim",
+      "status": "PASS",
+      "evidence": "exact phrase absent from clean TeX"
+    },
+    {
+      "name": "Structured taxonomy framing is present",
+      "status": "PASS",
+      "evidence": "phrase present in manuscript and response"
+    },
+    {
+      "name": "2D versus latent-dimensionality concern is addressed",
+      "status": "PASS",
+      "evidence": "Fig. 6 Results and Methods sensitivity-control text"
+    },
+    {
+      "name": "Real labels are framed as annotation concordance",
+      "status": "PASS",
+      "evidence": "Fig. 5/Methods/Discussion language present"
+    },
+    {
+      "name": "Score aggregation is verifiable",
+      "status": "PASS",
+      "evidence": "Fig. 3 Results and Methods score aggregation"
+    },
+    {
+      "name": "Scalability boundary is stated",
+      "status": "PASS",
+      "evidence": "Fig. 8 Results and Discussion limitation"
+    },
+    {
+      "name": "Hardware core/thread statement is present",
+      "status": "PASS",
+      "evidence": "Implementation and reproducibility section"
+    },
+    {
+      "name": "Batch-correction scope limitation is present",
+      "status": "PASS",
+      "evidence": "Discussion limitation"
+    },
+    {
+      "name": "ZINB-WaVE and Bonsai are future extensions, not Table S1 benchmark methods",
+      "status": "PASS",
+      "evidence": "Discussion and R3.2 response"
+    },
+    {
+      "name": "Cooley citation replaces incomplete local-neighborhood reference",
+      "status": "PASS",
+      "evidence": "clean TeX and BBL include Cooley689851"
+    },
+    {
+      "name": "Incomplete noa/noauthor citation is absent from final generated manuscript bibliography",
+      "status": "PASS",
+      "evidence": "clean TeX/BBL/BLG checked"
+    },
+    {
+      "name": "Solomon genome citation is absent from final generated manuscript bibliography",
+      "status": "PASS",
+      "evidence": "clean TeX/BBL/BLG checked"
+    },
+    {
+      "name": "scikit-learn implementation citation is present",
+      "status": "PASS",
+      "evidence": "Methods and BBL include Pedregosa et al."
+    },
+    {
+      "name": "Supplementary Table S1 records the 26 full-benchmark method catalogue and implementation-source metadata",
+      "status": "PASS",
+      "evidence": "rows=30; full_benchmark=26; columns=['benchmark_scope', 'implementation_language', 'implementation_principle', 'is_variant', 'method_family', 'method_id', 'method_order', 'parent_method', 'publication_year', 'reference', 'source_or_url', 'variant_note']"
+    },
+    {
+      "name": "Supplementary Table S2 records the 100-dataset atlas",
+      "status": "PASS",
+      "evidence": "rows=100; real=50; simulated=50"
+    },
+    {
+      "name": "Supplementary Tables S3 and S4 record 50 real and 50 simulated dataset details",
+      "status": "PASS",
+      "evidence": "S3=50; S4=50"
+    },
+    {
+      "name": "Supplementary Table S5 records 16 profile-score components and weights",
+      "status": "PASS",
+      "evidence": "profile_components=16; weights=['0.0625']"
+    },
+    {
+      "name": "Supplementary Table S6 provides 26-method profile-score matrix",
+      "status": "PASS",
+      "evidence": "rows=26; columns=21"
+    },
+    {
+      "name": "Supplementary Table S8 supports annotation-concordance response",
+      "status": "PASS",
+      "evidence": "metrics=['ARI', 'COMP', 'HOMO', 'NMI', 'SIL']; algorithms=['kmeans', 'louvain', 'spectral']; caption_expands_abbreviations=True"
+    },
+    {
+      "name": "Supplementary Table S10 supports 26-method scalability/completion response",
+      "status": "PASS",
+      "evidence": "rows=26; columns=29"
+    },
+    {
+      "name": "Supplementary Table S11 supports targeted sensitivity controls",
+      "status": "PASS",
+      "evidence": "S11 manifest contains scVI, latent dimensions, PCA50 workflow and gene settings"
+    },
+    {
+      "name": "Supplementary Tables S12-S13 support supplementary figure/evidence mapping claims",
+      "status": "PASS",
+      "evidence": "S12 rows=145; S13 rows=5"
+    },
+    {
+      "name": "Supplementary Tables S14-S15 support source-data and availability route claims",
+      "status": "PASS",
+      "evidence": "S14 rows=308; S15 rows=6"
+    },
+    {
+      "name": "Environment and source-commit records are present",
+      "status": "PASS",
+      "evidence": "Publication/paper/final_materials_package_20260608_clean_figlegends/github_release/config/benchmark_environments/source_commits.csv; Publication/paper/final_materials_package_20260608_clean_figlegends/github_release/config/benchmark_environments/methods_install_manifest.csv"
+    }
+  ],
+  "corrected_during_audit": [
+    "Response title was aligned with the final manuscript title.",
+    "The ZINB-WaVE/Bonsai response was narrowed to future extensions rather than implying inclusion in Supplementary Table S1.",
+    "Supplementary Table S1 was completed with method-origin status and cleaned references.",
+    "The incomplete local-neighborhood citation was corrected to Cooley et al.; the final BBL no longer contains the incomplete noa/noauthor item.",
+    "The unrelated Solomon citation was removed from the final generated manuscript bibliography.",
+    "The scikit-learn implementation citation was added to Methods and the generated bibliography.",
+    "The hardware statement was completed with the CPU core/thread count.",
+    "Text/code/source files in the release and supplementary-table packages were checked for non-Latin artifact characters."
+  ],
+  "remaining_cautions": [
+    "ORCID linking is a submission-system action. The response correctly treats it as an action to complete in the Manuscript Tracking System rather than as a manuscript-text change.",
+    "Raw BibTeX files may still contain uncited legacy entries, but the clean TeX, BBL and BLG were checked so the final generated reference list does not display the corrected-away entries."
+  ]
+}

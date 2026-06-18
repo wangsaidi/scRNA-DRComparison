@@ -25,7 +25,12 @@ QA_OUT.mkdir(parents=True, exist_ok=True)
 
 SOURCE = SOURCE_DIR / "Figure_7_parameter_level_stability_source_data.csv"
 AVAILABILITY = SOURCE_DIR / "Figure_7_parameter_level_availability_summary.csv"
-METHODS = ROOT / "Publication/paper/revision_figures/canonical_source_tables/canonical_method_manifest.csv"
+FINAL_CANON = (
+    ROOT
+    / "Publication/paper/submission_package_communications_biology_20260609/07_source_data_and_code_availability/github_release/source_data/main_figures/canonical_source_tables"
+)
+METHODS = FINAL_CANON / "canonical_method_manifest.csv"
+VALIDATION = SOURCE_DIR / "Figure_7_recomputed_vs_published_axis_score_check.csv"
 
 FIGURE_BASENAME = "Figure_7_simulated_robustness_parameter_landscape_polished"
 
@@ -156,7 +161,7 @@ SCORE_CMAP = LinearSegmentedColormap.from_list(
     "simulated_robustness_score",
     ["#F2EFE6", "#CAD9D7", "#88BBB6", "#3F9C9A", "#214D6C"],
 )
-SCORE_CMAP.set_bad("#ECECEC")
+SCORE_CMAP.set_bad("#D7D7D7")
 
 COMPONENT_CMAP = LinearSegmentedColormap.from_list(
     "component_balance",
@@ -278,36 +283,70 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     return long, availability, manifest
 
 
-def draw_coverage(ax: plt.Axes, availability: pd.DataFrame) -> pd.DataFrame:
-    rows = []
+def draw_score_validation(ax: plt.Axes, method_order: list[str]) -> pd.DataFrame:
+    check = pd.read_csv(VALIDATION)
+    check = check[
+        check["method_id"].isin(method_order)
+        & check["perturbation_axis"].isin(AXIS_ORDER)
+        & check["published_axis_score"].notna()
+        & check["recomputed_axis_score"].notna()
+    ].copy()
+    check["perturbation_axis"] = pd.Categorical(check["perturbation_axis"], categories=AXIS_ORDER, ordered=True)
+    check["method_id"] = pd.Categorical(check["method_id"], categories=method_order, ordered=True)
+    check = check.sort_values(["perturbation_axis", "method_id"])
+    check["abs_diff"] = (check["published_axis_score"] - check["recomputed_axis_score"]).abs()
+
+    axis_colors = {
+        axis: color
+        for axis, color in zip(
+            AXIS_ORDER,
+            ["#3D6FB6", "#7396C8", "#A8BEDB", "#BF6F6B", "#D69B97", "#C79B38", "#DAB969", "#E6CF8E", "#3F9C9A"],
+        )
+    }
     for axis in AXIS_ORDER:
-        subset = availability[availability["perturbation_axis"].eq(axis)]
-        total = len(DISPLAY_DATASETS[axis])
-        scored = int(subset["complete_score_inputs"].sum())
-        rows.append({"axis": axis, "scored": scored, "incomplete": total - scored, "total": total})
-    cov = pd.DataFrame(rows)
-    x = np.arange(len(cov))
-    ax.bar(x, cov["scored"], color="#3F9C9A", width=0.64, edgecolor="white", linewidth=0.35)
-    ax.bar(
-        x,
-        cov["incomplete"],
-        bottom=cov["scored"],
-        color="#D9D9D9",
-        width=0.64,
-        edgecolor="white",
-        linewidth=0.35,
+        sub = check[check["perturbation_axis"].astype(str).eq(axis)]
+        if sub.empty:
+            continue
+        ax.scatter(
+            sub["published_axis_score"],
+            sub["recomputed_axis_score"],
+            s=9,
+            color=axis_colors[axis],
+            alpha=0.62,
+            edgecolor="white",
+            linewidth=0.20,
+        )
+    ax.plot([0, 1], [0, 1], color="#2B2B2B", linewidth=0.7, linestyle=(0, (3, 2)))
+    med = check["abs_diff"].median()
+    p90 = check["abs_diff"].quantile(0.90)
+    ax.text(
+        0.045,
+        0.955,
+        f"median |diff|={med:.3f}\n90th pct={p90:.3f}",
+        transform=ax.transAxes,
+        ha="left",
+        va="top",
+        fontsize=4.8,
+        color="#2B2B2B",
     )
-    for xi, row in cov.iterrows():
-        ax.text(xi, row["total"] + 0.25, f"{int(row['scored'])}/{int(row['total'])}", ha="center", va="bottom", fontsize=4.9)
-    ax.set_ylim(0, 10.2)
-    ax.set_ylabel("parameter levels")
-    ax.set_xticks(x)
-    ax.set_xticklabels([SHORT_AXIS_LABEL[a] for a in cov["axis"]], rotation=35, ha="right")
-    panel_header(ax, "a", "Simulated atlas coverage", dx=-0.16, dy=1.055, title_dx=0.14)
+    ax.set_xlim(-0.02, 1.02)
+    ax.set_ylim(-0.02, 1.02)
+    ax.set_xlabel("published axis score")
+    ax.set_ylabel("recomputed axis score")
+    ax.xaxis.grid(True, color="#E8E8E8", linewidth=0.45)
     ax.yaxis.grid(True, color="#E8E8E8", linewidth=0.45)
     ax.set_axisbelow(True)
+    panel_header(ax, "a", "Robustness-score validation", dx=-0.16, dy=1.055, title_dx=0.14)
     clean_axis(ax)
-    return cov
+    return check[
+        [
+            "method_id",
+            "perturbation_axis",
+            "published_axis_score",
+            "recomputed_axis_score",
+            "abs_diff",
+        ]
+    ]
 
 
 def draw_parameter_heatmap(fig: plt.Figure, ax: plt.Axes, df: pd.DataFrame) -> pd.DataFrame:
@@ -344,13 +383,27 @@ def draw_parameter_heatmap(fig: plt.Figure, ax: plt.Axes, df: pd.DataFrame) -> p
         center = start + (width - 1) / 2
         if start > 0:
             ax.axvline(start - 0.5, color="white", linewidth=1.05)
-        ax.text(center, -2.15, HEATMAP_AXIS_LABEL[axis], ha="center", va="bottom", fontsize=4.85, fontweight="bold", clip_on=False)
+        ax.text(center, -1.35, HEATMAP_AXIS_LABEL[axis], ha="center", va="bottom", fontsize=4.85, fontweight="bold", clip_on=False)
         start += width
 
     for y in np.arange(0.5, len(method_order), 1):
         ax.axhline(y, color="white", linewidth=0.18, alpha=0.62)
 
-    panel_header(ax, "b", "Parameter-level robustness landscape across 26 methods", dx=-0.085, dy=1.10, title_dx=0.08)
+    missing_mask = heat.isna().to_numpy()
+    for y, x in np.argwhere(missing_mask):
+        ax.add_patch(
+            Rectangle(
+                (x - 0.5, y - 0.5),
+                1,
+                1,
+                facecolor="#D7D7D7",
+                edgecolor="#AFAFAF",
+                linewidth=0.12,
+                hatch="///",
+            )
+        )
+
+    panel_header(ax, "b", "Parameter-level robustness landscape across 26 methods", dx=-0.070, dy=1.125, title_dx=0.070)
     for spine in ax.spines.values():
         spine.set_visible(False)
 
@@ -359,6 +412,30 @@ def draw_parameter_heatmap(fig: plt.Figure, ax: plt.Axes, df: pd.DataFrame) -> p
     cb.outline.set_linewidth(0.35)
     cb.ax.tick_params(labelsize=4.5, length=1.5, pad=0.8)
     cax.set_title("score", fontsize=4.9, pad=2.0)
+    ax.add_patch(
+        Rectangle(
+            (1.012, 0.595),
+            0.014,
+            0.030,
+            transform=ax.transAxes,
+            facecolor="#D7D7D7",
+            edgecolor="#AFAFAF",
+            linewidth=0.25,
+            hatch="///",
+            clip_on=False,
+        )
+    )
+    ax.text(
+        1.034,
+        0.610,
+        "not generated",
+        transform=ax.transAxes,
+        ha="left",
+        va="center",
+        fontsize=4.7,
+        color="#444444",
+        clip_on=False,
+    )
     return heat.reset_index()
 
 
@@ -510,8 +587,8 @@ def draw_trajectory_group(
 ) -> pd.DataFrame:
     parent = fig.add_subplot(spec)
     parent.axis("off")
-    panel_header(parent, label, title, dx=-0.10, dy=1.09, title_dx=0.11)
-    sub = GridSpecFromSubplotSpec(1, len(axes), subplot_spec=spec, wspace=0.32)
+    panel_header(parent, label, title, dx=-0.080, dy=1.065, title_dx=0.090)
+    sub = GridSpecFromSubplotSpec(1, len(axes), subplot_spec=spec, wspace=0.26)
     records = []
     for idx, axis_name in enumerate(axes):
         ax = fig.add_subplot(sub[0, idx])
@@ -604,9 +681,9 @@ Generated by: `Publication/paper/revision_figures/figure7_polish/make_figure7_si
 ## Figure Contract
 
 - Core claim: simulated perturbation robustness is method- and stress-axis dependent across the full 26-method benchmark.
-- Evidence hierarchy: panel b preserves the original parameter-level Figure 7 layer; panels a and c-j make coverage, summarization, method ranking, family structure, and stress trajectories inspectable.
+- Evidence hierarchy: panel b preserves the original parameter-level Figure 7 layer; panel a validates the derived robustness axis scores against recomputed source metrics; panels c-j summarize family structure, method ranking, and stress trajectories.
 - Unit of analysis: method x simulated parameter-level dataset score.
-- Missingness: cell_4w and cell_5w are shown as unavailable because required metric inputs are incomplete; they are not averaged into summaries.
+- Missingness: cell_4w and cell_5w are shown as not generated/not scored; they are not averaged into summaries.
 
 ## QA
 
@@ -619,8 +696,8 @@ Generated by: `Publication/paper/revision_figures/figure7_polish/make_figure7_si
 
 ## Panel Map
 
-- a, scoring coverage across the simulated perturbation atlas.
-- b, 26-method parameter-level robustness heatmap, retaining the original Figure 7 information layer and explicit missing cells.
+- a, recomputed robustness axis scores versus published axis-score summaries across methods and perturbation axes.
+- b, 26-method parameter-level robustness heatmap, retaining the original Figure 7 information layer and explicit not-generated/not-scored cells.
 - c, family median robustness by perturbation axis.
 - d, local/global/clustering component balance by method family.
 - e, all-method median robustness ranking with IQR across parameter levels.
@@ -636,23 +713,23 @@ Generated by: `Publication/paper/revision_figures/figure7_polish/make_figure7_si
 def main() -> None:
     df, availability, _ = load_data()
 
-    fig = plt.figure(figsize=(7.48, 10.55))
+    fig = plt.figure(figsize=(9.20, 10.20))
     gs = GridSpec(
         4,
         6,
         figure=fig,
-        height_ratios=[0.86, 4.18, 2.42, 2.04],
+        height_ratios=[0.88, 3.55, 2.38, 2.22],
         width_ratios=[1, 1, 1, 1, 1, 1],
-        hspace=0.56,
-        wspace=0.82,
-        left=0.075,
-        right=0.975,
-        bottom=0.075,
+        hspace=0.50,
+        wspace=0.64,
+        left=0.064,
+        right=0.982,
+        bottom=0.074,
         top=0.976,
     )
 
     panel_tables: dict[str, pd.DataFrame] = {}
-    panel_tables["a"] = draw_coverage(fig.add_subplot(gs[0, 0:2]), availability)
+    panel_tables["a"] = draw_score_validation(fig.add_subplot(gs[0, 0:2]), list(df["method_id"].cat.categories))
     panel_tables["c"] = draw_family_axis_heatmap(fig.add_subplot(gs[0, 2:4]), df)
     panel_tables["d"] = draw_component_balance(fig.add_subplot(gs[0, 4:6]), df)
     panel_tables["b"] = draw_parameter_heatmap(fig, fig.add_subplot(gs[1, 0:6]), df)

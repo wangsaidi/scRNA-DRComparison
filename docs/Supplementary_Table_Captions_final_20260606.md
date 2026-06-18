@@ -6,7 +6,7 @@ One-sentence argument: The supplementary tables make the benchmark auditable by 
 
 ### Supplementary Table S1. Dimensionality-reduction method catalogue and benchmark scope
 
-Catalogue of dimensionality-reduction methods included in the benchmark. The table lists the 26 full-benchmark methods, their method families, method-origin status, implementation principles, implementation languages, software/source links and references, and separately marks result variants and the targeted scVI reference analysis that are not counted as part of the 26-method benchmark.
+Catalogue of dimensionality-reduction methods included in the benchmark. The table lists the 26 full-benchmark methods, their method families, implementation principles, implementation languages, software/source links and references, and separately marks result variants and the targeted scVI reference analysis that are not counted as part of the 26-method benchmark.
 
 Linked evidence: Figure 1; Supplementary Figure S1.
 

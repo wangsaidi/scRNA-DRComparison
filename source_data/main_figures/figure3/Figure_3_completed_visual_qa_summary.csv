@@ -1,2 +1,2 @@
-panel_count,method_count,component_count,top_profile_method,top_profile_score
-8,26,16,TriMap,0.7681472501279613
+panel_count,layout,figure_width_in,figure_height_in,method_count,component_count,top_profile_method,top_profile_score,weight_sensitivity_records,component_correlation_records
+10,pagefit_10panel,9.2,12.4,26,16,TriMap,0.7681472501279613,130,256

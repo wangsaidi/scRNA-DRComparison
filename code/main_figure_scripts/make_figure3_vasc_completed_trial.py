@@ -155,7 +155,7 @@ DOMAIN_LIGHT = {
 DOMAIN_CMAPS = {
     "Structure preservation": ("#07599B", "#C8E0EF"),
     "Clustering concordance": ("#CE1F1B", "#F7A37D"),
-    "Efficiency": ("#F5AA2C", "#FFFCE8"),
+    "Efficiency": ("#F5AA2C", "#FCE5A6"),
     "Robustness": ("#00602F", "#A8DCA4"),
 }
 
@@ -594,16 +594,19 @@ def original_style_positions() -> tuple[list[str], dict[str, float], dict[str, f
     methods: list[str] = []
     ypos: dict[str, float] = {}
     category_y: dict[str, float] = {}
-    y = 0.0
+    y = 0.72
+    category_row_height = 1.46
+    method_row_height = 1.23
+    category_gap = 0.78
     for category, group_methods in ORIGINAL_STYLE_GROUPS.items():
         category_y[category] = y
-        y += 1.04
+        y += category_row_height
         for method in group_methods:
             methods.append(method)
             ypos[method] = y
-            y += 1.02
-        y += 0.48
-    return methods, ypos, category_y, y - 0.48
+            y += method_row_height
+        y += category_gap
+    return methods, ypos, category_y, y - category_gap
 
 
 def add_header_block(
@@ -616,11 +619,15 @@ def add_header_block(
     subtitle: str | None = None,
     title_size: float = 8.2,
     subtitle_size: float = 7.0,
+    title_y: float = -6.08,
+    title_h: float = 1.30,
+    subtitle_y: float = -4.74,
+    subtitle_h: float = 1.74,
 ) -> None:
-    ax.add_patch(Rectangle((x0, -4.24), x1 - x0, 0.78, facecolor=color, edgecolor="white", linewidth=0.8, zorder=4))
+    ax.add_patch(Rectangle((x0, title_y), x1 - x0, title_h, facecolor=color, edgecolor="white", linewidth=0.8, zorder=4))
     ax.text(
         (x0 + x1) / 2,
-        -3.85,
+        title_y + title_h / 2,
         title,
         color="white",
         fontsize=title_size,
@@ -630,8 +637,6 @@ def add_header_block(
         zorder=5,
     )
     if subtitle:
-        subtitle_y = -3.38
-        subtitle_h = 1.20
         ax.add_patch(
             Rectangle(
                 (x0, subtitle_y),
@@ -661,13 +666,39 @@ def draw_bubble_matrix(ax: plt.Axes, score: pd.DataFrame) -> None:
     n_cols = len(cols)
     methods, ypos, category_y, max_y = original_style_positions()
     score_idx = score.set_index("method_id")
+    metric_display_labels = {
+        "local": "Local",
+        "global": "Global",
+        "kmeans": "K-means",
+        "louvain": "Louvain",
+        "spectral": "Spectral",
+        "runtime_score": "Runtime",
+        "memory_score": "Memory",
+        "cell_number": "Cell\nno.",
+        "gene_number": "Gene\nno.",
+        "celltype_number": "Cell-type\nno.",
+        "dropout": "Dropout",
+        "batch_number": "Batch\nno.",
+        "batch_strength": "Batch\nstr.",
+        "de_prob": "DE\nprop.",
+        "de_strength": "DE\nstr.",
+        "out": "Outlier",
+    }
 
     ax.set_xlim(-3.04, n_cols - 0.25)
-    ax.set_ylim(max_y + 2.05, -4.38)
+    ax.set_ylim(max_y + 3.05, -6.28)
     ax.set_facecolor("white")
 
     # Original-style colored header bands.
-    add_header_block(ax, -2.82, -1.08, "#555555", "#E8E8E8", "Method", title_size=7.9)
+    add_header_block(
+        ax,
+        -2.82,
+        -1.08,
+        "#555555",
+        "#E8E8E8",
+        "Method",
+        title_size=6.6,
+    )
     add_header_block(
         ax,
         -0.65,
@@ -676,8 +707,8 @@ def draw_bubble_matrix(ax: plt.Axes, score: pd.DataFrame) -> None:
         DOMAIN_LIGHT["Structure preservation"],
         "Structure Preservation",
         "Local neighborhood\nand global geometry",
-        title_size=5.25,
-        subtitle_size=6.20,
+        title_size=4.65,
+        subtitle_size=5.15,
     )
     add_header_block(
         ax,
@@ -687,8 +718,8 @@ def draw_bubble_matrix(ax: plt.Axes, score: pd.DataFrame) -> None:
         DOMAIN_LIGHT["Clustering concordance"],
         "Cluster Accuracy",
         "K-means, Louvain,\nspectral",
-        title_size=7.25,
-        subtitle_size=6.20,
+        title_size=5.85,
+        subtitle_size=5.15,
     )
     add_header_block(
         ax,
@@ -698,8 +729,8 @@ def draw_bubble_matrix(ax: plt.Axes, score: pd.DataFrame) -> None:
         DOMAIN_LIGHT["Efficiency"],
         "Efficiency",
         "Runtime and\npeak memory",
-        title_size=7.6,
-        subtitle_size=6.75,
+        title_size=6.05,
+        subtitle_size=5.35,
     )
     add_header_block(
         ax,
@@ -709,15 +740,15 @@ def draw_bubble_matrix(ax: plt.Axes, score: pd.DataFrame) -> None:
         DOMAIN_LIGHT["Robustness"],
         "Stability",
         "Cell, gene, cell-type,\nbatch, dropout, DE, outlier",
-        title_size=7.9,
-        subtitle_size=6.95,
+        title_size=6.35,
+        subtitle_size=5.50,
     )
 
     row_index = 0
     for method in methods:
         y = ypos[method]
         if row_index % 2 == 0:
-            ax.axhspan(y - 0.43, y + 0.43, color="#E3E3E3", zorder=0)
+            ax.axhspan(y - 0.48, y + 0.48, color="#E3E3E3", zorder=0)
         row_index += 1
 
     for category, y in category_y.items():
@@ -727,40 +758,49 @@ def draw_bubble_matrix(ax: plt.Axes, score: pd.DataFrame) -> None:
         ax.text(-2.28, ypos[method], method, ha="left", va="center", fontsize=7.3, color="#111111")
 
     for x, (col, label, domain) in enumerate(cols):
-        ax.plot([x, x], [-0.47, -0.30], color="#111111", lw=0.55, zorder=3)
-        ax.text(x - 0.02, -0.58, label, rotation=31, ha="left", va="bottom", fontsize=5.75, color="#111111")
+        ax.plot([x, x], [-1.02, -0.45], color="#111111", lw=0.62, zorder=6)
+        ax.text(
+            x,
+            -1.72,
+            metric_display_labels.get(col, label),
+            rotation=0,
+            ha="center",
+            va="center",
+            fontsize=4.75,
+            color="#111111",
+            linespacing=0.88,
+            zorder=7,
+            clip_on=False,
+        )
         low, high = DOMAIN_CMAPS[domain]
         for method in methods:
             value = score_idx.loc[method, col]
             if pd.isna(value):
                 continue
             y = ypos[method]
-            size = 24 + 150 * float(np.clip(value, 0, 1)) ** 1.45
-            face = interpolate_color(low, high, float(value))
-            marker = "s" if domain == "Efficiency" else "o"
-            edge = "#6B6B6B" if domain == "Efficiency" else "#5A5A5A"
-            linewidth = 0.45 if domain == "Efficiency" else 0.35
+            clipped = float(np.clip(value, 0, 1))
+            face = interpolate_color(low, high, clipped)
+            size = 16 + 82 * clipped**1.45
             ax.scatter(
                 x,
                 y,
                 s=size,
-                marker=marker,
+                marker="o",
                 color=face,
-                edgecolors=edge,
-                linewidths=linewidth,
+                edgecolors="#5A5A5A",
+                linewidths=0.35,
                 zorder=2,
             )
 
     # Original-style score-size legend inside panel a.
     legend_vals = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-    legend_x0 = -2.76
-    legend_y = max_y + 1.22
+    legend_x0 = -2.84
+    legend_y = max_y + 1.42
     for i, value in enumerate(legend_vals):
-        x = legend_x0 + i * 0.50
-        marker = "s" if math.isclose(value, 1.0) else "o"
-        size = 13 + 86 * value**1.45
-        ax.scatter(x, legend_y, s=size, marker=marker, color="#BFBFBF", edgecolors="#555555", linewidths=0.35, zorder=5)
-        ax.text(x, legend_y + 0.72, f"{value:g}", ha="center", va="center", fontsize=5.7, color="#222222")
+        x = legend_x0 + i * 0.68
+        size = 10 + 62 * value**1.45
+        ax.scatter(x, legend_y, s=size, marker="o", color="#BFBFBF", edgecolors="#555555", linewidths=0.35, zorder=5)
+        ax.text(x, legend_y + 1.30, f"{value:g}", ha="center", va="center", fontsize=5.7, color="#222222", zorder=6)
 
     ax.set_xticks([])
     ax.set_yticks([])
@@ -961,7 +1001,7 @@ def draw_overall_panel(ax: plt.Axes, score: pd.DataFrame) -> None:
     ax.set_xlim(0, max(0.78, float(plot_df["overall_mean"].max()) + 0.04))
     ax.set_xlabel("Mean profile score", fontsize=6.4)
     ax.set_ylabel("")
-    ax.tick_params(axis="y", labelsize=4.8, length=0, pad=1.2)
+    ax.tick_params(axis="y", labelsize=4.15, length=0, pad=1.0)
     ax.tick_params(axis="x", labelsize=5.7, length=2)
     ax.grid(axis="x", color="#E1E4E8", lw=0.45)
     ax.set_title("Overall profile", fontsize=7.2, pad=3)
@@ -1028,7 +1068,7 @@ def draw_domain_panel(ax: plt.Axes, score: pd.DataFrame) -> None:
         ax.legend_.remove()
     ax.set_ylim(0, 1.03)
     ax.set_xlabel("")
-    ax.set_ylabel("Domain score", fontsize=6.4)
+    ax.set_ylabel("Score", fontsize=6.4, labelpad=1.5)
     ax.tick_params(axis="x", labelsize=5.8, rotation=18, length=0)
     ax.tick_params(axis="y", labelsize=5.7, length=2)
     ax.grid(axis="y", color="#E1E4E8", lw=0.45)
@@ -1124,8 +1164,17 @@ def draw_component_top_frequency(ax: plt.Axes, score: pd.DataFrame) -> None:
 
 def draw_contribution_panel(ax: plt.Axes, score: pd.DataFrame) -> None:
     long = domain_score_long(score)
-    top_methods = score.sort_values("overall_mean", ascending=False)["method_id"].head(8).tolist()
+    selection = (
+        score.sort_values("overall_mean", ascending=False)
+        [["method_id", "overall_mean"]]
+        .head(8)
+        .reset_index(drop=True)
+    )
+    selection["selection_rank"] = np.arange(1, len(selection) + 1)
+    selection["selection_rule"] = "top eight methods by equal-weight overall profile score"
+    top_methods = selection["method_id"].tolist()
     plot = long[long["method_id"].isin(top_methods)].copy()
+    plot = plot.merge(selection, on="method_id", how="left")
     plot["method_id"] = pd.Categorical(plot["method_id"], categories=top_methods[::-1], ordered=True)
     plot = plot.sort_values(["method_id", "domain"])
     domain_order = ["Structure", "Clustering", "Efficiency", "Robustness"]
@@ -1154,7 +1203,7 @@ def draw_contribution_panel(ax: plt.Axes, score: pd.DataFrame) -> None:
             left[method] += row["weighted_contribution"]
     ax.set_yticks(np.arange(len(top_methods)))
     ax.set_yticklabels(top_methods[::-1])
-    ax.set_title("Weighted domain contributions", fontsize=7.2, pad=3)
+    ax.set_title("Top-eight by profile score", fontsize=7.2, pad=3)
     ax.set_xlabel("profile-score contribution")
     ax.set_xlim(0, max(0.78, max(left.values()) + 0.04))
     ax.tick_params(axis="y", labelsize=4.8, length=0, pad=1.2)
@@ -1194,51 +1243,167 @@ def draw_raw_variability_panel(ax: plt.Axes, score: pd.DataFrame) -> None:
     ax.set_title("Raw-score variability", fontsize=7.2, pad=3)
 
 
+def draw_weight_sensitivity_panel(ax: plt.Axes, score: pd.DataFrame) -> pd.DataFrame:
+    component_cols = [col for col, _, _ in MATRIX_COLUMNS]
+    domain_cols = {
+        domain: [col for col, _, d in MATRIX_COLUMNS if d == domain]
+        for domain in DOMAIN_COLORS
+    }
+    scenarios = {"equal weight": component_cols}
+    for domain, cols in domain_cols.items():
+        scenarios[f"minus {DOMAIN_HEADER_LABELS[domain].lower()}"] = [
+            col for col in component_cols if col not in cols
+        ]
+    records = []
+    for scenario, cols in scenarios.items():
+        values = score[["method_id"] + cols].copy()
+        values["profile_score"] = values[cols].mean(axis=1, skipna=True)
+        values["profile_rank"] = values["profile_score"].rank(method="average", ascending=False)
+        values["scenario"] = scenario
+        records.append(values[["method_id", "scenario", "profile_score", "profile_rank"]])
+    long = pd.concat(records, ignore_index=True)
+    base = long[long["scenario"].eq("equal weight")][["method_id", "profile_score", "profile_rank"]].rename(
+        columns={"profile_score": "equal_weight_score", "profile_rank": "equal_weight_rank"}
+    )
+    long = long.merge(base, on="method_id", how="left")
+    long["score_delta_from_equal"] = long["profile_score"] - long["equal_weight_score"]
+    long["rank_delta_from_equal"] = long["profile_rank"] - long["equal_weight_rank"]
+    summary = (
+        long.groupby("method_id", observed=False)
+        .agg(
+            max_abs_score_delta=("score_delta_from_equal", lambda x: float(np.max(np.abs(x)))),
+            rank_span=("profile_rank", lambda x: float(np.max(x) - np.min(x))),
+            equal_weight_score=("equal_weight_score", "first"),
+            equal_weight_rank=("equal_weight_rank", "first"),
+        )
+        .reindex(CANONICAL_METHODS)
+        .reset_index()
+    )
+    plot = summary.set_index("method_id").reindex(CANONICAL_METHODS[::-1]).reset_index()
+    y = np.arange(len(plot))
+    colors = [FAMILY_COLORS.get(FAMILY.get(m, ""), "#777777") for m in plot["method_id"]]
+    ax.hlines(y, 0, plot["rank_span"], color=colors, lw=2.0, alpha=0.78)
+    ax.scatter(plot["rank_span"], y, s=18, color=colors, edgecolor="white", linewidth=0.35, zorder=3)
+    ax.set_yticks(y)
+    ax.set_yticklabels(plot["method_id"], fontsize=4.1)
+    ax.set_xlim(0, max(1.0, float(summary["rank_span"].max()) * 1.16))
+    ax.set_xlabel("rank span across leave-one-domain-out scores", fontsize=6.2)
+    ax.tick_params(axis="x", labelsize=5.4, length=2)
+    ax.tick_params(axis="y", length=0)
+    ax.grid(axis="x", color="#E1E4E8", lw=0.45)
+    ax.set_title("Score-weighting sensitivity", fontsize=7.2, pad=3)
+    long.to_csv(SOURCE_DIR / "Figure_3_weight_sensitivity_long.csv", index=False)
+    summary.to_csv(SOURCE_DIR / "Figure_3_weight_sensitivity_summary.csv", index=False)
+    return long.assign(panel="i")
+
+
+def draw_component_correlation_panel(ax: plt.Axes, score: pd.DataFrame) -> pd.DataFrame:
+    component_cols = [col for col, _, _ in MATRIX_COLUMNS]
+    component_labels = [label for _, label, _ in MATRIX_COLUMNS]
+    corr = score[component_cols].corr(method="spearman")
+    im = ax.imshow(corr.to_numpy(dtype=float), cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
+    ax.set_xticks(np.arange(len(component_cols)))
+    ax.set_xticklabels(component_labels, rotation=55, ha="right", fontsize=4.6)
+    ax.set_yticks(np.arange(len(component_cols)))
+    ax.set_yticklabels(component_labels, fontsize=4.6)
+    ax.tick_params(length=0, pad=1)
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    cbar = ax.figure.colorbar(im, ax=ax, fraction=0.030, pad=0.014, ticks=[-1, 0, 1])
+    cbar.ax.tick_params(labelsize=4.2, length=2, pad=1.0)
+    cbar.set_label("Spearman r", fontsize=5.0)
+    ax.set_title("Component-score correlation", fontsize=7.2, pad=3)
+    out = (
+        corr.reset_index()
+        .rename(columns={"index": "component_x"})
+        .melt(id_vars="component_x", var_name="component_y", value_name="spearman_r")
+    )
+    out.to_csv(SOURCE_DIR / "Figure_3_component_correlation_matrix.csv", index=False)
+    return out.assign(panel="j")
+
+
 def add_panel_labels(fig: plt.Figure, axes: list[tuple[str, plt.Axes]]) -> None:
     for label, ax in axes:
-        x = -0.035 if label in {"a", "b", "h"} else -0.055
-        ax.text(x, 1.004, label, transform=ax.transAxes, clip_on=False, **PANEL_LABEL_STYLE)
+        x = -0.030 if label in {"a", "b"} else -0.090
+        y = 1.010
+        if label in {"i", "j"}:
+            x = -0.115
+            y = 1.025
+        ax.text(x, y, label, transform=ax.transAxes, clip_on=False, **PANEL_LABEL_STYLE)
 
 
 def draw_figure(score: pd.DataFrame, compact: bool = False) -> None:
     setup_mpl()
     if compact:
-        fig_size = (7.25, 14.85)
-        height_ratios = [6.60, 0.35, 1.64, 0.40, 1.84, 0.70, 1.45, 0.42, 1.80]
-        content_rows = [0, 2, 4, 6, 8]
-        nrows = 9
-        top = 0.976
-        bottom = 0.064
-        hspace = 0.0
+        fig_size = (9.92, 12.02)
+        height_ratios = [5.15, 1.66, 1.78, 1.84]
+        nrows = 4
+        ncols = 1
+        top = 0.975
+        bottom = 0.070
+        left = 0.060
+        right = 0.982
+        wspace = 0.0
+        hspace = 0.42
     else:
         fig_size = (7.25, 17.35)
         height_ratios = [8.50, 2.02, 2.24, 1.75, 2.25]
         content_rows = [0, 1, 2, 3, 4]
         nrows = 5
+        ncols = 6
         top = 0.972
         bottom = 0.060
+        left = 0.070
+        right = 0.985
+        wspace = 0.42
         hspace = 0.220
 
     fig = plt.figure(figsize=fig_size)
     gs = fig.add_gridspec(
         nrows=nrows,
-        ncols=6,
+        ncols=ncols,
         height_ratios=height_ratios,
-        left=0.070,
-        right=0.985,
+        left=left,
+        right=right,
         top=top,
         bottom=bottom,
-        wspace=0.42,
+        wspace=wspace,
         hspace=hspace,
     )
-    ax_matrix = fig.add_subplot(gs[content_rows[0], :])
-    ax_score_demo = fig.add_subplot(gs[content_rows[1], :])
-    ax_rank = fig.add_subplot(gs[content_rows[2], 0:3])
-    ax_domain = fig.add_subplot(gs[content_rows[2], 3:6])
-    ax_family_domain = fig.add_subplot(gs[content_rows[3], 0:2])
-    ax_component_frequency = fig.add_subplot(gs[content_rows[3], 2:4])
-    ax_contribution = fig.add_subplot(gs[content_rows[3], 4:6])
-    ax_variability = fig.add_subplot(gs[content_rows[4], :])
+    if compact:
+        ax_matrix = fig.add_subplot(gs[0, 0])
+        ax_score_demo = fig.add_subplot(gs[1, 0])
+        middle = gs[2, 0].subgridspec(
+            1,
+            4,
+            width_ratios=[1.55, 1.05, 1.05, 1.45],
+            wspace=0.52,
+        )
+        bottom_grid = gs[3, 0].subgridspec(
+            1,
+            4,
+            width_ratios=[1.18, 1.20, 1.18, 1.20],
+            wspace=0.50,
+        )
+        ax_rank = fig.add_subplot(middle[0, 0])
+        ax_domain = fig.add_subplot(middle[0, 1])
+        ax_family_domain = fig.add_subplot(middle[0, 2])
+        ax_component_frequency = fig.add_subplot(middle[0, 3])
+        ax_contribution = fig.add_subplot(bottom_grid[0, 0])
+        ax_variability = fig.add_subplot(bottom_grid[0, 1])
+        ax_weight_sensitivity = fig.add_subplot(bottom_grid[0, 2])
+        ax_component_correlation = fig.add_subplot(bottom_grid[0, 3])
+    else:
+        ax_matrix = fig.add_subplot(gs[content_rows[0], :])
+        ax_score_demo = fig.add_subplot(gs[content_rows[1], :])
+        ax_rank = fig.add_subplot(gs[content_rows[2], 0:3])
+        ax_domain = fig.add_subplot(gs[content_rows[2], 3:6])
+        ax_family_domain = fig.add_subplot(gs[content_rows[3], 0:2])
+        ax_component_frequency = fig.add_subplot(gs[content_rows[3], 2:4])
+        ax_contribution = fig.add_subplot(gs[content_rows[3], 4:6])
+        ax_variability = fig.add_subplot(gs[content_rows[4], :])
+        ax_weight_sensitivity = fig.add_subplot(gs[content_rows[4], 0:3])
+        ax_component_correlation = fig.add_subplot(gs[content_rows[4], 3:6])
 
     draw_bubble_matrix(ax_matrix, score)
     draw_score_demo_panel(ax_score_demo, score)
@@ -1248,6 +1413,8 @@ def draw_figure(score: pd.DataFrame, compact: bool = False) -> None:
     draw_component_top_frequency(ax_component_frequency, score)
     draw_contribution_panel(ax_contribution, score)
     draw_raw_variability_panel(ax_variability, score)
+    weight_sensitivity = draw_weight_sensitivity_panel(ax_weight_sensitivity, score)
+    component_correlation = draw_component_correlation_panel(ax_component_correlation, score)
     add_panel_labels(
         fig,
         [
@@ -1259,6 +1426,8 @@ def draw_figure(score: pd.DataFrame, compact: bool = False) -> None:
             ("f", ax_component_frequency),
             ("g", ax_contribution),
             ("h", ax_variability),
+            ("i", ax_weight_sensitivity),
+            ("j", ax_component_correlation),
         ],
     )
 
@@ -1275,20 +1444,23 @@ def draw_figure(score: pd.DataFrame, compact: bool = False) -> None:
         handletextpad=0.35,
         columnspacing=1.0,
     )
-    pd.DataFrame(
+    qa_summary = pd.DataFrame(
         [
             {
-                "panel_count": 8,
-                "layout": "compact" if compact else "full",
+                "panel_count": 10,
+                "layout": "pagefit_10panel" if compact else "full",
                 "figure_width_in": fig_size[0],
                 "figure_height_in": fig_size[1],
                 "method_count": int(score["method_id"].nunique()),
                 "component_count": len(MATRIX_COLUMNS),
                 "top_profile_method": str(score.sort_values("overall_mean", ascending=False)["method_id"].iloc[0]),
                 "top_profile_score": float(score["overall_mean"].max()),
+                "weight_sensitivity_records": int(len(weight_sensitivity)),
+                "component_correlation_records": int(len(component_correlation)),
             }
         ]
-    ).to_csv(
+    )
+    qa_summary.to_csv(
         SOURCE_DIR / (
             "Figure_3_completed_compact_visual_qa_summary.csv"
             if compact
@@ -1296,9 +1468,11 @@ def draw_figure(score: pd.DataFrame, compact: bool = False) -> None:
         ),
         index=False,
     )
+    if compact:
+        qa_summary.to_csv(SOURCE_DIR / "Figure_3_completed_visual_qa_summary.csv", index=False)
 
     stems = (
-        ["Figure_3_vasc_completed_compact_8panel_trial"]
+        ["Figure_3_vasc_completed_pagefit_10panel_trial", "Figure_3_vasc_completed_compact_10panel_trial"]
         if compact
         else [
             "Figure_3_vasc_completed_score_demo_top_tier",
@@ -1310,7 +1484,7 @@ def draw_figure(score: pd.DataFrame, compact: bool = False) -> None:
     )
     for stem in stems:
         base = OUT_DIR / stem
-        fig.savefig(base.with_suffix(".png"), dpi=450)
+        fig.savefig(base.with_suffix(".png"), dpi=600)
         fig.savefig(base.with_suffix(".pdf"))
         fig.savefig(base.with_suffix(".svg"))
         fig.savefig(base.with_suffix(".tiff"), dpi=600)

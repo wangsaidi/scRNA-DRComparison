@@ -166,16 +166,20 @@ def draw_ranked_bar(
     title: str,
     xlabel: str,
     fmap: dict[str, str],
-    top: int = 16,
+    top: int | None = None,
 ) -> pd.DataFrame:
-    vals = values.dropna().sort_values(ascending=False).head(top).iloc[::-1]
+    vals_desc = values.dropna().sort_values(ascending=False)
+    if top is not None:
+        vals_desc = vals_desc.head(top)
+    vals = vals_desc.iloc[::-1]
     colors = [method_color(str(m), fmap) for m in vals.index]
-    ax.barh(vals.index, vals.values, color=colors, edgecolor="white", linewidth=0.45, height=0.72)
+    ax.barh(vals.index, vals.values, color=colors, edgecolor="white", linewidth=0.38, height=0.62)
     ax.set_title(title, fontsize=7.2, fontweight="bold", loc="left", pad=3)
     ax.set_xlabel(xlabel)
     ax.set_xlim(0, 1.03)
     ax.grid(axis="x", color=PALETTE["light_gray"], lw=0.45)
-    set_ticks(ax, 5.0)
+    ax.tick_params(axis="y", labelsize=4.15, length=0, pad=1.0)
+    ax.tick_params(axis="x", labelsize=4.8, length=2.0, pad=1.3)
     return pd.DataFrame({"method_id": vals.index[::-1], "score": vals.values[::-1], "rank": np.arange(1, len(vals) + 1)})
 
 
@@ -381,6 +385,88 @@ def draw_family_structure_profile(ax: plt.Axes, score: pd.DataFrame, fmap: dict[
     return profile.reset_index(names="family")
 
 
+def draw_rank_discordance(ax: plt.Axes, score: pd.DataFrame, fmap: dict[str, str]) -> pd.DataFrame:
+    work = score[["method_id", "local", "global"]].dropna().copy()
+    work["local_rank"] = work["local"].rank(method="average", ascending=False)
+    work["global_rank"] = work["global"].rank(method="average", ascending=False)
+    work["rank_discordance"] = (work["local_rank"] - work["global_rank"]).abs()
+    work["family"] = work["method_id"].map(fmap).fillna("other")
+
+    ax.plot([1, 26], [1, 26], color="#CFCFCF", lw=0.7, ls=(0, (3, 2)), zorder=0)
+    for _, row in work.iterrows():
+        ax.scatter(
+            row["local_rank"],
+            row["global_rank"],
+            s=20 + 3.8 * row["rank_discordance"],
+            color=method_color(row["method_id"], fmap),
+            edgecolor="white",
+            linewidth=0.4,
+            alpha=0.92,
+            zorder=3,
+        )
+    label_rows = work.sort_values("rank_discordance", ascending=False).head(7)
+    for _, row in label_rows.iterrows():
+        ax.text(
+            row["local_rank"] + 0.45,
+            row["global_rank"],
+            str(row["method_id"]),
+            fontsize=4.7,
+            va="center",
+            ha="left",
+            color=PALETTE["dark"],
+        )
+    ax.set_title("Local-global rank discordance", fontsize=7.2, fontweight="bold", loc="left", pad=3)
+    ax.set_xlabel("local rank")
+    ax.set_ylabel("global rank")
+    ax.set_xlim(0.4, 26.9)
+    ax.set_ylim(26.9, 0.4)
+    ax.grid(color=PALETTE["light_gray"], lw=0.45)
+    set_ticks(ax, 5.0)
+    return work
+
+
+def draw_metric_heterogeneity(
+    ax: plt.Axes,
+    local_heat: pd.DataFrame,
+    global_heat: pd.DataFrame,
+    fmap: dict[str, str],
+) -> pd.DataFrame:
+    combined = pd.concat(
+        [
+            local_heat.add_prefix("local_"),
+            global_heat.add_prefix("global_"),
+        ],
+        axis=1,
+    )
+    values = combined.apply(pd.to_numeric, errors="coerce")
+    summary = pd.DataFrame(
+        {
+            "method_id": values.index,
+            "metric_median": values.median(axis=1, skipna=True).values,
+            "metric_iqr": (
+                values.quantile(0.75, axis=1, interpolation="linear")
+                - values.quantile(0.25, axis=1, interpolation="linear")
+            ).values,
+            "metric_range": (values.max(axis=1, skipna=True) - values.min(axis=1, skipna=True)).values,
+            "n_metrics": values.notna().sum(axis=1).values,
+        }
+    ).dropna(subset=["metric_iqr"])
+    plot = summary.sort_values("metric_iqr", ascending=True)
+    y = np.arange(len(plot))
+    colors = [method_color(method, fmap) for method in plot["method_id"]]
+    ax.hlines(y, 0, plot["metric_iqr"], color=colors, lw=1.7, alpha=0.78)
+    ax.scatter(plot["metric_iqr"], y, s=14, color=colors, edgecolor="white", linewidth=0.35, zorder=3)
+    ax.set_yticks(y)
+    ax.set_yticklabels(plot["method_id"])
+    ax.set_xlim(0, max(0.05, float(plot["metric_iqr"].max()) * 1.18))
+    ax.set_title("Metric-level heterogeneity", fontsize=7.2, fontweight="bold", loc="left", pad=3)
+    ax.set_xlabel("IQR across structure metrics")
+    ax.grid(axis="x", color=PALETTE["light_gray"], lw=0.45)
+    ax.tick_params(axis="y", labelsize=4.15, length=0, pad=1.0)
+    ax.tick_params(axis="x", labelsize=4.8, length=2.0, pad=1.3)
+    return summary
+
+
 def main() -> None:
     fmap = method_family_map()
     canonical_methods = canonical_full_methods()
@@ -402,20 +488,42 @@ def main() -> None:
     global_heat = global_summary.reindex(global_order)[global_cols]
     score_indexed = score.set_index("method_id")
 
-    fig = plt.figure(figsize=(7.25, 10.70), constrained_layout=True)
-    gs = GridSpec(4, 2, figure=fig, height_ratios=[1.36, 1.00, 1.02, 0.92], hspace=0.08, wspace=0.10)
-    axes = [fig.add_subplot(gs[i, j]) for i in range(4) for j in range(2)]
-    for label, ax in zip("abcdefgh", axes):
+    fig = plt.figure(figsize=(9.60, 10.95), constrained_layout=False)
+    gs = GridSpec(
+        4,
+        6,
+        figure=fig,
+        height_ratios=[2.30, 2.52, 2.12, 2.36],
+        hspace=0.52,
+        wspace=0.40,
+    )
+    top_grid = gs[0, :].subgridspec(1, 2, wspace=0.28)
+    axes = {
+        "a": fig.add_subplot(top_grid[0, 0]),
+        "b": fig.add_subplot(top_grid[0, 1]),
+        "c": fig.add_subplot(gs[1, 0:2]),
+        "d": fig.add_subplot(gs[1, 2:4]),
+        "e": fig.add_subplot(gs[1, 4:6]),
+        "f": fig.add_subplot(gs[2, 0:2]),
+        "g": fig.add_subplot(gs[2, 2:4]),
+        "h": fig.add_subplot(gs[2, 4:6]),
+        "i": fig.add_subplot(gs[3, 0:3]),
+        "j": fig.add_subplot(gs[3, 3:6]),
+    }
+    for label, ax in axes.items():
         add_panel_label(ax, label)
+    fig.subplots_adjust(left=0.065, right=0.985, top=0.982, bottom=0.065)
 
-    draw_heatmap(axes[0], local_heat, "Local neighborhood-retention metrics", LOCAL_DISPLAY, "viridis", "median")
-    draw_heatmap(axes[1], global_heat, "Global geometry-preservation metrics", GLOBAL_DISPLAY, "mako", "median")
-    local_rank = draw_ranked_bar(axes[2], score_indexed["local"], "Aggregate local score", "normalized score", fmap)
-    global_rank = draw_ranked_bar(axes[3], score_indexed["global"], "Aggregate global score", "normalized score", fmap)
-    dist_data = draw_distribution(axes[4], raw, fmap)
-    tradeoff = draw_tradeoff(axes[5], score, fmap)
-    rank_stability = draw_dataset_rank_stability(axes[6], raw, canonical_methods, fmap)
-    family_profile = draw_family_structure_profile(axes[7], score, fmap)
+    draw_heatmap(axes["a"], local_heat, "Local neighborhood-retention metrics", LOCAL_DISPLAY, "viridis", "median")
+    draw_heatmap(axes["b"], global_heat, "Global geometry-preservation metrics", GLOBAL_DISPLAY, "mako", "median")
+    local_rank = draw_ranked_bar(axes["c"], score_indexed["local"], "Aggregate local score", "normalized score", fmap)
+    global_rank = draw_ranked_bar(axes["d"], score_indexed["global"], "Aggregate global score", "normalized score", fmap)
+    dist_data = draw_distribution(axes["e"], raw, fmap)
+    tradeoff = draw_tradeoff(axes["f"], score, fmap)
+    rank_stability = draw_dataset_rank_stability(axes["g"], raw, canonical_methods, fmap)
+    family_profile = draw_family_structure_profile(axes["h"], score, fmap)
+    rank_discordance = draw_rank_discordance(axes["i"], score, fmap)
+    metric_heterogeneity = draw_metric_heterogeneity(axes["j"], local_heat, global_heat, fmap)
 
     source_parts = [
         local_heat.reset_index().assign(panel="a_local_heatmap"),
@@ -426,6 +534,8 @@ def main() -> None:
         tradeoff.assign(panel="f_local_global_tradeoff"),
         rank_stability.assign(panel="g_dataset_rank_stability"),
         family_profile.assign(panel="h_family_structure_profile"),
+        rank_discordance.assign(panel="i_rank_discordance"),
+        metric_heterogeneity.assign(panel="j_metric_heterogeneity"),
     ]
     panel_source = pd.concat(source_parts, ignore_index=True, sort=False)
     panel_source = panel_source.rename(
@@ -442,7 +552,7 @@ def main() -> None:
     plt.close(fig)
 
     qa = {
-        "panel_count": 8,
+        "panel_count": 10,
         "canonical_full_methods": int(len(canonical_methods)),
         "local_heatmap_methods": int(local_heat.shape[0]),
         "global_heatmap_methods": int(global_heat.shape[0]),
@@ -458,6 +568,10 @@ def main() -> None:
         "local_global_score_correlation": float(tradeoff["local"].corr(tradeoff["global"])),
         "top_local_method": str(score.sort_values("local", ascending=False)["method_id"].iloc[0]),
         "top_global_method": str(score.sort_values("global", ascending=False)["method_id"].iloc[0]),
+        "max_local_global_rank_discordance": float(rank_discordance["rank_discordance"].max()),
+        "highest_metric_heterogeneity_method": str(
+            metric_heterogeneity.sort_values("metric_iqr", ascending=False)["method_id"].iloc[0]
+        ),
     }
     pd.DataFrame([qa]).to_csv(QA_OUT / "Figure_4_structure_preservation_top_tier_qa.csv", index=False)
     print(f"Wrote {base.with_suffix('.png')}")

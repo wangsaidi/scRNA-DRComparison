@@ -16,7 +16,14 @@ import seaborn as sns
 from matplotlib.gridspec import GridSpec
 
 
-ROOT = Path(__file__).resolve().parents[4]
+def find_project_root(start: Path) -> Path:
+    for parent in [start.resolve(), *start.resolve().parents]:
+        if (parent / "Publication" / "paper").exists() and (parent / "metadata").exists():
+            return parent
+    raise RuntimeError(f"Could not locate project root from {start}")
+
+
+ROOT = find_project_root(Path(__file__))
 SOURCE_IN = ROOT / "Publication/paper/revision_figures/redesigned_python_figure_package/source_data"
 POLISH_SCRIPT = ROOT / "Publication/paper/revision_figures/supplementary_polish/make_supplementary_figures_top_tier.py"
 OUT = ROOT / "Publication/paper/revision_figures/supplementary_atlas_top_tier"
@@ -764,7 +771,7 @@ def figure_s10() -> None:
         panel_label(ax, label)
     stab_matrix = stability.pivot_table(index="parent_method", columns="perturbation_axis", values="score", aggfunc="median").reindex(CANONICAL)
     compact_heatmap(axes[0], stab_matrix, "Stability across perturbation axes", cmap=SCORE_CMAP, vmin=0, vmax=1, show_y=True, xrot=35)
-    compact_heatmap(axes[1], stab_matrix.assign(family=[FAMILY_MAP.get(m, "other") for m in stab_matrix.index]).groupby("family").median(numeric_only=True).rename(index=family_short), "Family median stability", cmap=SCORE_CMAP, vmin=0, vmax=1, annotate=True, xrot=35)
+    compact_heatmap(axes[1], stab_matrix.assign(family=[FAMILY_MAP.get(m, "other") for m in stab_matrix.index]).groupby("family").median(numeric_only=True).rename(index=family_short), "Family median stability", cmap=SCORE_CMAP, vmin=0, vmax=1, annotate=False, xrot=35)
     compact_barh(axes[2], stab_matrix.mean(axis=1), "Method-level stability mean", "score", color={m: family_color(m) for m in CANONICAL}, top=14, xlim=(0, 1))
     compact_box(axes[3], stability, "perturbation_axis", "score", "Axis-level stability spread", color="#DFE8EF", xrot=35)
     local_metrics = ["nkr_30", "aji_30", "T_30", "C_30"]
@@ -935,7 +942,7 @@ def figure_s15() -> None:
     save_figure(fig, "Supplementary_Figure_S15_reproducibility_coverage_atlas", source)
     for i, role in enumerate(["implementation verification", "role accounting", "language footprint", "method scope", "commit records", "export formats", "source-data records", "old supplement coverage", "canonical method audit"]):
         add_panel_record(fig_id, chr(97 + i), role, "reproducibility and coverage audit")
-    add_legend(fig_id, "Reproducibility and evidence-layer coverage audit.", "Supplementary Fig. S15 documents implementation verification, source-data coverage, export completeness, canonical method accounting, and how metric-level evidence layers are represented in the atlas-style supplementary package.")
+    add_legend(fig_id, "Reproducibility and old-supplement coverage audit.", "Supplementary Fig. S15 documents implementation verification, source-data coverage, export completeness, canonical method accounting, and how the original Supplementary Figures document was consolidated into the new atlas-style supplementary package.")
 
 
 def old_docx_mapping() -> pd.DataFrame:
